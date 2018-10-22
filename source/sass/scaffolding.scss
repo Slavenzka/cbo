@@ -35,3 +35,19 @@ a {
   padding: 0 70px;
   margin: 0 auto;
 }
+
+@media (max-width: $width__tablet-max) {
+  .container {
+    margin: 0;
+    padding: 0 100% * 30 / 768;
+    min-width: $width__tablet;
+    width: auto;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .container {
+    padding: 0 100% * 10 / 320;
+    min-width: $width__mobile;
+  }
+}

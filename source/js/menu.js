@@ -7,21 +7,29 @@
   let city = nav.querySelector('.navigation__item--city');
   let linkCity = 'navigation__link--city';
 
+  function removeHoover (item) {
+    item.classList.remove('navigation-hover');
+    item.classList.add('navigation-nohover');
+  }
+
+  function addHoover (item) {
+    item.classList.remove('navigation-nohover');
+    item.classList.add('navigation-hover');
+  }
+
   function submenuToggle (evt, navItem, navLinkClass) {
+    removeHoover(navItem);
+
     if (!evt.target.classList.contains(navLinkClass)) {
       if (navItem.classList.contains('navigation__item--selected')) {
         navItem.classList.remove('navigation__item--selected');
-        nav.classList.remove('navigation-hover');
-        nav.classList.add('navigation-nohover');
       }
     } else if ((evt.target.classList.contains(navLinkClass)) &&
   navItem.classList.contains('navigation__item--selected')) {
-      nav.classList.remove('navigation-hover');
       navItem.classList.remove('navigation__item--selected');
-      nav.classList.add('navigation-nohover');
     } else {
-      nav.classList.add('navigation-hover');
       navItem.classList.add('navigation__item--selected');
+      addHoover(navItem);
     }
   }
 

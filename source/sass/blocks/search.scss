@@ -18,3 +18,12 @@
   color: $font-color__dark;
   border: none;
 }
+
+@media (max-width: $width__mobile-max) {
+  .search {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    width: 100%;
+  }
+}
