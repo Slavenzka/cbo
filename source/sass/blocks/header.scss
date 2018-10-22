@@ -1,0 +1,33 @@
+.header {
+  font-size: 1rem;
+}
+
+.header__intro > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url("../img/header__intro-bg.png");
+  background-repeat: no-repeat;
+  background-position: 55% 0;
+  background-size: 60em;
+}
+
+.header__logo--main {
+  margin-top: 1.5em;
+  width: 176px;
+}
+
+.header__company {
+  margin: calc(3em / 3.5) 0;
+  padding: 0 2.5em;
+  font-family: $font-family__main;
+  font-size: 3.5em;
+  font-weight: 300;
+  text-align: center;
+  color: $font-color__dark;
+}
+
+.header__logo--aux {
+  margin-top: 3em;
+  width: 125px;
+}

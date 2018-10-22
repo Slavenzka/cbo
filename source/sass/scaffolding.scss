@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -31,5 +32,6 @@ a {
 
 .container {
   width: $width__desktop;
+  padding: 0 70px;
   margin: 0 auto;
 }
