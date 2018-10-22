@@ -1,8 +1,8 @@
 {
-  "name": "GlobusVet",
+  "name": "CBO",
   "version": "1.0.0",
   "private": true,
-  "description": "Верстка макета магазина GlobusVet",
+  "description": "Верстка портала ЦБО",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
