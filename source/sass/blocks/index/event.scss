@@ -1,0 +1,134 @@
+.event {
+  padding-top: 2em;
+  font-size: 1rem;
+  background-image: url("../img/index__slider-item-bg--2.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+.event__wrapper {
+  margin: 0 auto;
+  padding: 7em 2em 2em 7em;
+  width: 100em;
+}
+
+.event__date {
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  color: $font-color__light;
+  text-transform: uppercase;
+}
+
+.event__definition {
+  margin: 0;
+  font-family: $font-family__main;
+  font-weight: 500;
+  color: $font-color__light;
+}
+
+.event__name {
+  display: block;
+  margin-top: 3em;
+  font-size: 4.5em;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.event__target {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 3.6em;
+  font-weight: 300;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.event__adv {
+  margin-top: 50px;
+  padding-left: 10em;
+  font-size: 2.2em;
+}
+
+.event__adv,
+.event__highlight {
+  font-family: $font-family__main;
+  color: $font-color__light;
+}
+
+.event__highlight {
+  background-color: $background__highlight;
+}
+
+.event__link {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px 80px 0 80px;
+  height: 60px;
+  font-family: $font-family__main;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: normal;
+  color: $font-color__light;
+  text-transform: uppercase;
+  background-color: $background__highlight;
+}
+
+@media (max-width: $width__tablet-max) {
+  .event {
+    padding: 3em;
+    font-size: 0.75rem;
+  }
+
+  .event__wrapper {
+    width: 100%;
+  }
+
+  .event__definition {
+    margin-left: auto;
+    width: 660px;
+  }
+
+  .event__name {
+    margin-top: 2em;
+  }
+
+  .event__link {
+    height: 50px;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .event {
+    font-size: 0.5rem;
+  }
+
+  .event__wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 290px;
+  }
+
+  .event__date {
+    font-size: 2.5em;
+  }
+
+  .event__definition {
+    margin-left: auto;
+    width: 290px;
+  }
+
+  .event__adv {
+    padding: 0;
+    font-size: 3em;
+  }
+
+  .event__link {
+    margin-top: 60px;
+    width: 100%;
+    font-size: 2.5em;
+    text-align: center;
+  }
+}

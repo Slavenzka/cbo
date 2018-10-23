@@ -18,14 +18,16 @@
   }
 
   function submenuToggle (evt, navItem, navLinkClass) {
-    removeHoover(navItem);
-
     if (!evt.target.classList.contains(navLinkClass)) {
+      if (navItem.classList.contains('navigation-hover')) {
+        removeHoover(navItem);
+      }
       if (navItem.classList.contains('navigation__item--selected')) {
         navItem.classList.remove('navigation__item--selected');
       }
     } else if ((evt.target.classList.contains(navLinkClass)) &&
-  navItem.classList.contains('navigation__item--selected')) {
+    navItem.classList.contains('navigation__item--selected')) {
+    removeHoover(navItem);
       navItem.classList.remove('navigation__item--selected');
     } else {
       navItem.classList.add('navigation__item--selected');

@@ -1,0 +1,194 @@
+.study {
+  padding-top: 2em;
+  font-size: 1rem;
+  background-image: url("../img/index__slider-item-bg--1.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.study__wrapper {
+  margin: 0 auto;
+  padding: 5em 0 2em 0;
+  width: 100em;
+  background-color: $background__light-opacity;
+  border-radius: 20px;
+  box-shadow: 5px 5px 40px 0 #dfdfdf;
+}
+
+.study__definition {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.study__definition dt {
+  font-family: $font-family__main;
+  font-size: 25em;
+  font-weight: 900;
+  line-height: 90%;
+  color: $font-color__dark;
+  text-transform: uppercase;
+}
+
+.study__definition dd {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: $font-color__highlight;
+}
+
+.study__features {
+  margin: 0;
+  margin-top: 4em;
+  padding: 0 5em;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.study__feature {
+  font-family: $font-family__main;
+  font-size: 2.3em;
+  font-weight: 500;
+  line-height: 100%;
+  color: $font-color__darker;
+  text-align: center;
+}
+
+.study__feature--2 {
+  position: relative;
+  width: 300px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 150%;
+    background-color: $background__darker;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 150%;
+    background-color: $background__darker;
+  }
+}
+
+.study__schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: $font-color__darkest;
+}
+
+.study__icon {
+  margin-right: 15px;
+}
+
+.study__start {
+  margin-left: 10px;
+  font-weight: 900;
+  color: $font-color__highlight;
+}
+
+.study__link {
+  display: inline-block;
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 257px;
+  height: 59px;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 100%;
+  color: $font-color__darkest;
+  vertical-align: middle;
+  background-image: linear-gradient(to top, #e88900 -25%, #e88900 -14.49%, #f6b100 49.27%, #ffed61 111.12%, #fffce5 125%);
+  border: 1px solid #e5b33e;
+  border-radius: 5px;
+}
+
+@media (max-width: $width__tablet-max) {
+  .study {
+    padding: 3em;
+    font-size: 0.75rem;
+  }
+
+  .study__wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .study {
+    padding-top: 3em;
+    font-size: 0.5rem;
+  }
+
+  .study__definition dt {
+    font-size: 20em;
+  }
+
+  .study__definition dd {
+    font-size: 3em;
+  }
+
+  .study__features {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .study__feature {
+    margin: 15px 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2.4em;
+  }
+
+  .study__feature--2 {
+    &::after {
+      display: none;
+    }
+  }
+
+  li.study__feature:not(:last-of-type) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: -15px;
+      left: calc(50% - 15px);
+      display: block;
+      width: 30px;
+      height: 1px;
+      background-color: $background__darker;
+      opacity: 0.2;
+    }
+  }
+
+  .study__schedule {
+    margin-top: 20px;
+    font-size: 2.1em;
+  }
+
+  .study__link {
+    font-size: 4em;
+  }
+}
