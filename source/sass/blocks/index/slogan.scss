@@ -1,0 +1,99 @@
+.slogan {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.slogan .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.slogan__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2.6em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker;
+
+  &::before {
+    content: "«";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: calc(5em / 2.6);
+    font-weight: 300;
+    line-height: normal;
+    color: $font-color__highlight--dark;
+  }
+
+  &::after {
+    content: "«";
+    position: absolute;
+    top: 0;
+    right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: calc(5em / 2.6);
+    font-weight: 300;
+    line-height: normal;
+    color: $font-color__highlight--dark;
+    transform: rotate(180deg);
+  }
+}
+
+.slogan__main {
+  font-size: calc(3.5em / 2.6);
+  line-height: 150%;
+}
+
+.slogan__link {
+  display: block;
+  margin-top: 30px;
+  width: 64px;
+  height: 64px;
+  font-size: 0;
+  background-image: url("../img/index__slogan-link-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $width__mobile-max) {
+  .slogan {
+    font-size: 0.7rem;
+  }
+
+  .slogan__content {
+    max-width: 300px;
+
+    &::before {
+      content: "«";
+      left: -20px;
+      font-size: calc(4em / 2.6);
+    }
+
+    &::after {
+      content: "«";
+      right: -20px;
+      font-size: calc(4em / 2.6);
+    }
+  }
+
+  .slogan__link {
+    width: 50px;
+    height: 50px;
+  }
+}
