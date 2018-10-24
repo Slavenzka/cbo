@@ -11,12 +11,24 @@
     });
   }
 
+  function showActive (item, index) {
+    if (item.checked) {
+      values[index].classList.add('info__value--active');
+    }
+  }
+
+  function initialSetup () {
+    keys.forEach((item, index) => {
+      showActive(item, index);
+    });
+  }
+
+  initialSetup();
+
   keys.forEach((item, index) => {
     item.addEventListener('click', function () {
       resetValues();
-      if (item.checked) {
-        values[index].classList.add('info__value--active');
-      }
+      showActive(item, index);
     });
-  })
+  });
 })();
