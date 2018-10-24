@@ -237,6 +237,9 @@
       </ul>
     </section>
     <section class="slogan">
+      <h2 class="visually-hidden">
+        Девиз компании
+      </h2>
       <div class="container">
         <blockquote class="slogan__content">
           Главное - авторский состав!
@@ -244,13 +247,15 @@
             Обучайтесь у лучших
           </span>
         </blockquote>
-        <a href="#
-        " class="slogan__link">
+        <a href="#team" class="slogan__link">
           Переход к галарее авторов и преподавателей
         </a>
       </div>
     </section>
     <section class="services">
+      <h2 class="visually-hidden">
+        Предлагаемые услуги
+      </h2>
       <div class="container">
         <ul class="services__list">
           <li class="services__item services__item--1">
@@ -328,14 +333,49 @@
         </ul>
       </div>
     </section>
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="team__title">
+          Наши преподаватели, эксперты, консультанты
+        </h2>
+        <a href="#" class="team__link-all">
+          Посмотреть всех
+        </a>
+        <ul class="team__list">
+        </ul>
+      </div>
+    </section>
   </main>
 
+  <template id="team-item">
+    <li class="team__item">
+      <a href="#" class="team__link">
+        <figure>
+          <div class="team__frame">
+            <img src="" alt="Фотография" class="team__img">
+          </div>
+          <figcaption class="team__full-name">
+            <span class="team__name">
+              Имя
+            </span>
+            <span class="team__family">
+              Фамилия
+            </span>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+  </template>
+
   <script src="js/menu.js"></script>
+  <script src="js/team-mockup.js"></script>
+  <script src="js/team-creation.js"></script>
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="plugins/slick/slick.min.js"></script>
   <script src="js/slider-init.js"></script>
+  <script src="js/team-init.js"></script>
 
 </body>
 

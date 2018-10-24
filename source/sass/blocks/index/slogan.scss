@@ -69,6 +69,7 @@
   background-image: url("../img/index__slogan-link-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: $width__mobile-max) {
