@@ -1035,3 +1035,88 @@ li.slider__item {
   .slogan__link {
     width: 50px;
     height: 50px; } }
+
+.services {
+  font-size: 1rem; }
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  margin-top: 3em;
+  padding: 0;
+  list-style: none; }
+
+.services__item {
+  margin-bottom: 20px;
+  width: 32.5em;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.55);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.55);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s; }
+
+.services__item:hover {
+  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.55);
+          box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.55); }
+
+.services__link {
+  display: block; }
+
+.services__link figure {
+  margin: 0; }
+
+.services__frame {
+  width: 32.5em;
+  height: 18.8em;
+  overflow: hidden; }
+
+.services__img {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.services__link figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 82px;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: normal;
+  color: black;
+  text-align: center; }
+
+@media (max-width: 1139px) {
+  .services__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .services__item {
+    margin: 0 5px 20px 5px; } }
+
+@media (max-width: 767px) {
+  .services {
+    font-size: 0.8rem; }
+  .services__frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
