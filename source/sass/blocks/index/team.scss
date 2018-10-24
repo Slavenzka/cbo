@@ -1,0 +1,121 @@
+.team > .container {
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+.team__title {
+  display: inline-block;
+  font-family: $font-family__main;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 100%;
+  color: $font-color__highlight--darkest;
+}
+
+.team__link-all {
+  margin-left: 140px;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 100%;
+  color: $font-color__link;
+  text-decoration: underline;
+}
+
+.team__list {
+  margin: 0;
+  margin-top: 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.team__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__frame {
+  width: 17em;
+  height: 22em;
+}
+
+.team__img {
+  width: 100%;
+}
+
+.team__full-name {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.team__name,
+.team__family {
+  display: block;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: normal;
+  color: $font-color__darker;
+}
+
+.team figure {
+  margin: 0;
+  padding: 0;
+}
+
+.team .slick-arrow {
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 560px);
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../img/index__slider-button-bg.png");
+  background-size: cover;
+  border: none;
+}
+
+.team .slick-next {
+  left: auto;
+  right: calc(50% - 560px);
+  transform: rotate(180deg);
+}
+
+@media (max-width: $width__tablet-max) {
+  .team > .container {
+    padding-top: 5em;
+    padding-bottom: 10em;
+  }
+
+  .team__link-all {
+    display: block;
+    margin-left: 0;
+  }
+
+  .team .slick-arrow {
+    top: auto;
+    bottom: -80px;
+    left: calc(50% - 80px);
+    width: 40px;
+    height: 40px;
+  }
+
+  .team .slick-next {
+    left: auto;
+    right: calc(50% - 80px);
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .team > .container {
+    padding-top: 2em;
+    padding-bottom: 10em;
+  }
+
+  .team__title {
+    font-size: 2em;
+  }
+}
