@@ -214,4 +214,4 @@
     'img/index__clients-item-logo--33.jpeg',
     'img/index__clients-item-logo--34.jpeg',
     'img/index__clients-item-logo--35.jpeg'
-  ]
+  ];
