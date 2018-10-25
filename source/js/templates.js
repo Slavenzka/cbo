@@ -9,7 +9,7 @@
       let element = template.cloneNode(true);
       element.querySelector('.team__name').textContent = teamMembers[i].name;
       element.querySelector('.team__family').textContent = teamMembers[i].family;
-      element.querySelector('.team__img').src = teamMembers[i].photo;
+      element.querySelector('.team__img').dataset.lazy = teamMembers[i].photo;
       team.appendChild(element);
     }
   }
@@ -21,7 +21,7 @@
     for (let i = 0; i < clientsArray.length; i++) {
       let element = template.cloneNode(true);
       let image = element.querySelector('img');
-      image.src = clientsArray[i];
+      image.dataset.lazy = clientsArray[i];
       clients.appendChild(element);
     }
   }
