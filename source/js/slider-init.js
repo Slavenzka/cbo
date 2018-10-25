@@ -14,6 +14,7 @@
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 4,
+      lazyLoad: 'ondemand',
       responsive: [
         {
           breakpoint: 767,
@@ -28,6 +29,7 @@
 
   $(document).ready(function(){
     $('.clients__list').slick({
+      lazyLoad: 'ondemand',
       infinite: true,
       slidesToShow: 6,
       slidesToScroll: 6,
