@@ -59,7 +59,7 @@
     {
       name: 'Михаил',
       family: 'Дегтярев',
-      photo: 'img/index__team-item--12.jpeg'
+      photo: 'img/index__team-item--12.jpg'
     },
     {
       name: 'Игорь',
