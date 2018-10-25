@@ -49,4 +49,20 @@
       ]
     });
   });
+
+  $(document).ready(function(){
+    $('.reviews__list').slick({
+      speed: 500,
+      adaptiveHeight: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            dots: false
+          }
+        }
+      ]
+    });
+  });
 })();
