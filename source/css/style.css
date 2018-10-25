@@ -569,6 +569,109 @@ a {
     -webkit-filter: none;
             filter: none; }
 
+.footer {
+  padding: 20px 0;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 1rem;
+  background-color: #e8e8e8; }
+
+.footer > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 67%; }
+
+.footer__slogan {
+  margin: 0 0 20px 0;
+  width: 100%;
+  font-size: 3.5em;
+  font-weight: 100;
+  color: #005856; }
+
+.footer__slogan > span {
+  color: #db1a23; }
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  width: 100%;
+  list-style: none; }
+
+.footer__link {
+  display: block;
+  padding: 5px 15px;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #005856;
+  border: 2px solid #005856;
+  border-radius: 5px; }
+
+.footer__item:not(:last-of-type) {
+  margin-right: 20px; }
+
+.footer__contacts {
+  width: 33%;
+  text-align: right; }
+
+.footer__phone {
+  display: block; }
+
+.footer__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.footer__service:not(:last-of-type) {
+  margin-bottom: 10px; }
+
+.footer__link-service {
+  font-size: 18px;
+  font-weight: 300;
+  color: #231f20;
+  text-decoration: underline; }
+
+.footer__logo {
+  display: inline-block;
+  margin: 10px 0; }
+
+.footer__copyright,
+.footer__warning {
+  padding-left: 20px;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: normal;
+  color: #231f20; }
+
+@media (max-width: 1139px) {
+  .footer {
+    font-size: 0.8rem; }
+  .footer__social {
+    width: 60%; }
+  .footer__item:not(:last-of-type) {
+    margin-right: 10px; }
+  .footer__contacts {
+    width: 40%; } }
+
+@media (max-width: 767px) {
+  .footer__social {
+    display: none; }
+  .footer__contacts {
+    width: 100%; } }
+
 .slider {
   font-size: 1rem; }
 
@@ -1543,6 +1646,7 @@ li.clients__item.slick-slide {
     height: 10px; } }
 
 .reviews {
+  padding-bottom: 50px;
   font-family: "Museo Sans", "Arial", sans-serif;
   font-size: 1rem; }
 
