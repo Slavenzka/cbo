@@ -18,6 +18,7 @@ var run = require("run-sequence");
 var ttf2woff = require('gulp-ttf2woff');
 var ttf2woff2 = require('gulp-ttf2woff2');
 var jsMinify = require('gulp-minify');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -111,6 +112,13 @@ gulp.task('compress', function() {
       },
   }))
     .pipe(gulp.dest('source/js/'))
+});
+
+gulp.task('minifyHtml', () => {
+  return gulp.src('source/index.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(rename("index.min.html"))
+    .pipe(gulp.dest('source/'));
 });
 
 gulp.task("serve", ["style"], function() {
