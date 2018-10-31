@@ -2458,6 +2458,15 @@ li.reviews__item.slick-slide {
   line-height: 130%;
   color: #070707; }
 
+.card__italic {
+  display: block;
+  margin: 0;
+  margin-top: 3px;
+  font-size: calc(1.7em / 1.7);
+  font-weight: 300;
+  line-height: 130%;
+  font-style: italic; }
+
 .card__trenings-list {
   margin: 0;
   padding: 0;
@@ -2488,6 +2497,12 @@ li.reviews__item.slick-slide {
 .card__list {
   list-style: square; }
 
+.card__item--highlight {
+  font-weight: 900; }
+
+.card__item--highlight:not(:last-of-type) {
+  margin-bottom: 15px; }
+
 .card__achievement {
   font-size: 2em; }
 
@@ -2517,6 +2532,9 @@ li.reviews__item.slick-slide {
 .card__photo {
   width: 30em; }
 
+.card__bolder {
+  font-weight: 900; }
+
 @media (max-width: 1139px) {
   .card {
     font-size: 0.8rem; } }
@@ -2541,7 +2559,7 @@ li.reviews__item.slick-slide {
     line-height: 17px;
     text-align: center;
     vertical-align: bottom; }
-  .card__selector:not(:first-of-type) + label {
+  .card__selector:not(.card__selector--general) + label {
     padding-top: 9px; }
   .card__selector:first-of-type + label {
     width: 40%; }
