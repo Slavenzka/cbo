@@ -47,6 +47,13 @@
   border-radius: 5px;
 }
 
+.footer__link-service.footer__link {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: $font-color__darker;
+  text-decoration: none;
+}
+
 .footer__item:not(:last-of-type) {
   margin-right: 20px;
 }

@@ -2,11 +2,6 @@
 
   let teamMembers = [
     {
-      name: 'Роман',
-      family: 'Тарасенко',
-      photo: 'img/index__team-item--1.png'
-    },
-    {
       name: 'Евгений',
       family: 'Доценко',
       photo: 'img/index__team-item--2.png'
