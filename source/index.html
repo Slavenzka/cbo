@@ -28,7 +28,7 @@
     </symbol>
   </svg>
 
-  <header class="header">
+  <header class="header" id="header-main">
     <div class="header__intro">
       <div class="container">
         <a href="#" class="header__link header__link--main">
@@ -345,6 +345,23 @@
           Посмотреть всех
         </a>
         <ul class="team__list">
+          <li class="team__item">
+            <a href="#" class="team__link">
+              <figure>
+                <div class="team__frame">
+                  <img src="img/index__team-item--1.png" alt="Фотография" class="team__img">
+                </div>
+                <figcaption class="team__full-name">
+                  <span class="team__name">
+                    Роман
+                  </span>
+                  <span class="team__family">
+                    Тарасенко
+                  </span>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -737,9 +754,65 @@
         <div id="vk_groups"></div>
         <ul class="footer__info">
           <li class="footer__item">
-            <a href="#" class="footer__link">
+            <a href="#" class="footer__link-service footer__link">
               5 причин подписаться
             </a>
+            <div class="modal modal__reasons">
+              <div class="modal__wrapper">
+                <button class="modal__close" type="button">
+                  Закрыть окно
+                </button>
+                <ol class="modal__why-list">
+                  <li class="modal__why-item modal__why-item--1">
+                    Получайте спецпредложения
+                    <p class="modal__content">
+                      Наши подписчики порой получают совершенно уникальные предложения. Например, сходить на тренинг за 5 000 и репост...
+                    </p>
+                  </li>
+                  <li class="modal__why-item modal__why-item--2">
+                    Участвуйте в конкурсах
+                    <p class="modal__content">
+                      Мы регулярно проводим конкурсы
+                    </p>
+                    <ul class="modal__competitions">
+                      <li class="modal__competition">
+                        репостов
+                      </li>
+                      <li class="modal__competition">
+                        тематические
+                      </li>
+                      <li class="modal__competition">
+                        творческие
+                      </li>
+                    </ul>
+                    <p class="modal__content">
+                      и другие, которые придумываем по ходу :)
+                    </p>
+                  </li>
+                  <li class="modal__why-item modal__why-item--3">
+                    Узнавайте первыми о новинках
+                    <p class="modal__content">
+                      Получайте лучшие места по лучшим ценам. Экономьте время и деньги!
+                    </p>
+                  </li>
+                  <li class="modal__why-item modal__why-item--4">
+                    Ищите себя на фотоотчетах с программ
+                    <p class="modal__content">
+                      Первые фото мы стараемся распечатать и вывесить в холле в день мероприятия, а самый полный фотоотчет – спустя пару дней в соц. сетях.
+                    </p>
+                  </li>
+                  <li class="modal__why-item modal__why-item--5">
+                    С нами интересно!
+                    <p class="modal__content">
+                      Мы регулярно пишем о новостях экономики и политики, следим за курсом доллара и публикуем статьи о том, как удержаться от выгорания на работе.
+                    </p>
+                  </li>
+                </ol>
+                <p class="modal__content modal__content--last">
+                  Мы всегда открыты для простого человеческого общения!
+                </p>
+              </div>
+            </div>
           </li>
           <li class="footer__item">
             <a href="#" class="footer__link">
@@ -762,7 +835,7 @@
             <a href="#" class="footer__link-service">
               Об оплате банковскими картами
             </a>
-            <!-- <div class="modal modal__cards">
+            <div class="modal modal__cards">
               <div class="modal__wrapper">
                 <button class="modal__close" type="button">
                   Закрыть окно
@@ -771,7 +844,7 @@
                   Об оплате банковскими картами
                 </h2>
                 <ol class="modal__list" type="I">
-                  <li class="modal__items">
+                  <li class="modal__item">
                     Порядок и условия оплаты по картам и правила предоставления услуг.
                     <p class="modal__highlight">
                       На странице Программы
@@ -798,13 +871,13 @@
                       </li>
                     </ol>
                   </li>
-                  <li class="modal__items">
+                  <li class="modal__item">
                     Условия зачисления суммы на счет абонента при оплате картами.
                     <p class="modal__content">
                       После проверки корректности введенной суммы, с карты происходит списание средств. Платеж зачисляется автоматически. Срок зачисления может варьироваться от 1 минуты до 24 часов с момента списания средств с карты и зависит от нагруженности сервера.
                     </p>
                   </li>
-                  <li class="modal__items">
+                  <li class="modal__item">
                     Политика отмены / возвратов платежей при оплате картами.
                     <p class="modal__content">
                       Возврат денежных средств осуществляется с письменного заявления клиента в соответствии со следующими условиями:
@@ -827,30 +900,91 @@
                       Образец заявления выдается по адресу: г. Екатеринбург, ул. Белинского 83, офис 812 или по запросу в свободной форме на email <a class="modal__email" href="mailto:cbo@cbo.ru">cbo@cbo.ru</a>. Срок возврата денежных средств — до 10 рабочих дней. Возврат осуществляется на ту же карту, с помощью которой была произведена оплата.
                     </p>
                   </li>
-                  <li class="modal__items">
+                  <li class="modal__item">
                     Положение о защищенности передаваемых данных
                     <p class="modal__content">
                       Безопасность платежей обеспечивается с помощью Банка-эквайера, функционирующего на основе современных протоколов и технологий, разработанных международными платежными системами Visa International, MasterCard Worldwide и МИР (3D-Secure: Verified by VISA, MasterCard SecureCode и MIR Accept). Обработка полученных конфиденциальных данных Держателя карты производится в процессинговом центре Банка-эквайера, сертифицированного по стандарту PCI DSS. Безопасность передаваемой информации обеспечивается с помощью современных протоколов обеспечения безопасности в сети Интернет.
                     </p>
                   </li>
                 </ol>
-                <img src="img/index__modal-visa1.jpg" alt="Логотип платежной системы Visa" class="modal__logo">
-                <img src="img/index__modal-visa2.jpg" alt="Логотип платежной системы Visa" class="modal__logo">
-                <img src="img/index__modal-master1.gif" alt="Логотип платежной системы Mastercard" class="modal__logo">
-                <img src="img/index__modal-master2.gif" alt="Логотип платежной системы Mastercard" class="modal__logo">
-                <img src="img/index__modal-mir.png" alt="Логотип платежной системы Мир" class="modal__logo">
+                <div class="modal__logos">
+                  <img src="img/index__modal-visa1.jpg" alt="Логотип платежной системы Visa" class="modal__logo">
+                  <img src="img/index__modal-visa2.jpg" alt="Логотип платежной системы Visa" class="modal__logo">
+                  <img src="img/index__modal-master1.gif" alt="Логотип платежной системы Mastercard" class="modal__logo">
+                  <img src="img/index__modal-master2.gif" alt="Логотип платежной системы Mastercard" class="modal__logo">
+                  <img src="img/index__modal-mir.png" alt="Логотип платежной системы Мир" class="modal__logo">
+                </div>
               </div>
-            </div> -->
+            </div>
           </li>
           <li class="footer__service">
             <a href="#" class="footer__link-service">
               Политика конфиденциальности
             </a>
+            <div class="modal modal__policy">
+              <div class="modal__wrapper">
+                <button class="modal__close" type="button">
+                  Закрыть окно
+                </button>
+                <h2 class="modal__title">
+                  Политика конфиденциальности
+                </h2>
+                <p class="modal__content">
+                  Настоящая Политика конфиденциальности распространяется на всех посетителей и пользователей (далее Пользователь) сайта и/или его субдоменов (далее Сайт). Пользователю Сайта необходимо внимательно ознакомиться с настоящей Политикой. Используя Сайт Пользователь дает разрешение на обработку своих персональных данных, указываемых им в анкете, формах, на Сайте компании.
+                </p>
+                <p class="modal__content">
+                  При заполнении форм на Сайте и/или его субдоменах у Пользователя могут запросить персональную информацию, такую как имя, номер телефона, адрес электронной почты (email). Предоставление такой информации в ответ на запрос осуществляется Пользователем исключительно добровольно. Предоставленная Пользователем информация используется, чтобы оказать те услуги, которые Пользователь сам запрашивает.
+                </p>
+                <p class="modal__content">Сайт использует всю добровольно предоставленную пользователем информацию для обработки и предоставления товаров и услуг, а также улучшения сервиса и качества обслуживания. Никакая информация личного характера об отдельном пользователе не разглашается, кроме случаев, предусмотренных законом.</p>
+              </div>
+            </div>
           </li>
           <li class="footer__service">
             <a href="#" class="footer__link-service">
               Реквизиты
             </a>
+            <div class="modal modal__payment-info">
+              <div class="modal__wrapper">
+                <button class="modal__close" type="button">
+                  Закрыть окно
+                </button>
+                <p class="modal__highlight">
+                  Наименование организации: ООО "Центр бизнес-образования"
+                </p>
+                <ul class="modal__requisites modal__content">
+                  <li class="modal__requisite">
+                    ИНН 6670183 720
+                  </li>
+                  <li class="modal__requisite">
+                    КПП 668501001
+                  </li>
+                  <li class="modal__requisite">
+                    ОГРН 1076670025585
+                  </li>
+                  <li class="modal__requisite">
+                    БИК: 046577909
+                  </li>
+                  <li class="modal__requisite">
+                    К/С: 30101810000000000909
+                  </li>
+                  <li class="modal__requisite">
+                    Р/С: 40702810250090000444 в Уральский филиал АО «Банк Интеза»
+                  </li>
+                  <li class="modal__requisite">
+                    Юридический и Фактический адрес
+                    <p class="modal__content">
+                      620026, г. Екатеринбург, ул. Белинского, 83, оф.811
+                    </p>
+                    <p class="modal__content">
+                      Почтовый адрес
+                    </p>
+                    <p class="modal__content">
+                      620026, г. Екатеринбург, ул. Белинского, 83, 8 этаж
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
         <img src="img/footer__contacts-logo.png" alt="Логотип Центра Бизнес Образования" class="footer__logo">
@@ -863,6 +997,23 @@
       </div>
     </div>
   </footer>
+
+  <a href="#header-main" class="scroll-top">
+  </a>
+
+  <div class="callback">
+    <a href="" class="callback__btn footer__link-service">
+      Открыть форму обратного звонка
+    </a>
+    <div class="modal modal__callback">
+      <div class="modal__wrapper">
+        <button class="modal__close" type="button">
+          Закрыть окно
+        </button>
+        test
+      </div>
+    </div>
+  </div>
 
   <template id="team-item">
     <li class="team__item">
@@ -900,6 +1051,8 @@
   <script async src="js/jquery-migrate-1.4.1.min.js"></script>
   <script async src="plugins/slick/slick.min.js"></script>
   <script async src="js/slider-init.js"></script>
+  <script async src="js/modals.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 
 </html>
