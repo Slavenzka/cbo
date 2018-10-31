@@ -170,12 +170,41 @@
   color: $font-color__darker4;
 }
 
-.card__ext-list {
+.card__highlight--special {
+  color: $font-color__higlight--card;
+}
+
+.card__list {
   list-style: square;
 }
 
 .card__achievement {
   font-size: 2em;
+}
+
+.card__award {
+  display: flex;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.card__award-img {
+  width: 56px;
+  height: 79px;
+}
+
+.card__award-title {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 1.7em;
+  font-weight: 300;
+  line-height: 130%;
+  color: $font-color__darker4;
+}
+
+.card__host {
+  display: block;
+  font-size: calc(1.2em / 1.7);
 }
 
 .card__photo {
@@ -207,6 +236,10 @@
     line-height: 17px;
     text-align: center;
     vertical-align: bottom;
+  }
+
+  .card__selector:not(:first-of-type) + label {
+    padding-top: 9px;
   }
 
   .card__selector:first-of-type + label {
