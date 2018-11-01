@@ -49,7 +49,12 @@
   position: fixed;
   bottom: 50px;
   right: 50px;
+  font-family: $font-family__main;
+  font-size: 1rem;
   border-radius: 50%;
+  transition-duration: 0.5s;
+  opacity: 0;
+  pointer-events: none;
 
   &::before {
     content: "";
@@ -93,8 +98,6 @@
   font-size: 0;
   border-radius: 50%;
   border: none;
-  transform: rotate(0);
-  transition-duration: 0.3s;
   z-index: 2;
 
   &::before {
@@ -136,6 +139,11 @@
   }
 }
 
+.callback-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .callback:hover {
   &::before {
     animation-name: none;
@@ -154,5 +162,98 @@
   &::before {
     animation-name: callbackFadeIn;
     pointer-events: auto;
+  }
+}
+
+.callback__wrapper {
+  margin-top: 150px;
+  padding: 100px;
+}
+
+.callback__intro {
+  position: relative;
+  margin: 0;
+  margin-bottom: 45px;
+  font-size: 3.8em;
+  font-weight: 900;
+  line-height: 120%;
+  color: $font-color__darkest;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: -47px;
+    width: 37px;
+    height: 106px;
+    background-image: url("../img/callback__arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+
+.callback__intro span {
+  display: block;
+  color: $font-color__highlight--callback;
+}
+
+.callback__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-bottom: 20px;
+  width: 700px;
+  height: 148px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.callback__phone,
+.callback__name {
+  margin: 0;
+  padding: 0;
+  padding-left: 22px;
+  font-family: $font-family__main;
+  font-size: 2.2em;
+  font-weight: 300;
+  line-height: 100%;
+  color: $font-color__callback-input;
+  width: 450px;
+  height: 51px;
+  border: 1px solid $border__darkest-opacity;
+}
+
+.callback__phone::placeholder,
+.callback__name::placeholder {
+  opacity: 0.5;
+}
+
+.callback__name {
+  margin-top: 18px;
+}
+
+.callback__submit {
+  display: block;
+  margin-top: -5px;
+  margin-left: 35px;
+  width: 215px;
+  height: 60px;
+  font-family: $font-family__main;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 100%;
+  color: $font-color__darkest;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #e88900 -20%, #f6b100 0, #ffed61 111.12%, #fffce5 125%);
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.23);
+}
+
+@media (max-width: $width__tablet-max) {
+  .callback {
+    display: none;
   }
 }
