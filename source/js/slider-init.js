@@ -67,4 +67,42 @@
       ]
     });
   });
+
+  let authorTrigger = document.querySelector('.advanced__selector--author');
+  let formatTrigger = document.querySelector('.advanced__selector--format');
+  let themeTrigger = document.querySelector('.advanced__selector--theme');
+
+  function showAuthors () {
+    $('.advanced__list--author').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      adaptiveHeight: true
+    });
+    authorTrigger.removeEventListener('click', showAuthors);
+  }
+
+  function showFormats () {
+    $('.advanced__list--format').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows: true
+    });
+    formatTrigger.removeEventListener('click', showFormats);
+  }
+
+  function showThemes () {
+    $('.advanced__list--theme').slick({
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows: true
+    });
+    themeTrigger.removeEventListener('click', showThemes);
+  }
+
+
+
+  authorTrigger.addEventListener('click', showAuthors);
+  formatTrigger.addEventListener('click', showFormats);
+  themeTrigger.addEventListener('click', showThemes);
 })();

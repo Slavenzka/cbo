@@ -1,0 +1,124 @@
+.selection {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.selection__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2em 4em;
+  list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.selection__link {
+  position: relative;
+  display: block;
+  padding-left: calc(7em / 1.6);
+  font-size: 1.6em;
+  font-weight: 500;
+  line-height: calc(4.4em / 1.6);
+  color: $font-color__darker2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(-50% + 2.2em / 1.6);
+    left: 0;
+    width: calc(4.4em / 1.6);
+    height: calc(4.4em / 1.6);
+    background-color: $background__darker;
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(1);
+    transition-duration: 0.3s;
+  }
+}
+
+.selection__item--calendar .selection__link {
+  &::after {
+    content: "\e006";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: calc(1em / 2);
+    font-family: $font-family__icon;
+    font-size: calc(2em / 1.6);
+    line-height: calc(4.3em / 2);
+    color: $font-color__light;
+    border: 2px solid transparent;
+  }
+}
+
+.selection__item--free .selection__link {
+  &::after {
+    content: "\e005";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: calc(1em / 2);
+    font-family: $font-family__icon;
+    font-size: calc(2em / 1.6);
+    line-height: calc(4.3em / 2);
+    color: $font-color__light;
+    border: 2px solid transparent;
+  }
+}
+
+.selection__item--archive .selection__link {
+  &::after {
+    content: "\e004";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: calc(1em / 2);
+    font-family: $font-family__icon;
+    font-size: calc(2em / 1.6);
+    line-height: calc(4.3em / 2);
+    color: $font-color__light;
+    border: 2px solid transparent;
+  }
+}
+
+.selection__link:hover {
+  &::before {
+    content: "";
+    opacity: 0;
+    transform: scale(1.3);
+  }
+
+  &::after {
+    width: calc(4.4em / 2);
+    height: calc(4.4em / 2);
+    color: $font-color__darker;
+    border-radius: 50%;
+    border: 2px solid $background__darker;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .selection {
+    font-size: 0.8rem;
+  }
+
+  .selection__item--calendar .selection__link,
+  .selection__item--free .selection__link,
+  .selection__item--archive .selection__link {
+    &::after {
+      line-height: calc(4em / 2);
+    }
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .selection__list {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .selection__item:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}

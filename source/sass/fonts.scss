@@ -47,3 +47,13 @@
     url("../fonts/museosanscyrl_900-webfont.woff2") format("woff2"),
     url("../fonts/museosanscyrl_900-webfont.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Ecoicon";
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url("../fonts/ecoicon.woff2") format("woff2"),
+    url("../fonts/ecoicon.woff") format("woff");
+}

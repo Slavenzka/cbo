@@ -103,22 +103,24 @@
 
 @media (max-width: $width__mobile-max) {
   .info .container {
+    flex-direction: column;
     justify-content: center;
   }
 
   .info__title,
-  .info__keys {
-    display: none;
+  .info__keys,
+  .info__values {
+    margin: 0 auto;
+    width: 300px;
   }
 
   .info__values {
-    margin-top: -30px;
-    width: auto;
+    margin-top: 30px;
   }
 
-  .info__value--1 {
-    display: block;
-    margin: 0;
-    width: 300px;
-  }
+  // .info__value--1 {
+  //   display: block;
+  //   margin: 0;
+  //   width: 300px;
+  // }
 }

@@ -31,6 +31,20 @@ a {
   font-size: 0;
 }
 
+.hide-input {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+
 .container {
   width: $width__desktop;
   padding: 0 70px;
