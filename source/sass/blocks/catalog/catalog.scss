@@ -1,6 +1,20 @@
 .catalog {
+  position: relative;
   font-family: $font-family__main;
   font-size: 1rem;
+  padding-bottom: 5em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -31px;
+    left: calc(50% - 475px);
+    width: 951px;
+    height: 31px;
+    background-image: url("../img/catalog__shadow-bottom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .catalog__title {
@@ -20,4 +34,16 @@
   line-height: 100%;
   color: $font-color__highlight--dark;
   text-align: center;
+}
+
+.catalog__archieve {
+  padding: 0 5em;
+  font-size: 3.6em;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+}
+
+.catalog__archieve-btn {
+  margin: 0 auto;
 }

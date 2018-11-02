@@ -73,6 +73,21 @@ a {
   pointer-events: auto;
 }
 
+.button-colors {
+  display: block;
+  margin: 0;
+  margin-top: calc(5em / 2);
+  padding: 0 calc(2em / 2);
+  font-size: 2em;
+  font-weight: 700;
+  line-height: calc(6em / 2);
+  background-color: transparent;
+  background-image: linear-gradient(to top, #e88900 -20%, #f6b100 10, #ffed61 111.12%, #fffce5 125%);
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
 @media (max-width: $width__tablet-max) {
   .container {
     margin: 0;
