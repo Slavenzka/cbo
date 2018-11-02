@@ -22,6 +22,22 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-bottom: 2em;
+  height: 100%;
+}
+
+.large__link:hover {
+  background-color: $background__catalog-hover;
+}
+
+.large__link:hover > * > * {
+  color: $font-color__light;
+  border-color: $border__light;
+}
+
+.large__link:hover .large__schedule {
+  &::before {
+    filter: invert(1);
+  }
 }
 
 .large__format {
