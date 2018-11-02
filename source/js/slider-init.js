@@ -71,6 +71,7 @@
   let authorTrigger = document.querySelector('.advanced__selector--author');
   let formatTrigger = document.querySelector('.advanced__selector--format');
   let themeTrigger = document.querySelector('.advanced__selector--theme');
+  let pickerTrigger = document.querySelector('.advanced__selector--start');
 
   function showAuthors () {
     $('.advanced__list--author').slick({
@@ -100,9 +101,18 @@
     themeTrigger.removeEventListener('click', showThemes);
   }
 
-
+  function showPicker () {
+    pickmeup('.advanced__datepicker', {
+      flat  : true,
+      mode  : 'range',
+      prev: '',
+      next: ''
+    });
+    pickerTrigger.removeEventListener('click', showPicker);
+  }
 
   authorTrigger.addEventListener('click', showAuthors);
   formatTrigger.addEventListener('click', showFormats);
   themeTrigger.addEventListener('click', showThemes);
+  pickerTrigger.addEventListener('click', showPicker);
 })();

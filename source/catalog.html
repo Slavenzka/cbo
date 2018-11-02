@@ -201,7 +201,7 @@
         </ul>
       </div>
     </aside>
-    <aside class="filter">
+    <section class="filter">
       <div class="container">
         <p class="filter__intro">
           Подобрать Программу:
@@ -540,13 +540,304 @@
             </button>
           </div>
           <div class="advanced__start">
-            <p class="advanced__slogan">
-              Выберите удобные даты
-            </p>
+            <div class="advanced__wrapper">
+              <p class="advanced__slogan">
+                Выберите удобные даты
+              </p>
+              <input class="advanced__date-start" type="text">
+              <input class="advanced__date-end" type="text">
+              <button class="advanced__set-filter" type="button">
+                Применить фильтры
+              </button>
+            </div>
+            <div class="advanced__datepicker"></div>
           </div>
         </div>
       </div>
-    </aside>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <h2 class="catalog__title">
+          Ближайшие программы обучения
+        </h2>
+        <span class="catalog__city">
+          Екатеринбург
+        </span>
+        <ul class="catalog__soon large">
+          <li class="large__item">
+            <a href="#" class="large__link">
+              <span class="large__format">
+                Семинары, тренинги, мастер-классы
+              </span>
+              <div class="large__frame">
+                <img src="img/catalog__large-item-1-bg.jpeg" alt="Иллюстрация к карточке программы" class="large__img">
+              </div>
+              <figure class="large__course course">
+                <p class="course__title">
+                  SelfMadeMan
+                </p>
+                <figcaption class="course__author">
+                  Радислав Гандапас
+                </figcaption>
+              </figure>
+              <ul class="large__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+                  <li class="audience__tag">Специалисту</li>
+                  <li class="audience__tag">Студенту</li>
+              </ul>
+              <p class="large__schedule schedule">
+                <span class="schedule__date">
+                  02 ноября 2018
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="large__item">
+            <a href="#" class="large__link">
+              <span class="large__format">
+                Семинары, тренинги, мастер-классы
+              </span>
+              <div class="large__frame">
+                <img src="img/catalog__large-item-2-bg.png" alt="Иллюстрация к карточке программы" class="large__img">
+              </div>
+              <figure class="large__course course">
+                <p class="course__title">
+                  Планирование и оптимизация налогов: разумность и предел допустимости
+                </p>
+                <figcaption class="course__author">
+                  Татьяна Смирнова
+                </figcaption>
+              </figure>
+              <ul class="large__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+                  <li class="audience__tag">Специалисту</li>
+              </ul>
+              <p class="large__schedule schedule">
+                <span class="schedule__date">
+                  09 ноября 2018
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="large__item">
+            <a href="#" class="large__link">
+              <span class="large__format">
+                Семинары, тренинги, мастер-классы
+              </span>
+              <div class="large__frame">
+                <img src="img/catalog__large-item-3-bg.jpeg" alt="Иллюстрация к карточке программы" class="large__img">
+              </div>
+              <figure class="large__course course">
+                <p class="course__title">
+                  Стоп-скрипт. Как продавать много и без бумажки
+                </p>
+                <figcaption class="course__author">
+                  Игорь Рызов
+                </figcaption>
+              </figure>
+              <ul class="large__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+                  <li class="audience__tag">Специалисту</li>
+              </ul>
+              <p class="large__schedule schedule">
+                <span class="schedule__date">
+                  20 ноября 2018
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="large__item">
+            <a href="#" class="large__link">
+              <span class="large__format">
+                Семинары, тренинги, мастер-классы
+              </span>
+              <div class="large__frame">
+                <img src="img/catalog__large-item-4-bg.jpeg" alt="Иллюстрация к карточке программы" class="large__img">
+              </div>
+              <figure class="large__course course">
+                <p class="course__title">
+                  Владельческий контроль
+                </p>
+                <figcaption class="course__author">
+                  Наталия Сафонова
+                </figcaption>
+              </figure>
+              <ul class="large__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+                  <li class="audience__tag">Специалисту</li>
+              </ul>
+              <p class="large__schedule schedule">
+                <span class="schedule__date">
+                  22 ноября - 23 ноября 2018
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+        </ul>
+        <ul class="catalog__soon small">
+          <li class="small__item">
+            <a href="#" class="small__link">
+              <span class="small__format">
+                Семинары, тренинги, мастер-классы
+              </span>
+              <div class="small__frame">
+                <img src="img/catalog__small-item-1-bg.png" alt="Иллюстрация к карточке программы" class="small__img">
+              </div>
+              <figure class="small__course course">
+                <p class="course__title">
+                  Бизнес как развитие личной силы.  Модуль 1. «Технологии достижения экстраординарных результатов»
+                </p>
+                <figcaption class="course__author">
+                  Марк Пальчик, Наталья Жарова
+                </figcaption>
+              </figure>
+              <ul class="small__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+                  <li class="audience__tag">Специалисту</li>
+              </ul>
+              <p class="small__schedule schedule">
+                <span class="schedule__date">
+                  29 ноября - 02 декабря 2018
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="small__item">
+            <a href="#" class="small__link">
+              <span class="small__format">
+                Конференции, форумы, фестивали
+              </span>
+              <div class="small__frame">
+                <img src="img/catalog__small-item-2-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
+              </div>
+              <figure class="small__course course">
+                <p class="course__title">
+                  Базовые Стратегии 2019
+                </p>
+                <figcaption class="course__author">
+                  Группа Авторов
+                </figcaption>
+              </figure>
+              <ul class="small__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+              </ul>
+              <p class="small__schedule schedule">
+                <span class="schedule__date">
+                  13 декабря 2018
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="small__item">
+            <a href="#" class="small__link">
+              <span class="small__format">
+                Семинары, тренинги, мастер-классы
+              </span>
+              <div class="small__frame">
+                <img src="img/catalog__small-item-3-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
+              </div>
+              <figure class="small__course course">
+                <p class="course__title">
+                  Стратегическое управление в условиях изменений
+                </p>
+                <figcaption class="course__author">
+                  Сергей Макшанов
+                </figcaption>
+              </figure>
+              <ul class="small__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+              </ul>
+              <p class="small__schedule schedule">
+                <span class="schedule__date">
+                  14 декабря - 16 декабря 2018
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="small__item">
+            <a href="#" class="small__link">
+              <span class="small__format">
+                Семинары, тренинги, мастер-классы
+              </span>
+              <div class="small__frame">
+                <img src="img/catalog__small-item-4-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
+              </div>
+              <figure class="small__course course">
+                <p class="course__title">
+                  Искусство Убеждать
+                </p>
+                <figcaption class="course__author">
+                  Михаил Дегтярев
+                </figcaption>
+              </figure>
+              <ul class="small__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+                  <li class="audience__tag">Специалисту</li>
+              </ul>
+              <p class="small__schedule schedule">
+                <span class="schedule__date">
+                  07 февраля - 09 февраля 2019
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="small__item">
+            <a href="#" class="small__link">
+              <span class="small__format">
+                Семинары, тренинги, мастер-классы
+              </span>
+              <div class="small__frame">
+                <img src="img/catalog__small-item-5-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
+              </div>
+              <figure class="small__course course">
+                <p class="course__title">
+                  Бизнес как развитие личной силы. Спецмодуль БОЧКИ
+                </p>
+                <figcaption class="course__author">
+                  Марк Пальчик
+                </figcaption>
+              </figure>
+              <ul class="small__audience audience">
+                  <li class="audience__tag">Руководителю</li>
+                  <li class="audience__tag">Специалисту</li>
+              </ul>
+              <p class="small__schedule schedule">
+                <span class="schedule__date">
+                  30 марта - 04 апреля 2019
+                </span>
+                <span class="schedule__city">
+                  Екатеринбург
+                </span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -847,6 +1138,7 @@
   <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
   <script async src="js/modals.js"></script>
   <script src="js/drop-down-btns.js"></script>
+  <script src="plugins/pickmeup/pickmeup.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+.audience {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 2em;
+  min-height: 34px;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.audience__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  padding: 0.8em 1em 0.5em 1em;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: $font-color__filter-selected;
+  border: 1px solid $border__audience;
+  border-radius: calc(1.6em / 0.9);
+}
+
+.audience__tag:not(:last-of-type) {
+  margin-right: 2em;
+}

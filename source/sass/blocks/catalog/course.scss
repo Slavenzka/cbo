@@ -1,0 +1,23 @@
+.course {
+  margin: 0;
+  padding: 0 2em;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.course__title {
+  margin: 0;
+  margin-top: calc(1em / 1.7);
+  font-size: 1.7em;
+  font-weight: 900;
+  line-height: 130%;
+  color: $font-color__darker2;
+}
+
+.course__author {
+  margin: calc(1em / 1.3) 0;
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 130%;
+  color: $font-color__catalog-author;
+}

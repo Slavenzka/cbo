@@ -1,0 +1,33 @@
+.schedule {
+  position: relative;
+  margin: 0;
+  padding-right: 2em;
+  padding-left: 2em;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 130%;
+  color: $font-color__filter-selected;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/catalog__schedule-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.schedule__city,
+.schedule__date {
+  font-size: 1.3em;
+  line-height: 120%;
+}
+
+.schedule__city {
+  display: block;
+  margin-top: 0.25em;
+}

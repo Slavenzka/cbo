@@ -1,0 +1,23 @@
+.catalog {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.catalog__title {
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 100%;
+  color: $font-color__darker3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog__city {
+  display: block;
+  margin: calc(3em / 3) 0;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 100%;
+  color: $font-color__highlight--dark;
+  text-align: center;
+}
