@@ -78,7 +78,16 @@
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 4,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
     });
     authorTrigger.removeEventListener('click', showAuthors);
   }
@@ -87,7 +96,16 @@
     $('.advanced__list--format').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
-      arrows: true
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
     formatTrigger.removeEventListener('click', showFormats);
   }
@@ -96,7 +114,16 @@
     $('.advanced__list--theme').slick({
       slidesToShow: 2,
       slidesToScroll: 2,
-      arrows: true
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
     });
     themeTrigger.removeEventListener('click', showThemes);
   }

@@ -19,6 +19,7 @@
   font-weight: 900;
   line-height: 130%;
   color: $font-color__darker2;
+  word-wrap: break-word;
 }
 
 .course__author {
@@ -27,4 +28,18 @@
   font-weight: 700;
   line-height: 130%;
   color: $font-color__catalog-author;
+}
+
+@media (max-width: $width__tablet-max) {
+  .course {
+    margin: 0;
+    padding: 0 2em;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .course__title {
+    font-size: 1.5em;
+    overflow-wrap: break-word;
+  }
 }
