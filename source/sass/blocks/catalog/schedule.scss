@@ -31,3 +31,10 @@
   display: block;
   margin-top: 0.25em;
 }
+
+@media (max-width: $width__tablet-max) {
+  .schedule__city,
+  .schedule__date {
+    font-size: 1em;
+  }
+}

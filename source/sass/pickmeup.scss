@@ -174,3 +174,27 @@ $today-color                      : $color-hover !default;
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  .pickmeup {
+    .pmu-instance:first-child .pmu-prev,
+    .pmu-instance:last-child .pmu-next {
+      position: absolute;
+      top: calc(50% - 20px);
+      display: block;
+      height: 30px;
+      width: 30px;
+      background-image: url("../img/catalog__advanced-prev-icon.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .pmu-instance:first-child .pmu-prev {
+      left: -60px;
+    }
+
+    .pmu-instance:first-child .pmu-next {
+      right: -60px;
+    }
+  }
+}

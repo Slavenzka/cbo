@@ -78,3 +78,36 @@
 .large__schedule {
   width: 30%;
 }
+
+@media (max-width: $width__tablet-max) {
+  .large {
+    justify-content: space-around;
+    font-size: 0.7rem;
+  }
+
+  .large__item {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  .large__audience {
+    max-width: 60%;
+  }
+
+  .large__schedule {
+    width: 40%;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .large {
+    // flex-direction: column;
+    // align-items: center;
+    font-size: 0.60608rem;
+  }
+
+  .large__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

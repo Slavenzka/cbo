@@ -176,3 +176,59 @@
 .filter__result:checked + label {
   color: $font-color__filter-selected;
 }
+
+@media (max-width: $width__tablet-max) {
+  .filter {
+    font-size: 0.8rem;
+  }
+
+  .filter__item--customer:checked ~ .filter__area--customer,
+  .filter__item--theme:checked ~ .filter__area--theme,
+  .filter__item--advanced:checked ~ .filter__area--advanced {
+    margin-top: 4em;
+  }
+
+  .filter__item--advanced + label {
+    margin-right: calc(4em / 1.6);
+    padding-left: calc(3em / 1.6);
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .filter > .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter__item--customer + label,
+  .filter__item--theme + label {
+    margin-top: 1.5em;
+  }
+
+  .filter__item--advanced + label {
+    margin-top: 2em;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: calc(3em / 1.6);
+  }
+
+  .filter__area {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter__result + label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 40px;
+    font-family: $font-family__main;
+    font-size: 1.8em;
+    line-height: 100%;
+    color: $font-color__filter-result;
+    text-align: center;
+    cursor: pointer;
+  }
+}
