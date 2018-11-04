@@ -3046,7 +3046,7 @@ li.reviews__item.slick-slide {
 
 .filter__item {
   position: absolute;
-  top: 0;
+  top: 50%;
   margin: 0;
   padding: 0;
   width: 1px;
@@ -3193,6 +3193,8 @@ li.reviews__item.slick-slide {
   .filter__item--customer + label,
   .filter__item--theme + label {
     margin-top: 1.5em; }
+  .filter__item--set:not(:last-of-type) + label {
+    margin-right: 0; }
   .filter__item--advanced + label {
     margin-top: 2em;
     margin-right: 0;
@@ -3519,7 +3521,8 @@ li.reviews__item.slick-slide {
 @media (max-width: 767px) {
   .advanced__selector + label {
     margin-top: 1em;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    margin-left: 0; }
   .advanced__reset {
     margin-right: 0;
     margin-left: 0; }
