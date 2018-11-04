@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Все программы ЦБО</title>
+  <title>Архив программ ЦБО</title>
   <link rel="preload" href="fonts/museosanscyrl_500-webfont.woff2" as="font">
   <link rel="preload" href="fonts/museosanscyrl_900-webfont.woff2" as="font">
   <link rel="stylesheet" href="plugins/slick/slick.css">
@@ -105,7 +105,7 @@
             </div>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link navigation__link--programs">
+            <a href="catalog.html" class="navigation__link navigation__link--programs">
               ⊞ Все программы
             </a>
           </li>
@@ -178,392 +178,17 @@
 
   <main>
     <h1 class="visually-hidden">
-      Каталог программ Центра Бизнес-Образования
+      Архив программ Центра Бизнес-Образования
     </h1>
-    <aside class="selection">
+    <section class="archive">
       <div class="container">
-        <ul class="selection__list">
-          <li class="selection__item selection__item--calendar">
-            <a href="#" class="selection__link">
-              Календарь программ
-            </a>
-          </li>
-          <li class="selection__item selection__item--free">
-            <a href="#" class="selection__link">
-              Бесплатные мастер-классы
-            </a>
-          </li>
-          <li class="selection__item selection__item--archive">
-            <a href="#" class="selection__link">
-              Архив программ
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <section class="filter">
-      <div class="container">
-        <p class="filter__intro">
-          Подобрать Программу:
-        </p>
-        <input class="filter__item filter__item--set filter__item--customer" type="radio" name="filter-program" id="filter-customer">
-        <label for="filter-customer">Для Кого</label>
-        <input class="filter__item filter__item--set filter__item--theme" type="radio" name="filter-program" id="filter-theme">
-        <label for="filter-theme">По Теме</label>
-        <input class="filter__item filter__item--advanced" type="radio" name="filter-program" id="filter-advanced">
-        <label for="filter-advanced">Расширенный поиск</label>
-        <div class="filter__area filter__area--customer">
-          <input type="radio" class="filter__result filter__result--custommer" name="result-customer" id="result-manager" value="manager">
-          <label for="result-manager">Руководителю</label>
-          <input type="radio" class="filter__result filter__result--custommer" name="result-customer" id="result-specialist" value="specialist">
-          <label for="result-specialist">Специалисту</label>
-          <input type="radio" class="filter__result filter__result--custommer" name="result-customer" id="result-student" value="student">
-          <label for="result-student">Студенту</label>
-        </div>
-        <div class="filter__area filter__area--theme">
-          <input type="radio" class="filter__result filter__result--management" name="result-theme" id="result-management" value="management">
-          <label for="result-management">Менеджмент</label>
-          <input type="radio" class="filter__result filter__result--marketing" name="result-theme" id="result-marketing" value="marketing">
-          <label for="result-marketing">Маркетинг</label>
-          <input type="radio" class="filter__result filter__result--custommer" name="result-theme" id="result-sales" value="sales">
-          <label for="result-sales">Продажи</label>
-          <input type="radio" class="filter__result filter__result--finance" name="result-theme" id="result-finance" value="finance">
-          <label for="result-finance">Финансы</label>
-          <input type="radio" class="filter__result filter__result--finance" name="result-theme" id="result-hr" value="hr">
-          <label for="result-hr">Управление персоналом</label>
-          <input type="radio" class="filter__result filter__result--law" name="result-theme" id="result-law" value="law">
-          <label for="result-law">Право</label>
-          <input type="radio" class="filter__result filter__result--account" name="result-theme" id="result-account" value="account">
-          <label for="result-account">Бухучет и налоги</label>
-          <input type="radio" class="filter__result filter__result--efficiency" name="result-theme" id="result-efficiency" value="efficiency">
-          <label for="result-efficiency">Личная эффективность</label>
-        </div>
-        <div class="filter__area filter__area--advanced advanced">
-          <span class="advanced__comment">
-            Выбор по
-          </span>
-          <input type="radio" class="hide-input advanced__selector advanced__selector--author" name="advanced-selecton" id="advanced-author" value="author">
-          <label for="advanced-author">
-            Автор
-            <span class="advanced__counter">
-              33
-            </span>
-          </label>
-          <input type="radio" class="hide-input advanced__selector advanced__selector--format" name="advanced-selecton" id="advanced-format" value="format">
-          <label for="advanced-format">
-            Формат программы
-            <span class="advanced__counter">
-              33
-            </span>
-          </label>
-          <input type="radio" class="hide-input advanced__selector advanced__selector--theme" name="advanced-selecton" id="advanced-theme" value="theme">
-          <label for="advanced-theme">
-            Тема
-            <span class="advanced__counter">
-              33
-            </span>
-          </label>
-          <input type="radio" class="hide-input advanced__selector advanced__selector--start" name="advanced-selecton" id="advanced-start" value="start">
-          <label for="advanced-start">
-            Срок начала
-            <span class="advanced__counter">
-              33
-            </span>
-          </label>
-          <button class="advanced__reset" type="button">
-            Очистить фильтр
-          </button>
-          <div class="advanced__author">
-            <p class="advanced__slogan">
-              Выберите автора
-            </p>
-            <ul class="advanced__list advanced__list--author">
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-1" value="1">
-                <label for="select-author-1">Агеев Михаил</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-2" value="2">
-                <label for="select-author-2">Адизес Ицхак</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-3" value="3">
-                <label for="select-author-3">Антошина Ольга</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-4" value="4">
-                <label for="select-author-4">Архангельский Глеб</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-5" value="5">
-                <label for="select-author-5">Бойченко Евгений</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-6" value="6">
-                <label for="select-author-6">Бэнг Майкл</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-7" value="7">
-                <label for="select-author-7">Васильев Артем</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-8" value="8">
-                <label for="select-author-8">Вовний Александр</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-9" value="9">
-                <label for="select-author-9">Гаврилова Надежда</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-10" value="10">
-                <label for="select-author-10">Гадецкий Олег</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-11" value="11">
-                <label for="select-author-11">Гандапас Радислав</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-12" value="12">
-                <label for="select-author-12">Гейц Игорь</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-13" value="13">
-                <label for="select-author-13">Голиков Димид</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-14" value="14">
-                <label for="select-author-14">Головина Светлана</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-15" value="15">
-                <label for="select-author-15">Гончарова Светлана</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-16" value="16">
-                <label for="select-author-16">Григорьев Владимир</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-17" value="17">
-                <label for="select-author-17">Гришин Сергей</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-18" value="18">
-                <label for="select-author-18">Данилевский Юрий</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-19" value="19">
-                <label for="select-author-19">Дегтярев Михаил</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-20" value="20">
-                <label for="select-author-20">Делягин Михаил</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-21" value="21">
-                <label for="select-author-21">Доценко Евгений</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-22" value="22">
-                <label for="select-author-22">Думинаская Ольга</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-23" value="23">
-                <label for="select-author-23">Егоров Вадим</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-24" value="24">
-                <label for="select-author-24">Ефремова Анна</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-25" value="25">
-                <label for="select-author-25">Жандарова Наталья</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-26" value="26">
-                <label for="select-author-26">Землянухина Мария</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-27" value="27">
-                <label for="select-author-27">Капуста Алексей</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-28" value="28">
-                <label for="select-author-28">Кармазин Тимур</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-29" value="29">
-                <label for="select-author-29">Козарезова Лариса</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-30" value="30">
-                <label for="select-author-30">Козлов Владимир</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-31" value="31">
-                <label for="select-author-31">Краснова Наталья</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-32" value="32">
-                <label for="select-author-32">Куликова Катерина</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-33" value="33">
-                <label for="select-author-33">Кулинич Андрей</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-34" value="34">
-                <label for="select-author-34">Куценко Вадим</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-35" value="35">
-                <label for="select-author-35">Левяков Олег</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-36" value="36">
-                <label for="select-author-36">Лисицына Екатерина</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-37" value="37">
-                <label for="select-author-37">Лузин Александр</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-38" value="38">
-                <label for="select-author-38">Майфат Аркадий</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-39" value="39">
-                <label for="select-author-39">Максимович Галина</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-40" value="40">
-                <label for="select-author-40">Макшанов Сергей</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-41" value="41">
-                <label for="select-author-41">Манн Игорь</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-42" value="42">
-                <label for="select-author-42">Медведев Александр</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-43" value="43">
-                <label for="select-author-43">МИРБИС Московские Преподаватели</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-44" value="44">
-                <label for="select-author-44">Михеева Татьяна</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-45" value="45">
-                <label for="select-author-45">Нахратов Андрей</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-46" value="46">
-                <label for="select-author-46">Окунькова Юлия</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-47" value="47">
-                <label for="select-author-47">Пальчик Марк</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-48" value="48">
-                <label for="select-author-48">Патрушева Лилия</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-49" value="49">
-                <label for="select-author-49">Переверзева Елена</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-50" value="50">
-                <label for="select-author-50">Полковников Алексей</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-51" value="51">
-                <label for="select-author-51">Попова Мария</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-52" value="52">
-                <label for="select-author-52">Прилуцкая Мария</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-53" value="53">
-                <label for="select-author-53">Роббинс Тони</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-54" value="54">
-                <label for="select-author-54">Рызов Игорь</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-55" value="55">
-                <label for="select-author-55">Савкин Константин</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-56" value="56">
-                <label for="select-author-56">Сазанович Александр</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-57" value="57">
-                <label for="select-author-57">Сафонова Наталия</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-58" value="58">
-                <label for="select-author-58">Сергеев Александр</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-59" value="59">
-                <label for="select-author-59">Смирнова Татьяна</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-60" value="60">
-                <label for="select-author-60">Соколова Галина</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-61" value="61">
-                <label for="select-author-61">Станковская Ирина</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-62" value="62">
-                <label for="select-author-62">Стерхова Светлана</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-63" value="63">
-                <label for="select-author-63">Стрелкова Зоя</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-64" value="64">
-                <label for="select-author-64">Тарасенко Роман</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-65" value="65">
-                <label for="select-author-65">Тарасов Владимир</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-66" value="66">
-                <label for="select-author-66">Токаренко Геннадий</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-67" value="67">
-                <label for="select-author-67">Тюрин Иван</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-68" value="68">
-                <label for="select-author-68">Усков Вадим</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-69" value="69">
-                <label for="select-author-69">Ушаков Александр</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-70" value="70">
-                <label for="select-author-70">Форштретер Эмма</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-71" value="71">
-                <label for="select-author-71">Хазин Михаил</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-72" value="72">
-                <label for="select-author-72">Хайниш Станислав</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-73" value="73">
-                <label for="select-author-73">Хамитов Габдулла</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-74" value="74">
-                <label for="select-author-74">Чамкина Надежда</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-75" value="75">
-                <label for="select-author-75">Шило Игорь</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-76" value="76">
-                <label for="select-author-76">Шри Девдас Джи Махарадж</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-77" value="77">
-                <label for="select-author-77">Щавелев Алексей</label>
-                <input class="hide-input advanced__select-author" type="checkbox" name="select-author" id="select-author-78" value="78">
-                <label for="select-author-78">Якуба Владимир</label>
-              </li>
-            </ul>
-            <button class="advanced__set-filter" type="button">
-              Применить фильтры
-            </button>
-          </div>
-          <div class="advanced__format">
-            <p class="advanced__slogan">
-              Выберите формат программы
-            </p>
-            <ul class="advanced__list advanced__list--format">
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-1" value="1">
-                <label for="select-format-1">Молодежный бизнес-лагерь</label>
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-2" value="2">
-                <label for="select-format-2">MBA, mini-MBA</label>
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-3" value="3">
-                <label for="select-format-3">Семинары, тренинги, мастер-классы</label>
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-4" value="4">
-                <label for="select-format-4">Корпоративное обучение и консалтинг</label>
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-5" value="5">
-                <label for="select-format-5">Бизнес-курсы, повышение квалификации</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-6" value="6">
-                <label for="select-format-6">Интеллектуальные путешествия</label>
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-7" value="7">
-                <label for="select-format-7">Аналитика, исследования, деловые книги</label>
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-8" value="8">
-                <label for="select-format-8">Конференции, формумы, фестивали</label>
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-9" value="9">
-                <label for="select-format-9">Зарубежны стажировки, деловые визиты</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-10" value="10">
-                <label for="select-format-10">Благотворительный Фестиваль бизнес-образования</label>
-                <input class="hide-input advanced__select-format" type="checkbox" name="select-format" id="select-format-11" value="11">
-                <label for="select-format-11">Мастер-классы: бизнес, культура, искусство</label>
-              </li>
-            </ul>
-            <button class="advanced__set-filter" type="button">
-              Применить фильтры
-            </button>
-          </div>
-          <div class="advanced__theme">
-            <p class="advanced__slogan">
-              Выберите тему
-            </p>
-            <ul class="advanced__list advanced__list--theme">
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-theme" type="checkbox" name="select-theme" id="select-theme-1" value="1">
-                <label for="select-theme-1">Маркетинг</label>
-                <input class="hide-input advanced__select-theme" type="checkbox" name="select-theme" id="select-theme-2" value="2">
-                <label for="select-theme-2">Менеджмент</label>
-                <input class="hide-input advanced__select-theme" type="checkbox" name="select-theme" id="select-theme-3" value="3">
-                <label for="select-theme-3">Право</label>
-                <input class="hide-input advanced__select-theme" type="checkbox" name="select-theme" id="select-theme-4" value="4">
-                <label for="select-theme-4">Управление персоналом</label>
-                <input class="hide-input advanced__select-theme" type="checkbox" name="select-theme" id="select-theme-5" value="5">
-                <label for="select-theme-5">Финасы</label>
-              </li>
-              <li class="advanced__item">
-                <input class="hide-input advanced__select-theme" type="checkbox" name="select-theme" id="select-theme-6" value="6">
-                <label for="select-theme-6">Бухучет и налоги</label>
-                <input class="hide-input advanced__select-theme" type="checkbox" name="select-theme" id="select-theme-7" value="7">
-                <label for="select-theme-7">Личная эффективность</label>
-                <input class="hide-input advanced__select-theme" type="checkbox" name="select-theme" id="select-theme-8" value="8">
-                <label for="select-theme-8">Продажи</label>
-              </li>
-            </ul>
-            <button class="advanced__set-filter" type="button">
-              Применить фильтры
-            </button>
-          </div>
-          <div class="advanced__start">
-            <div class="advanced__wrapper">
-              <p class="advanced__slogan">
-                Выберите удобные даты
-              </p>
-              <input class="advanced__date-start" type="text">
-              <input class="advanced__date-end" type="text">
-              <button class="advanced__set-filter" type="button">
-                Применить фильтры
-              </button>
-            </div>
-            <div class="advanced__datepicker"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="catalog">
-      <div class="container">
-        <h2 class="catalog__title">
-          Ближайшие программы обучения
+        <h2 class="archive__title">
+          Архив
         </h2>
-        <span class="catalog__city">
+        <span class="archive__city">
           Екатеринбург
         </span>
-        <ul class="catalog__soon large">
+        <ul class="archive__last large">
           <li class="large__item">
             <a href="#" class="large__link">
               <span class="large__format">
@@ -686,7 +311,7 @@
             </a>
           </li>
         </ul>
-        <ul class="catalog__soon small">
+        <ul class="archive__old small">
           <li class="small__item">
             <a href="#" class="small__link">
               <span class="small__format">
@@ -836,10 +461,10 @@
             </a>
           </li>
         </ul>
-        <h3 class="catalog__city">
+        <h3 class="archive__city">
           Программы в других городах / странах
         </h3>
-        <ul class="calalog__soon calalog__soon--locations small">
+        <ul class="archive__old archive__old--locations small">
           <li class="small__item">
             <a href="#" class="small__link">
               <span class="small__format">
@@ -1362,12 +987,6 @@
             </a>
           </li>
         </ul>
-        <p class="catalog__archieve">
-          Смотрите прошедшие программы в Архиве
-        </p>
-        <a href="archive.html" class="button-colors catalog__archieve-btn">
-          Перейти в архив
-        </a>
       </div>
     </section>
   </main>
