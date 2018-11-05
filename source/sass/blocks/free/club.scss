@@ -1,0 +1,243 @@
+.club {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.club__content {
+  padding: 13.5em 0;
+  background-color: $background__darkest-hover;
+  background-image: url("../img/free__club-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.club__content .container {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  color: $font-color__light;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0) 100%);
+  background-position: 50% 50%;
+}
+
+.club__slogan {
+  margin: 0;
+  font-size: 10em;
+  font-weight: 900;
+  line-height: calc(14em / 10);
+  text-transform: uppercase;
+}
+
+.club__title {
+  position: relative;
+  margin: 0;
+  padding: calc(3em / 4.5) 0 calc(3.5em / 4.5) 0;
+  font-size: 4.5em;
+  font-weight: 500;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 3em);
+    width: 6em;
+    height: 2px;
+    background-color: $background__light;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 3em);
+    width: 6em;
+    height: 2px;
+    background-color: $background__light;
+  }
+}
+
+.club__descriptor {
+  margin: 0;
+  padding: calc(2em / 2.8) 1.5em;
+  font-size: 2.8em;
+  font-weight: 500;
+}
+
+.club__share {
+  display: inline-block;
+  padding-bottom: calc(2em / 2);
+  font-size: 2em;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.club__social {
+  margin-bottom: 40px;
+}
+
+.club__scroll {
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background-image: url("../img/free__club-scroll-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.club__banner {
+  position: relative;
+  height: 185px;
+  background-image: url("../img/free__club-banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3.1em;
+    left: calc(50% - 95.9em / 2);
+    width: 95.9em;
+    height: 3.1em;
+    background-image: url("../img/catalog__shadow-bottom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.club__photo,
+.club__video {
+  position: relative;
+  display: inline-block;
+  margin-top: 6.5em;
+  padding: 10px 25px 9px 5px;
+  font-size: 2em;
+  font-weight: 500;
+  color: $font-color__club-link;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-top: 2px solid $border__club-link;
+    border-left: 2px solid $border__club-link;
+    transition-duration: 0.5s;
+    transform: scale(0);
+    transform-origin: 0 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-right: 2px solid $border__club-link;
+    border-bottom: 2px solid $border__club-link;
+    transition-duration: 0.5s;
+    transform: scale(0);
+    transform-origin: 100% 100%;
+  }
+}
+
+.club__photo:hover,
+.club__video:hover {
+  &::before {
+    transform: scale(1);
+  }
+
+  &::after {
+    transform: scale(1);
+  }
+}
+
+.club__photo {
+  margin-left: calc(50% - 16.5em);
+}
+
+.club__video {
+  margin-left: 1.7em;
+}
+
+.club__photo span,
+.club__video span {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -20px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/free__club-banner-arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .club {
+    font-size: 0.8rem;
+  }
+
+  .club__photo,
+  .club__video {
+    margin-top: 8em;
+  }
+
+  .club__photo {
+    margin-left: calc(50% - 18.5em);
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .club {
+    font-size: 0.7rem;
+  }
+
+  .club__slogan {
+    font-size: 9em;
+  }
+
+  .club__banner {
+    background-position: 40% 50%;
+
+    &::before {
+      content: "";
+      bottom: -10px;
+      left: calc(50% - 150px);
+      width: 300px;
+      height: 10px;
+    }
+  }
+
+  .club__photo,
+  .club__video {
+    margin-top: 9em;
+  }
+
+  .club__photo {
+    margin-left: calc(50% - 140px);
+  }
+
+  .club__photo span,
+  .club__video span {
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
