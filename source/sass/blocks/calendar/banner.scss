@@ -1,0 +1,86 @@
+.banner {
+  padding-top: 53em;
+  height: 63em;
+  font-family: $font-family__main;
+  font-size: 1rem;
+  color: $font-color__darker3;
+  background-image: url("../img/calendar__banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.banner__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 2em;
+  width: 69em;
+  box-shadow: 0 0 1.5em 0 $shadow__main;
+  background-color: $background__light;
+}
+
+.banner__slogan {
+  margin: 0;
+  margin-bottom: calc(2em / 3);
+  width: 100%;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner__slogan span {
+  color: $font-color__banner-highlight;
+}
+
+.banner__statement {
+  display: block;
+  padding-top: 0.9em;
+  width: 50%;
+  font-size: 2em;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.banner__benefits {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 120%;
+}
+
+@media (max-width: $width__tablet-max) {
+  .banner {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .banner {
+    padding-top: 30em;
+    height: 40em;
+    font-size: 0.7rem;
+  }
+
+  .banner__wrapper {
+    width: 300px;
+  }
+
+  .banner__slogan {
+    font-size: 2.5em;
+  }
+
+  .banner__statement {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner__benefits {
+    margin: 1em auto 0 auto;
+    width: calc(21em / 2 / 0.7);
+  }
+}
