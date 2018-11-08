@@ -72,6 +72,8 @@
   let formatTrigger = document.querySelector('.advanced__selector--format');
   let themeTrigger = document.querySelector('.advanced__selector--theme');
   let pickerTrigger = document.querySelector('.advanced__selector--start');
+  let start = document.querySelector('.advanced__date-start');
+  let end = document.querySelector('.advanced__date-end');
 
   function showAuthors () {
     $('.advanced__list--author').slick({
@@ -128,6 +130,8 @@
     themeTrigger.removeEventListener('click', showThemes);
   }
 
+  let picker = document.querySelector('.advanced__datepicker');
+
   function showPicker () {
     pickmeup('.advanced__datepicker', {
       flat  : true,
@@ -136,6 +140,11 @@
       next: ''
     });
     pickerTrigger.removeEventListener('click', showPicker);
+
+    picker.addEventListener('pickmeup-change', function (e) {
+      start.value = e.detail.formatted_date[0];
+      end.value = e.detail.formatted_date[1];
+    })
   }
 
   authorTrigger.addEventListener('click', showAuthors);
