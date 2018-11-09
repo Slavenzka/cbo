@@ -75,80 +75,110 @@
   let start = document.querySelector('.advanced__date-start');
   let end = document.querySelector('.advanced__date-end');
 
-  function showAuthors () {
-    $('.advanced__list--author').slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+  if (authorTrigger) {
+    function showAuthors () {
+      $('.advanced__list--author').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
           }
-        }
-      ]
-    });
-    authorTrigger.removeEventListener('click', showAuthors);
-  }
+        ]
+      });
+      authorTrigger.removeEventListener('click', showAuthors);
+    }
 
-  function showFormats () {
-    $('.advanced__list--format').slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: true,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+    function showFormats () {
+      $('.advanced__list--format').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
           }
-        }
-      ]
-    });
-    formatTrigger.removeEventListener('click', showFormats);
-  }
+        ]
+      });
+      formatTrigger.removeEventListener('click', showFormats);
+    }
 
-  function showThemes () {
-    $('.advanced__list--theme').slick({
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      arrows: true,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+    function showThemes () {
+      $('.advanced__list--theme').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
           }
-        }
-      ]
-    });
-    themeTrigger.removeEventListener('click', showThemes);
+        ]
+      });
+      themeTrigger.removeEventListener('click', showThemes);
+    }
+
+    let picker = document.querySelector('.advanced__datepicker');
+
+    function showPicker () {
+      pickmeup('.advanced__datepicker', {
+        flat  : true,
+        mode  : 'range',
+        prev: '',
+        next: ''
+      });
+      pickerTrigger.removeEventListener('click', showPicker);
+
+      picker.addEventListener('pickmeup-change', function (e) {
+        start.value = e.detail.formatted_date[0];
+        end.value = e.detail.formatted_date[1];
+      })
+    }
+
+    authorTrigger.addEventListener('click', showAuthors);
+    formatTrigger.addEventListener('click', showFormats);
+    themeTrigger.addEventListener('click', showThemes);
+    pickerTrigger.addEventListener('click', showPicker);
   }
 
-  let picker = document.querySelector('.advanced__datepicker');
+  $(document).ready(function(){
+    let letters = document.querySelectorAll('.authors__letter');
 
-  function showPicker () {
-    pickmeup('.advanced__datepicker', {
-      flat  : true,
-      mode  : 'range',
-      prev: '',
-      next: ''
+    $('.authors__alphabet').slick({
+      fade: true,
+      dots: true,
+      arrows: false,
+      speed: 500,
+      customPaging: function(slider, i) {
+        return $('<button type="button" />').text(letters[i].dataset.letter);
+      },
+      appendDots: $('.authors__paginator')
     });
-    pickerTrigger.removeEventListener('click', showPicker);
 
-    picker.addEventListener('pickmeup-change', function (e) {
-      start.value = e.detail.formatted_date[0];
-      end.value = e.detail.formatted_date[1];
-    })
-  }
+    let authorsArea = document.querySelector('.authors');
+    let dotButtons = authorsArea.querySelectorAll('.authors .slick-dots button');
+    let dotElements = authorsArea.querySelectorAll('.authors .slick-dots li');
+    let authors = authorsArea.querySelectorAll('.authors__list');
 
-  authorTrigger.addEventListener('click', showAuthors);
-  formatTrigger.addEventListener('click', showFormats);
-  themeTrigger.addEventListener('click', showThemes);
-  pickerTrigger.addEventListener('click', showPicker);
+    authors.forEach((item, i) => {
+      if (item.children.length === 0) {
+        dotButtons[i].style.color = 'grey';
+        dotElements[i].style.pointerEvents = 'none';
+      }
+    });
+  });
+
 })();
