@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Клуб клиентов ЦБО: бесплатные тренинги, вебинары, семинары</title>
+  <title>Авторы ЦБО</title>
   <link rel="preload" href="fonts/museosanscyrl_500-webfont.woff2" as="font">
   <link rel="preload" href="fonts/museosanscyrl_900-webfont.woff2" as="font">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link href="plugins/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 
 <body>
-
   <svg style="display: none">
     <symbol id="icon-pc">
       <path d="m413.917,96.775h-360.622c-6.369,0-11.551,5.181-11.551,11.55v213.182c0,6.369 5.182,11.55 11.551,11.55h360.622c6.368,0 11.55-5.181 11.55-11.55v-213.181c-5.68434e-14-6.369-5.182-11.551-11.55-11.551zm1.55,224.732c0,0.855-0.695,1.55-1.55,1.55h-360.622c-0.855,0-1.551-0.696-1.551-1.55v-213.181c0-0.855 0.695-1.55 1.551-1.55h360.622c0.854,0 1.55,0.696 1.55,1.55v213.181z"></path>
@@ -31,7 +32,7 @@
   <header class="header" id="header-main">
     <div class="header__intro">
       <div class="container">
-        <a href="index.html" class="header__link header__link--main">
+        <a href="#" class="header__link header__link--main">
           <img class="header__logo header__logo--main" src="img/header__logo-main.png" alt="Логотип Центра Бизнес Образования">
         </a>
         <p class="header__company">
@@ -175,389 +176,391 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden">
-      Бесплатные тренинги, вебинары, семинары, вступление в клуб клиентов
-    </h1>
-    <section class="club">
-      <h2 class="visually-hidden">
-        Промо-блок клуба друзей ЦБО
-      </h2>
-      <div class="club__content">
-        <div class="container">
-          <p class="club__slogan">
-            Бизнес-класс
-          </p>
-          <h3 class="club__title">
-            Клуб Друзей ЦБО
-          </h3>
-          <p class="club__descriptor">
-            Бизнес-Класс ЦБО&nbsp;&mdash; сообщество успешных, развивающихся&nbsp;людей и&nbsp;компаний, нацеленных на&nbsp;национальное, отраслевое или глобальное лидерство.
-          </p>
-          <span class="club__share">
-            Делитесь с друзьями
-          </span>
-          <div class="club__social">
-            <script async src="//yastatic.net/share/share.js"></script>
-            <div class="yashare-auto-init b-share_theme_counter" data-yasharel10n="ru" data-yasharetype="m" data-yasharequickservices="vkontakte,facebook,twitter,odnoklassniki,moimir" data-yasharetheme="counter" data-yasharelink="https://cbo.ru/biznes-klyb"></div>
-          </div>
-          <a href="#club-features" class="club__scroll">
-            Перейти к следующему разделу на странице
-          </a>
-        </div>
-      </div>
-      <div class="club__banner">
-        <div class="container">
-          <a href="#" class="club__photo">
-            <span>
-              Фотоотчет
-            </span>
-          </a>
-          <a href="#" class="club__video">
-            <span>
-              Видеоотчет
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="club__features" id="club-features">
-        <div class="container">
-          <ul class="club__list features">
-            <li class="features__item features__item--1">
-              <h3 class="features__title">
-                База Знаний
-              </h3>
-              <p class="features__descriptopr">
-                Мастер-классы и&nbsp;вебинары экспертов и&nbsp;бизнес-тренеров и&nbsp;международного уровня.
-              </p>
-            </li>
-            <li class="features__item features__item--2">
-              <h3 class="features__title">
-                Выдающиеся предприниматели XXI века
-              </h3>
-              <p class="features__descriptopr">
-                Истории успеха, решения нестандартных задач, побед и&nbsp;свершений на&nbsp;пути к&nbsp;&laquo;Бизнес-Олимпу&raquo;&nbsp;&mdash; вживую, из&nbsp;первых рук.
-              </p>
-            </li>
-            <li class="features__item features__item--3">
-              <h3 class="features__title">
-                Бизнес и Культура
-              </h3>
-              <p class="features__descriptopr">
-                Расширение кругозора вместе с&nbsp;партнерами ЦБО в&nbsp;сфере Искусства, Музыки, Театра... Изучайте прекрасное, развивайте воображение&nbsp;&mdash; это полезно и&nbsp;в&nbsp;бизнесе, и&nbsp;в&nbsp;жизни.
-              </p>
-            </li>
-            <li class="features__item features__item--4">
-              <h3 class="features__title">
-                Бизнес как развитие личной силы
-              </h3>
-              <p class="features__descriptopr">
-                Психологические, физические, ментальные практики. Для тех, кто понимает что жизнь&nbsp;&mdash; постоянный тренинг личностного роста.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="free">
-      <h2 class="visually-hidden">
-        Каталог бесплатных мастер-классов и вебинаров
-      </h2>
+    <section class="authors">
       <div class="container">
-        <p class="free__intro">
-          Здесь вы можете прямо сейчас получить доступ к различным мастер-классам, вебинарам, встречам, которые проводит Группа Компаний «ЦБО»
+        <h1 class="authors__title">
+          Наши авторы
+        </h1>
+        <p class="authors__advice">
+          Воспользуйтесь алфавитным указателем
         </p>
-        <div class="free__soon">
-          <h3 class="catalog__title free__title">
-            Ближайшие программы
-          </h3>
-          <span class="catalog__city free__city">
-            Екатеринбург
-          </span>
-          <span class="free__nothing">
-            Извините, ничего&nbsp;не&nbsp;найдено
-          </span>
-        </div>
-        <div class="free__archive">
-          <h3 class="catalog__title free__title">
-            Скачайте записи из Архива
-          </h3>
-          <span class="catalog__city free__city">
-            Екатеринбург
-          </span>
-          <ul class="free__archive-list free__archive-list--large large">
-            <li class="large__item">
-              <a href="#" class="large__link">
-                <span class="large__format">
-                  Семинары, тренинги, мастер-классы
-                </span>
-                <div class="large__frame">
-                  <img src="img/catalog__large-item-1-bg.jpeg" alt="Иллюстрация к карточке программы" class="large__img">
-                </div>
-                <figure class="large__course course">
-                  <p class="course__title">
-                    SelfMadeMan
-                  </p>
-                  <figcaption class="course__author">
-                    Радислав Гандапас
-                  </figcaption>
-                </figure>
-                <ul class="large__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                    <li class="audience__tag">Специалисту</li>
-                    <li class="audience__tag">Студенту</li>
-                </ul>
-                <p class="large__schedule schedule">
-                  <span class="schedule__date">
-                    02 ноября 2018
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li class="large__item">
-              <a href="#" class="large__link">
-                <span class="large__format">
-                  Семинары, тренинги, мастер-классы
-                </span>
-                <div class="large__frame">
-                  <img src="img/catalog__large-item-2-bg.png" alt="Иллюстрация к карточке программы" class="large__img">
-                </div>
-                <figure class="large__course course">
-                  <p class="course__title">
-                    Планирование и оптимизация налогов: разумность и предел допустимости
-                  </p>
-                  <figcaption class="course__author">
-                    Татьяна Смирнова
-                  </figcaption>
-                </figure>
-                <ul class="large__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                    <li class="audience__tag">Специалисту</li>
-                </ul>
-                <p class="large__schedule schedule">
-                  <span class="schedule__date">
-                    09 ноября 2018
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li class="large__item">
-              <a href="#" class="large__link">
-                <span class="large__format">
-                  Семинары, тренинги, мастер-классы
-                </span>
-                <div class="large__frame">
-                  <img src="img/catalog__large-item-3-bg.jpeg" alt="Иллюстрация к карточке программы" class="large__img">
-                </div>
-                <figure class="large__course course">
-                  <p class="course__title">
-                    Стоп-скрипт. Как продавать много и без бумажки
-                  </p>
-                  <figcaption class="course__author">
-                    Игорь Рызов
-                  </figcaption>
-                </figure>
-                <ul class="large__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                    <li class="audience__tag">Специалисту</li>
-                </ul>
-                <p class="large__schedule schedule">
-                  <span class="schedule__date">
-                    20 ноября 2018
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li class="large__item">
-              <a href="#" class="large__link">
-                <span class="large__format">
-                  Семинары, тренинги, мастер-классы
-                </span>
-                <div class="large__frame">
-                  <img src="img/catalog__large-item-4-bg.jpeg" alt="Иллюстрация к карточке программы" class="large__img">
-                </div>
-                <figure class="large__course course">
-                  <p class="course__title">
-                    Владельческий контроль
-                  </p>
-                  <figcaption class="course__author">
-                    Наталия Сафонова
-                  </figcaption>
-                </figure>
-                <ul class="large__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                    <li class="audience__tag">Специалисту</li>
-                </ul>
-                <p class="large__schedule schedule">
-                  <span class="schedule__date">
-                    22 ноября - 23 ноября 2018
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-          </ul>
-          <ul class="free-archive__list free-archive__list--small small">
-            <li class="small__item">
-              <a href="#" class="small__link">
-                <span class="small__format">
-                  Семинары, тренинги, мастер-классы
-                </span>
-                <div class="small__frame">
-                  <img src="img/catalog__small-item-1-bg.png" alt="Иллюстрация к карточке программы" class="small__img">
-                </div>
-                <figure class="small__course course">
-                  <p class="course__title">
-                    Бизнес как развитие личной силы.  Модуль 1. «Технологии достижения экстраординарных результатов»
-                  </p>
-                  <figcaption class="course__author">
-                    Марк Пальчик, Наталья Жарова
-                  </figcaption>
-                </figure>
-                <ul class="small__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                    <li class="audience__tag">Специалисту</li>
-                </ul>
-                <p class="small__schedule schedule">
-                  <span class="schedule__date">
-                    29 ноября - 02 декабря 2018
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li class="small__item">
-              <a href="#" class="small__link">
-                <span class="small__format">
-                  Конференции, форумы, фестивали
-                </span>
-                <div class="small__frame">
-                  <img src="img/catalog__small-item-2-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
-                </div>
-                <figure class="small__course course">
-                  <p class="course__title">
-                    Базовые Стратегии 2019
-                  </p>
-                  <figcaption class="course__author">
-                    Группа Авторов
-                  </figcaption>
-                </figure>
-                <ul class="small__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                </ul>
-                <p class="small__schedule schedule">
-                  <span class="schedule__date">
-                    13 декабря 2018
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li class="small__item">
-              <a href="#" class="small__link">
-                <span class="small__format">
-                  Семинары, тренинги, мастер-классы
-                </span>
-                <div class="small__frame">
-                  <img src="img/catalog__small-item-3-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
-                </div>
-                <figure class="small__course course">
-                  <p class="course__title">
-                    Стратегическое управление в условиях изменений
-                  </p>
-                  <figcaption class="course__author">
-                    Сергей Макшанов
-                  </figcaption>
-                </figure>
-                <ul class="small__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                </ul>
-                <p class="small__schedule schedule">
-                  <span class="schedule__date">
-                    14 декабря - 16 декабря 2018
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li class="small__item">
-              <a href="#" class="small__link">
-                <span class="small__format">
-                  Семинары, тренинги, мастер-классы
-                </span>
-                <div class="small__frame">
-                  <img src="img/catalog__small-item-4-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
-                </div>
-                <figure class="small__course course">
-                  <p class="course__title">
-                    Искусство Убеждать
-                  </p>
-                  <figcaption class="course__author">
-                    Михаил Дегтярев
-                  </figcaption>
-                </figure>
-                <ul class="small__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                    <li class="audience__tag">Специалисту</li>
-                </ul>
-                <p class="small__schedule schedule">
-                  <span class="schedule__date">
-                    07 февраля - 09 февраля 2019
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-            <li class="small__item">
-              <a href="#" class="small__link">
-                <span class="small__format">
-                  Семинары, тренинги, мастер-классы
-                </span>
-                <div class="small__frame">
-                  <img src="img/catalog__small-item-5-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
-                </div>
-                <figure class="small__course course">
-                  <p class="course__title">
-                    Бизнес как развитие личной силы. Спецмодуль БОЧКИ
-                  </p>
-                  <figcaption class="course__author">
-                    Марк Пальчик
-                  </figcaption>
-                </figure>
-                <ul class="small__audience audience">
-                    <li class="audience__tag">Руководителю</li>
-                    <li class="audience__tag">Специалисту</li>
-                </ul>
-                <p class="small__schedule schedule">
-                  <span class="schedule__date">
-                    30 марта - 04 апреля 2019
-                  </span>
-                  <span class="schedule__city">
-                    Екатеринбург
-                  </span>
-                </p>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <div class="authors__paginator"></div>
+        <ul class="authors__alphabet">
+          <li class="authors__letter" data-letter="А">
+            <ul class="authors__list">
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Михаил Агеев
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__list-item-portrait--2.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Ицхак Адизес
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__list-item-portrait--3.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Ольга Антошина
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__list-item-portrait--4.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Глеб Архангельский
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Б">
+            <ul class="authors__list">
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/index__team-item--19.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Евгений Бойченко
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Майкл Бэнг
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="В">
+            <ul class="authors__list">
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Артем Васильев
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__list-item-portrait--7.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Александр Вовний
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Г">
+            <ul class="authors__list">
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__list-item-portrait--8.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Надежда Гаврилова
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Олег Гадецкий
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/index__team-item--18.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Радислав Гандапас
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/index__team-item--4.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Игорь Гейц
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Демид Голиков
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/index__team-item--21.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Светлана Головина
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/index__team-item--27.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Светлана Гончарова
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Владимир Григорьев
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/index__team-item--17.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Сергей Гришин
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Д">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Е">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Ё">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Ж">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="З">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="И">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="К">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Л">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="М">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Н">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="О">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="П">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Р">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="С">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Т">
+            <ul class="authors__list">
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/index__team-item--1.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Роман Тарасенко
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__list-item--tarasov.jpeg" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Владимир Тарасов
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Геннадий Токаренко
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__list-item-portrait--turin.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Иван Тюрин
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="У">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Ф">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Х">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Ц">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Ч">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Ш">
+            <ul class="authors__list">
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Игорь Шило
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li class="authors__item">
+                <a class="authors__link" href="javascript:;" data-type="ajax" data-fancybox="authors-gallery">
+                  <figure>
+                    <img src="img/authors__missing.png" alt="Фотография автора ЦБО" class="authors__portrait">
+                    <figcaption class="authors__name">
+                      Шри Девдас Джи Махарадж
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Щ">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Ы">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Э">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Ю">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+          <li class="authors__letter" data-letter="Я">
+            <ul class="authors__list">
+
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -853,6 +856,11 @@
   <script async src="js/menu.js"></script>
   <script async src="js/vk-init.js"></script>
   <script async src="js/fb-init.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script async src="plugins/slick/slick.min.js"></script>
+  <script async src="js/slider-init.js"></script>
+  <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
   <script async src="js/modals.js"></script>
   <script src="js/drop-down-btns.js"></script>
 </body>

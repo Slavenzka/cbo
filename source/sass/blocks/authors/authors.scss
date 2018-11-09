@@ -1,0 +1,147 @@
+.authors {
+  position: relative;
+  padding-top: 5em;
+  padding-bottom: 10em;
+  font-family: $font-family__main;
+  font-size: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3.1em;
+    left: calc(50% - 95.9em / 2);
+    width: 95.9em;
+    height: 3.1em;
+    background-image: url("../img/catalog__shadow-bottom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.authors .container {
+  position: relative;
+}
+
+.authors__title {
+  font-size: 4.6em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker2;
+  text-align: center;
+}
+
+.authors__advice {
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.authors__paginator {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.authors__alphabet {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.authors .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.authors .slick-dots li:not(:last-of-type) {
+  margin-right: 1px;
+}
+
+.authors .slick-dots button {
+  padding: 0;
+  width: 30px;
+  height: 27px;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 25px;
+  color: $font-color__authors-alphabet;
+  background-color: $background__authors-alphabet;
+  border: none;
+  cursor: pointer;
+}
+
+.authors .slick-dots .slick-active button {
+  color: $font-color__light;
+  background-color: $background__dark;
+}
+
+.authors__letter {
+  margin-top: 40px;
+  padding-top: 0;
+  width: 100%;
+}
+
+.authors__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.authors__item {
+  margin: 0 1em 2em 1em;
+}
+
+.authors__link figure {
+  margin: 0;
+  width: 17.5em;
+}
+
+.authors__portrait {
+  width: 17.5em;
+  height: 22.5em;
+  object-fit: cover;
+}
+
+.authors__name {
+  margin-top: calc(1.7em / 1.8);
+  width: 100%;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__darker2;
+  text-align: center;
+}
+
+@media (max-width: $width__tablet-max) {
+  .authors {
+    font-size: 0.8rem;
+  }
+
+  .authors__paginator {
+    overflow-x: scroll;
+  }
+
+  .authors .slick-dots {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .authors {
+    &::before {
+      content: "";
+      bottom: -10px;
+      left: calc(50% - 150px);
+      width: 300px;
+      height: 10px;
+    }
+  }
+}
