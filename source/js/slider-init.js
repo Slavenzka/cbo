@@ -162,6 +162,7 @@
       dots: true,
       arrows: false,
       speed: 500,
+      adaptiveHeight: true,
       customPaging: function(slider, i) {
         return $('<button type="button" />').text(letters[i].dataset.letter);
       },
