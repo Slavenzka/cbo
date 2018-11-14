@@ -1,0 +1,164 @@
+.content {
+  font-family: $font-family__main;
+  font-size: 1rem;
+  color: $font-color__darker3;
+}
+
+.content > .container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.content__heading {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.content__intro {
+  margin: 1em 0;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 130%;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+.content__subheading {
+  margin: 0.5em 0;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.content__descriptor {
+  margin: 1em 0;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 130%;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+.content__img-float {
+  float: left;
+  margin: 0.7em 2em 0.5em 0;
+  width: 50em;
+  max-height: 30em;
+}
+
+.content__img-standalone {
+  margin: 1em 0;
+  width: 100%;
+  max-height: 70em;
+}
+
+.content__img-captioned {
+  margin: 0;
+}
+
+.content__img-captioned figcaption {
+  margin: 0.5em 0 0 0;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 130%;
+  color: $font-color__catalog-author;
+  text-align: center;
+}
+
+.content__highlight {
+  color: $font-color__highlight--dark;
+}
+
+.content__link {
+  position: relative;
+  color: $background__darker2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(to right, white 0%, white 2px, $background__darker2 2px, $background__darker2 4px);
+  }
+}
+
+.content__link:hover {
+  &::before {
+    display: none;
+  }
+}
+
+.content__video {
+  display: block;
+  margin: 3em auto;
+  width: 80em;
+  height: 40em;
+  border: 0;
+}
+
+.content__btn {
+  display: inline-block;
+  padding: calc(2em / 2.5);
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker3;
+  background-color: $background__btn;
+  border-radius: 5px;
+  box-shadow: 0 6px 0 0 $background__btn-bg;
+}
+
+.content__btn:hover {
+  position: relative;
+  top: 3px;
+  filter: brightness(1.1);
+  box-shadow: 0 4px 0 0 $background__btn-bg;
+}
+
+@media (max-width: $width__tablet-max) {
+  .content {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .content {
+    font-size: 0.8rem;
+  }
+
+  .content__wrapper {
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .content__heading {
+    font-size: 3em;
+  }
+
+  .content__img-float {
+    float: left;
+    margin: 0.7em 2em 0.5em 0;
+    width: 100%;
+  }
+
+  .content__intro {
+    font-size: 1.5em;
+  }
+
+  .content__subheading {
+    font-size: 2em;
+  }
+
+  .content__descriptor {
+    font-size: 1.5em;
+  }
+
+  .content__video {
+    width: 300px;
+    height: 150px;
+  }
+}

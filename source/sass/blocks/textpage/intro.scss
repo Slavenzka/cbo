@@ -1,0 +1,120 @@
+.intro {
+  padding-top: 4em;
+  font-family: $font-family__main;
+  font-size: 1rem;
+  height: 58em;
+  background-image: url("../img/textpage__intro-bg.jpg");
+  background-size: cover;
+  background-position: 50% 0;
+  color: $font-color__darker3;
+}
+
+.intro__wrapper {
+  padding: 2em;
+  width: 50em;
+  background-color: $background__light-opacity2;
+}
+
+.intro__wrapper--light {
+  background-color: transparent;
+}
+
+.intro__wrapper--dark {
+  color: $font-color__light;
+  background-color: transparent;
+}
+
+.intro__title {
+  margin: 0;
+  font-size: 6em;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.intro__subtitle {
+  display: block;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.intro__descriptor {
+  margin: 0;
+  margin-top: 1em;
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.intro__list {
+  display: flex;
+  margin: 0;
+  margin-top: 3em;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__item:not(:last-of-type) {
+  margin-right: 1.5em;
+}
+
+.intro__link {
+  display: block;
+  padding: calc(1.2em / 1.6) calc(2.5em / 1.6);
+  font-size: 1.6em;
+  font-weight: 700;
+  color: $font-color__darker3;
+  text-transform: uppercase;
+  border-radius: 7px;
+  transition-duration: 0.2s;
+}
+
+.intro__wrapper--dark .intro__link {
+  color: $font-color__light;
+}
+
+.intro__link:hover {
+  filter: brightness(1.1);
+}
+
+.intro__item--1 .intro__link {
+  background-color: $background__textpage-intro-link-1;
+}
+
+.intro__item--2 .intro__link {
+  background-color: $background__textpage-intro-link-2;
+}
+
+.intro__item--3 .intro__link {
+  background-color: $background__textpage-intro-link-3;
+}
+
+@media (max-width: $width__tablet-max) {
+  .intro {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .intro {
+    font-size: 0.8  rem;
+  }
+
+  .intro__wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+  }
+
+  .intro__title {
+    font-size: 4em;
+  }
+
+  .intro__subtitle {
+    font-size: 2em;
+  }
+
+  .intro__link {
+    font-size: 1em;
+  }
+}
