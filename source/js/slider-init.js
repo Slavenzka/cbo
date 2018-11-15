@@ -149,37 +149,41 @@
     }
 
     authorTrigger.addEventListener('click', showAuthors);
-    formatTrigger.addEventListener('click', showFormats);
+    if (formatTrigger) {
+      formatTrigger.addEventListener('click', showFormats);
+    }
     themeTrigger.addEventListener('click', showThemes);
     pickerTrigger.addEventListener('click', showPicker);
   }
 
-  $(document).ready(function(){
-    let letters = document.querySelectorAll('.authors__letter');
+  if (document.querySelector('.authors')) {
+    $(document).ready(function(){
+      let letters = document.querySelectorAll('.authors__letter');
 
-    $('.authors__alphabet').slick({
-      fade: true,
-      dots: true,
-      arrows: false,
-      speed: 500,
-      adaptiveHeight: true,
-      customPaging: function(slider, i) {
-        return $('<button type="button" />').text(letters[i].dataset.letter);
-      },
-      appendDots: $('.authors__paginator')
+      $('.authors__alphabet').slick({
+        fade: true,
+        dots: true,
+        arrows: false,
+        speed: 500,
+        adaptiveHeight: true,
+        customPaging: function(slider, i) {
+          return $('<button type="button" />').text(letters[i].dataset.letter);
+        },
+        appendDots: $('.authors__paginator')
+      });
+
+      let authorsArea = document.querySelector('.authors');
+      let dotButtons = authorsArea.querySelectorAll('.authors .slick-dots button');
+      let dotElements = authorsArea.querySelectorAll('.authors .slick-dots li');
+      let authors = authorsArea.querySelectorAll('.authors__list');
+
+      authors.forEach((item, i) => {
+        if (item.children.length === 0) {
+          dotButtons[i].style.color = 'grey';
+          dotElements[i].style.pointerEvents = 'none';
+        }
+      });
     });
-
-    let authorsArea = document.querySelector('.authors');
-    let dotButtons = authorsArea.querySelectorAll('.authors .slick-dots button');
-    let dotElements = authorsArea.querySelectorAll('.authors .slick-dots li');
-    let authors = authorsArea.querySelectorAll('.authors__list');
-
-    authors.forEach((item, i) => {
-      if (item.children.length === 0) {
-        dotButtons[i].style.color = 'grey';
-        dotElements[i].style.pointerEvents = 'none';
-      }
-    });
-  });
+  }
 
 })();

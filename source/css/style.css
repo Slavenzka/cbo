@@ -5016,3 +5016,102 @@ li.reviews__item.slick-slide {
   .content__video {
     width: 300px;
     height: 150px; } }
+
+.post {
+  padding: 3em 0;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-style: 1rem; }
+
+.post > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.post__back {
+  position: relative;
+  display: block;
+  padding-left: 2em;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: calc(2.5em / 1.8);
+  color: #016869; }
+  .post__back::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(2.5em / 1.8);
+    height: calc(2.5em / 1.8);
+    background-image: url("../img/scroll-top__bg.png");
+    background-size: cover;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+
+.post__back:hover {
+  opacity: 0.7; }
+
+.post__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin-top: 3em; }
+
+.post__frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6em;
+  height: 6em;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.post__avatar {
+  width: 100%; }
+
+.post__data figcaption {
+  margin-left: 2em; }
+
+.post__author {
+  display: block;
+  font-size: 1.8em;
+  line-height: normal;
+  color: #016869; }
+
+.post__date {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  color: #231f20; }
+
+.post__theme {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  opacity: 0.5; }
+
+.post__wrapper {
+  padding: 0 3em;
+  width: calc(100% - 300px); }
+
+.post__promo {
+  width: 300px;
+  height: 800px;
+  background: black; }
+
+.post__content {
+  margin-top: 3em; }
+
+.filter__area--blogz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2em; }
