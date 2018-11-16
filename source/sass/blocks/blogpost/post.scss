@@ -162,6 +162,7 @@
 
 .post__video {
   width: 100%;
+  height: 35em;
 }
 
 @media (max-width: $width__tablet-max) {
@@ -198,5 +199,15 @@
 @media (max-width: $width__mobile-max) {
   .post {
     font-size: 0.8rem;
+  }
+
+  .post__control,
+  .post__data {
+    width: 100%;
+  }
+
+  .post__control {
+    margin-top: 3em;
+    justify-content: center;
   }
 }
