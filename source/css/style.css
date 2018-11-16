@@ -5004,9 +5004,11 @@ li.reviews__item.slick-slide {
   .content__heading {
     font-size: 3em; }
   .content__img-float {
-    float: left;
-    margin: 0.7em 2em 0.5em 0;
-    width: 100%; }
+    float: none;
+    margin: 0.7em 0 0.5em 0;
+    width: 100%;
+    height: auto;
+    max-height: 70em; }
   .content__intro {
     font-size: 1.5em; }
   .content__subheading {
