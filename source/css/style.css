@@ -5179,7 +5179,8 @@ li.reviews__item.slick-slide {
   margin-top: 3em; }
 
 .post__video {
-  width: 100%; }
+  width: 100%;
+  height: 35em; }
 
 @media (max-width: 1139px) {
   .post > .container {
@@ -5209,7 +5210,15 @@ li.reviews__item.slick-slide {
 
 @media (max-width: 767px) {
   .post {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+  .post__control,
+  .post__data {
+    width: 100%; }
+  .post__control {
+    margin-top: 3em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 .filter__area--blogz {
   display: -webkit-box;
