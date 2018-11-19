@@ -1,0 +1,119 @@
+.program {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.program > .container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.program__heading {
+  margin: 0;
+  font-size: 4.6em;
+  font-weight: 900;
+  line-height: normal;
+  color: $background__landing-highlight;
+  text-align: center;
+}
+
+.program__list {
+  margin: 0;
+  margin-top: 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.program__item {
+  position: relative;
+  border-bottom: 1px solid $border__landing-program;
+}
+
+.program__icon {
+  position: absolute;
+  top: 3em;
+  right: 1.4em;
+  transform: rotate(0);
+  transition-duration: 0.3s;
+  pointer-events: none;
+}
+
+.program__icon use {
+  fill: $background__darker2;
+}
+
+.program__content {
+  display: none;
+}
+
+.program__selector--1:checked ~ .program__content--1,
+.program__selector--2:checked ~ .program__content--2,
+.program__selector--3:checked ~ .program__content--3,
+.program__selector--4:checked ~ .program__content--4,
+.program__selector--5:checked ~ .program__content--5,
+.program__selector--6:checked ~ .program__content--6 {
+  display: block;
+}
+
+.program__selector {
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 0;
+  opacity: 0;
+}
+
+.program__selector + label {
+  position: relative;
+  display: block;
+  padding: calc(2em / 2.5) 3em calc(2em / 2.5) 0;
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 125%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(1.5em / 2.5);
+    right: 0;
+    width: calc(3.9em / 2.5);
+    height: calc(3.9em / 2.5);
+    background-color: transparent;
+    border: 3px solid rgb(204, 220, 221);
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-property: background-color;
+    pointer-events: none;
+  }
+}
+
+.program__selector:checked + label {
+  &::before {
+    background-color: $background__darker2;
+    border: none;
+  }
+}
+
+.program__selector:checked ~ .program__icon {
+  transform: rotate(135deg);
+  fill: $background__light;
+}
+
+.program__selector:checked ~ .program__icon use {
+  fill: $background__light;
+}
+
+@media (max-width: $width__mobile-max) {
+  .program {
+    font-size: 0.8rem;
+  }
+
+  .program__icon {
+    top: 22px;
+    right: 10px;
+  }
+}

@@ -31,6 +31,7 @@ $font-color__catalog-author: rgb(184, 184, 184);
 $font-color__club-link: rgb(160, 103, 32);
 $font-color__banner-highlight: rgb(255, 0, 0);
 $font-color__authors-alphabet: rgb(0, 155, 156);
+$font-color__landing-highlight: rgb(175, 3, 3);
 
 $background__dark: rgb(1, 104, 105);
 $background__darker: rgb(0, 88, 86);
@@ -55,6 +56,10 @@ $background__textpage-intro-link-2: rgb(6, 172, 6);
 $background__textpage-intro-link-3: rgb(214, 101, 212);
 $background__btn: rgb(247, 178, 0);
 $background__btn-bg: rgb(193, 140, 6);
+$background__landing-highlight: rgb(175, 3, 3);
+$background__landing-public: rgb(82, 82, 82);
+$background__landing-results: rgb(241, 241, 241);
+$background__landing-results-item: rgb(250, 250, 250);
 
 $border__light: rgb(255, 255, 255);
 $border__darkest: rgb(0, 0, 0);
@@ -65,8 +70,10 @@ $border__card-menu: rgb(204, 225, 225);
 $border__advanced-selector: rgb(179, 203, 203);
 $border__audience: rgb(229, 229, 229);
 $border__club-link:  rgb(160, 103, 32);
+$border__landing-program: rgb(217, 217, 217);
 
 $icon__light: rgb(255, 255, 255);
 
 $shadow__main: rgba(50, 50, 50, 0.35);
 $shadow__blog--dark: rgba(1, 104, 105, 0.8);
+$shadow__results-item: rgb(216, 211, 211);

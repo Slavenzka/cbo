@@ -1,0 +1,52 @@
+.profile {
+  margin-top: -5em;
+  font-size: 1rem;
+  font-family: $font-family__main;
+}
+
+.profile__features {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $background__light;
+  box-shadow: 5px 5px 0 0 $background__landing-highlight;
+}
+
+.profile__feature {
+  padding: calc(2em / 2) calc(6.5em / 2);
+  width: 33%;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker3;
+  text-align: center;
+}
+
+.profile__feature:not(:last-of-type) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 4.6em / 4);
+    right: 0;
+    width: calc(0.5em / 2);
+    height: calc(4.6em / 2);
+    background-color: $background__landing-highlight;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .profile {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .profile__feature {
+    padding: calc(2em / 2) calc(2em / 2);
+    font-size: 1.7em;
+  }
+}

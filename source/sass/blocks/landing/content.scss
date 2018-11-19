@@ -1,0 +1,29 @@
+.content {
+  margin: 0;
+  margin-bottom: 3em;
+  padding: 0;
+  padding-left: 3em;
+  list-style: none;
+}
+
+.content__item {
+  position: relative;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 144%;
+  color: $font-color__darkest;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: calc(-3em / 1.8);
+    width: 5px;
+    height: 5px;
+    background-color: $font-color__landing-highlight;
+  }
+}
+
+.content__item:not(:last-of-type) {
+  margin-bottom: 0.5em;
+}
