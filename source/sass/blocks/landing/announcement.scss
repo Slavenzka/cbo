@@ -1,0 +1,113 @@
+.announcement {
+  font-family: $font-family__main;
+  font-size: 1rem;
+  background-image: url("../img/landing__announcement-bg.jpg");
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.announcement .container {
+  position: relative;
+  padding-top: 8em;
+  height: 73em;
+}
+
+.announcement__title {
+  position: relative;
+  display: inline-block;
+  padding: 0 calc(1.5em / 2);
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 38px;
+  color: $font-color__light;
+  background-color: $background__landing-highlight;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -22px;
+    border-bottom: 38px solid $background__landing-highlight;
+    border-right: 22px solid transparent;
+    border-left: 22px solid transparent;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -22px;
+    border-top: 38px solid $background__landing-highlight;
+    border-right: 22px solid transparent;
+    border-left: 22px solid transparent;
+    z-index: -1;
+  }
+}
+
+.announcement__course {
+  margin: 0;
+  font-size: 7em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__light;
+  text-transform: uppercase;
+}
+
+.announcement__comment {
+  font-size: calc(2.6em / 7);
+  text-transform: none;
+}
+
+.announcement__date,
+.announcement__location {
+  display: inline-block;
+  padding-left: calc(2.5em / 1.7);
+  width: calc(43em / 1.7);
+  font-size: 1.7em;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(2em / 1.7);
+    height: calc(2em / 1.7);
+    background-size: cover;
+  }
+}
+
+.announcement__date {
+  position: relative;
+  display: block;
+  margin-top: calc(7em / 1.7);
+
+  &::before {
+    background-image: url("../img/landing__calendar-icon.svg");
+  }
+}
+
+.announcement__location {
+  position: relative;
+  margin-top: calc(1em / 1.7);
+  padding-right: 13em;
+
+  &::before {
+    background-image: url("../img/landing__location-icon.svg");
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .announcement {
+    font-size: 0.8rem;
+  }
+
+  .announcement__date,
+  .announcement__location {
+    width: 100%;
+  }
+}

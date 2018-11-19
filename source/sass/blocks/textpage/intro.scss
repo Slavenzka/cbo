@@ -60,9 +60,10 @@
 
 .intro__link {
   display: block;
-  padding: calc(1.2em / 1.6) calc(2.5em / 1.6);
+  padding: calc(1.5em / 1.6) calc(2.5em / 1.6) calc(1.2em / 1.6) calc(2.5em / 1.6);
   font-size: 1.6em;
   font-weight: 700;
+  line-height: normal;
   color: $font-color__darker3;
   text-transform: uppercase;
   border-radius: 7px;
@@ -83,6 +84,7 @@
 
 .intro__item--2 .intro__link {
   background-color: $background__textpage-intro-link-2;
+  color: $font-color__light;
 }
 
 .intro__item--3 .intro__link {

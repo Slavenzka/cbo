@@ -1,0 +1,126 @@
+.results {
+  font-family: $font-family__main;
+  font-size: 1rem;
+  background-color: $background__landing-results;
+  background-image: url("../img/landing__author-img.png");
+  background-repeat: no-repeat;
+  background-size: 45em;
+  background-position: -3em 0;
+}
+
+.results > .container {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.results__heading {
+  margin: 0;
+  font-size: 3.6em;
+  font-weight: 500;
+  line-height: normal;
+  color: $font-color__darker3;
+  text-align: center;
+}
+
+.results__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.results__item {
+  position: relative;
+  margin: 1em 0;
+  padding-top: 0.4em;
+  padding-right: 0.5em;
+  padding-left: calc(7.5em / 1.8);
+  width: calc(32em / 1.8);
+  height: calc(9.5em / 1.8);
+  font-size: 1.8em;
+  font-weight: 500;
+  line-height: 140%;
+  color: $font-color__darker3;
+  background-color: $background__landing-results-item;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px 0 $shadow__results-item;
+  transition-duration: 0.5s;
+  transition-property: box-shadow;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.4em;
+    left: 0.6em;
+    width: calc(5.5em / 1.8);
+    height: calc(5.5em / 1.8);
+    border-radius: 50%;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
+
+.results__item--1 {
+  &::before {
+    background-image: url("../img/results__item--1.png");
+  }
+}
+
+.results__item--2 {
+  &::before {
+    background-image: url("../img/results__item--2.png");
+  }
+}
+
+.results__item--3 {
+  &::before {
+    background-image: url("../img/results__item--3.png");
+  }
+}
+
+.results__item--4 {
+  &::before {
+    background-image: url("../img/results__item--4.png");
+  }
+}
+
+.results__item--5 {
+  &::before {
+    background-image: url("../img/results__item--5.png");
+  }
+}
+
+.results__item--6 {
+  &::before {
+    background-image: url("../img/results__item--6.png");
+  }
+}
+
+.results__item:hover {
+  box-shadow: 0 2px 2px 0 $shadow__results-item;
+}
+
+@media (max-width: 1600px) {
+  .results {
+    background-image: none;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .results__list {
+    justify-content: space-around;
+  }
+
+  .results__item {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .results {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,37 @@
+.videos {
+  font-size: 1rem;
+}
+
+.videos > .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5em;
+  padding-bottom: 2.5em;
+}
+
+.videos__item {
+  width: 70em;
+  height: 31.5em;
+  border: none;
+}
+
+.videos__item:not(:last-of-type) {
+  margin-bottom: 5em;
+}
+
+@media (max-width: $width__tablet-max) {
+  .videos {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .videos {
+    font-size: 0.7rem;
+  }
+
+  .videos__item {
+    width: 100%;
+  }
+}
