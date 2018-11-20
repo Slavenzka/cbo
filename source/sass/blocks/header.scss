@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  width: auto;
+  min-width: $width__desktop;
   background-image: url("../img/header__intro-bg.png");
   background-repeat: no-repeat;
   background-position: 55% 0;
