@@ -7,6 +7,8 @@
 
 .footer > .container {
   display: flex;
+  width: auto;
+  min-width: $width__desktop;
 }
 
 .footer__social {
