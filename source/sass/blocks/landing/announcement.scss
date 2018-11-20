@@ -21,7 +21,7 @@
   line-height: 38px;
   color: $font-color__light;
   background-color: $background__landing-highlight;
-  z-index: 2;
+  z-index: 1;
 
   &::before {
     content: "";
