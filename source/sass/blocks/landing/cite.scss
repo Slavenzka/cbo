@@ -1,0 +1,47 @@
+.cite {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.cite > .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.cite__content {
+  margin: 0;
+  padding: calc(3em / 2) calc(5em / 2);
+  font-family: $font-family__aux;
+  font-size: 2em;
+  font-weight: 300;
+  font-style: italic;
+  border: 5px solid $background__landing-highlight;
+}
+
+.cite__author {
+  align-self: flex-end;
+  margin-top: 0.5em;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker3;
+  font-style: normal;
+  text-align: right;
+}
+
+.cite__btn {
+  margin-top: 2em;
+  align-self: center;
+}
+
+@media (max-width: $width__mobile-max) {
+  .cite {
+    font-size: 0.8rem;
+  }
+
+  .cite__content {
+    padding: calc(2em / 2) calc(2em / 2);
+  }
+}

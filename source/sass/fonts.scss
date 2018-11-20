@@ -10,12 +10,22 @@
 
 @font-face {
   font-family: "Museo Sans";
-  font-weight: 200;
+  font-weight: 300;
   font-display: swap;
   font-style: normal;
   src:
     url("../fonts/museosanscyrl_300-webfont.woff2") format("woff2"),
     url("../fonts/museosanscyrl_300-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+  src:
+    url("../fonts/museosanscyrl_300_italic-webfont.woff2") format("woff2"),
+    url("../fonts/museosanscyrl_300_italic-webfont.woff") format("woff");
 }
 
 @font-face {
