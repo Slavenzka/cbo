@@ -276,6 +276,91 @@
   }
 }
 
+.modal__books .modal__wrapper {
+  padding: 4em;
+  width: 80em;
+}
+
+.modal__frame {
+  padding: 0 4em 4em 4em;
+  border: 3px solid $font-color__landing-highlight;
+}
+
+.modal__author {
+  display: block;
+}
+
+.modal__subscribtion {
+  margin-top: 5em;
+}
+
+.modal__input {
+  display: block;
+  width: 100%;
+  padding: 0 calc(1.5em / 1.7);
+  font-size: 1.7em;
+  font-weight: 300;
+  line-height: calc(5em / 1.9);
+  color: $font-color__modal-input;
+  border: 1px solid rgba(186, 186, 186, 0.88);
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.modal__input::placeholder {
+  opacity: 0.5;
+}
+
+.modal__input--name,
+.modal__input--mail {
+  margin-bottom: 2em;
+}
+
+.modal__input--phone {
+  margin-bottom: 1em;
+}
+
+.modal__accept {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.modal__subscribe {
+  margin: 0;
+}
+
+.modal__subscribe + label {
+  display: inline-block;
+  margin-left: 15px;
+  width: 95%;
+  font-family: $font-family__modal-checkbox;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 120%;
+  color: $font-color__darkest;
+  vertical-align: middle;
+}
+
+.modal__example {
+  color: $font-color__modal-example;
+  text-decoration: underline;
+}
+
+.modal__btn {
+  width: 100%;
+  border: 1px solid $border__modal-btn;
+  border-radius: 7px;
+}
+
+.modal__privacy {
+  display: inline-block;
+  margin-top: 1em;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 120%;
+  color: $font-color__modal-example;
+}
+
 @media (max-width: $width__tablet-max) {
   .modal {
     font-size: 0.7rem;
@@ -300,5 +385,18 @@
   .modal__logos {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .modal__books .modal__wrapper {
+    padding: 2em;
+    width: 300px;
+  }
+
+  .modal__books .modal__title {
+    margin-top: 2em;
+  }
+
+  .modal__subscribe + label {
+    width: 80%;
   }
 }

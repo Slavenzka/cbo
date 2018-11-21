@@ -1,4 +1,4 @@
-$width__desktop: 1280px;
+$width__desktop: 1140px;
 $width__tablet-max: 1139px;
 $width__tablet: 768px;
 $width__mobile-max: 767px;
@@ -7,6 +7,7 @@ $width__mobile: 320px;
 $font-family__main: "Museo Sans", "Arial", sans-serif;
 $font-family__aux: "Georgia", "Times New Roman", serif;
 $font-family__icon: "Ecoicon";
+$font-family__modal-checkbox: "Arial";
 
 $font-color__dark: rgb(1, 104, 105);
 $font-color__darker: rgb(0, 88, 86);
@@ -32,6 +33,8 @@ $font-color__club-link: rgb(160, 103, 32);
 $font-color__banner-highlight: rgb(255, 0, 0);
 $font-color__authors-alphabet: rgb(0, 155, 156);
 $font-color__landing-highlight: rgb(175, 3, 3);
+$font-color__modal-input: rgb(28, 46, 65);
+$font-color__modal-example: rgb(147, 152, 159);
 
 $background__dark: rgb(1, 104, 105);
 $background__darker: rgb(0, 88, 86);
@@ -61,6 +64,8 @@ $background__landing-public: rgb(82, 82, 82);
 $background__landing-results: rgb(241, 241, 241);
 $background__landing-results-item: rgb(250, 250, 250);
 $background__button-shining: rgb(195, 1, 1);
+$background__lending-price-item: rgb(45, 131, 111);
+$background__lending-price-item-dark: rgb(28, 95, 79);
 
 $border__light: rgb(255, 255, 255);
 $border__darkest: rgb(0, 0, 0);
@@ -72,9 +77,11 @@ $border__advanced-selector: rgb(179, 203, 203);
 $border__audience: rgb(229, 229, 229);
 $border__club-link:  rgb(160, 103, 32);
 $border__landing-program: rgb(217, 217, 217);
+$border__modal-btn: rgb(229, 179, 62);
 
 $icon__light: rgb(255, 255, 255);
 
 $shadow__main: rgba(50, 50, 50, 0.35);
 $shadow__blog--dark: rgba(1, 104, 105, 0.8);
 $shadow__results-item: rgb(216, 211, 211);
+$shadow__dark: rgba(0, 0, 0, 0.55);
