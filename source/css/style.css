@@ -6609,13 +6609,13 @@ a.book__btn {
   margin-right: 3em; }
 
 .additional__item--1 {
-  background-image: url("../img/landing__additional-item-bg--1.png"); }
+  background-image: url("../img/landing__additional-item-bg--1.jpg"); }
 
 .additional__item--2 {
-  background-image: url("../img/landing__additional-item-bg--2.png"); }
+  background-image: url("../img/landing__additional-item-bg--2.jpg"); }
 
 .additional__item--3 {
-  background-image: url("../img/landing__additional-item-bg--3.png"); }
+  background-image: url("../img/landing__additional-item-bg--3.jpg"); }
 
 .additional__item:hover {
   -webkit-box-shadow: 0 0 10px white;
