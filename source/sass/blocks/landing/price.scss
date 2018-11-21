@@ -1,0 +1,308 @@
+.price {
+  margin: 2em 0;
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.price__heading {
+  margin: 0;
+  font-size: 4.6em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker3;
+  text-align: center;
+}
+
+.price__list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 3em;
+  padding: 0;
+  list-style: none;
+}
+
+.price__item {
+  position: relative;
+  margin: 0 0.5em;
+  width: 27em;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 $shadow__dark;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transition-property: box-shadow;
+}
+
+.price__item:hover {
+  box-shadow: 6px 9px 20px 0 $shadow__dark;
+}
+
+.price__item:hover .price__link {
+  &::before {
+    background-color: $background__lending-price-item-dark;
+  }
+}
+
+.price__link {
+  padding-top: 2em;
+  padding-bottom: 7em;
+  display: block;
+
+  &::before {
+    content: "Купить";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: calc(1em / 2.4);
+    width: 100%;
+    height: calc(6em / 2.4);
+    font-size: 2.4em;
+    font-weight: 300;
+    line-height: normal;
+    color: $font-color__light;
+    text-align: center;
+    background-color: $background__lending-price-item;
+    pointer-events: none;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+  }
+}
+
+.price__item--no-vacancy .price__link {
+  &::before {
+    content: "В лист ожидания";
+  }
+}
+
+.price__item--hide .price__link {
+  &::before {
+    content: "Узнать";
+  }
+}
+
+.price__grade {
+  margin: 0 0 calc(1em / 3.6) 0;
+  font-size: 3.6em;
+  font-weight: 300;
+  line-height: normal;
+  color: gray;
+  text-align: center;
+}
+
+.price__remain {
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  color: $font-color__highlight--dark;
+}
+
+.price__img {
+  width: 100%;
+  max-height: 14.3em;
+}
+
+.price__features {
+  margin: 0;
+  margin-top: 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.price__feature {
+  position: relative;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 140%;
+  color: $font-color__darker3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(1em / 1.4);
+    background-size: cover;
+  }
+}
+
+.price__feature:not(:last-of-type) {
+  margin-bottom: calc(2em / 1.4);
+}
+
+.price__feature:not(.price__feature--ammount) {
+  padding: 0 calc(2em / 1.4) 0 calc(4em / 1.4);
+}
+
+.price__feature--ammount {
+  margin-top: 3em;
+  font-size: calc(2.6em);
+  font-weight: 700;
+  line-height: normal;
+  color: grey;
+  text-align: center;
+}
+
+.price__item--hide .price__feature--ammount {
+  display: none;
+}
+
+.price__feature--highlight {
+  font-weight: 900;
+}
+
+.price__feature--participation {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(1.9em / 1.4);
+    background-image: url("../img/landing__price-feature--participation.png");
+  }
+}
+
+.price__feature--registration {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(1.5em / 1.4);
+    background-image: url("../img/landing__price-feature--registration.png");
+  }
+}
+
+.price__feature--badge {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--badge.png");
+  }
+}
+
+.price__feature--materials {
+  &::before {
+    width: calc(1.9em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--materials.png");
+  }
+}
+
+.price__feature--coffebreak {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--coffebreak.png");
+  }
+}
+
+.price__feature--seats {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2.1em / 1.4);
+    background-image: url("../img/landing__price-feature--seats.png");
+  }
+}
+
+.price__feature--parking {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--parking.png");
+  }
+}
+
+.price__feature--meal {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--meal.png");
+  }
+}
+
+.price__feature--question {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--question.png");
+  }
+}
+
+.price__feature--registration-fast {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2.1em / 1.4);
+    background-image: url("../img/landing__price-feature--registration-fast.png");
+  }
+}
+
+.price__feature--photo {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(1.9em / 1.4);
+    background-image: url("../img/landing__price-feature--photo.png");
+  }
+}
+
+.price__feature--registration-special {
+  &::before {
+    left: calc(1.5em / 1.4);
+    width: calc(1.2em / 1.4);
+    height: calc(2.1em / 1.4);
+    background-image: url("../img/landing__price-feature--registration-special.png");
+  }
+}
+
+.price__feature--certificate {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--certificate.png");
+  }
+}
+
+.price__feature--book {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--book.png");
+  }
+}
+
+.price__feature--signature {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--signature.png");
+  }
+}
+
+.price__feature--adv {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--adv.png");
+  }
+}
+
+.price__feature--manager {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--manager.png");
+  }
+}
+
+.price__feature--consult {
+  &::before {
+    width: calc(2em / 1.4);
+    height: calc(2em / 1.4);
+    background-image: url("../img/landing__price-feature--consult.png");
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .price {
+    font-size: 0.8rem;
+  }
+
+  .price__item {
+    margin-top: 2em;
+  }
+}

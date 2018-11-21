@@ -22,11 +22,12 @@ li.reviews__item.slick-slide {
   justify-content: flex-start;
   align-items: center;
   margin: 0;
-  width: 78em;
+  width: 100%;
 }
 
 .reviews__text {
   position: relative;
+  margin: 0;
   padding: 0 4em;
   width: 100%;
   font-family: $font-family__aux;
@@ -38,7 +39,7 @@ li.reviews__item.slick-slide {
 }
 
 .reviews__text:first-of-type {
-  padding-top: 50px;
+  padding-top: calc(5em / 1.8);
 
   &::before {
     content: "";
@@ -52,7 +53,7 @@ li.reviews__item.slick-slide {
 }
 
 .reviews__text:last-of-type {
-  padding-bottom: 81px;
+  padding-bottom: calc(8.1em / 1.8);
 
   &::after {
     content: "";
@@ -94,8 +95,8 @@ li.reviews__item.slick-slide {
 
 .reviews .slick-arrow {
   position: absolute;
-  top: calc(50% - 37px);
-  left: 0;
+  top: 10%;
+  left: -70px;
   width: 74px;
   height: 74px;
   font-size: 0;
@@ -109,7 +110,7 @@ li.reviews__item.slick-slide {
 }
 
 .reviews .slick-next {
-  right: 0;
+  right: -70px;
   left: auto;
   transform: rotate(180deg);
 }
@@ -189,13 +190,13 @@ li.reviews__item.slick-slide {
 
   .reviews__text:first-of-type {
     &::before {
-      height: 2px;
+      height: 3px;
     }
   }
 
   .reviews__text:last-of-type {
     &::after {
-      height: 20px;
+      height: 25px;
     }
   }
 

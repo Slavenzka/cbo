@@ -88,20 +88,20 @@ a {
   cursor: pointer;
 }
 
-.button-shine {
-  display: block;
+a.button-shine {
+  display: inline-block;
   padding: calc(1.5em / 2) calc(2.5em / 2);
-  min-width: calc(28em / 2);
-  max-width: calc(32em / 2);
-  width: 100%;
+  width: calc(32em / 2);
   font-size: 2em;
   font-weight: 300;
   line-height: normal;
   color: $font-color__light;
   text-align: center;
+  text-decoration: none;
   background-color: $background__button-shining;
   border-radius: 5px;
   box-shadow: 0 0 20px 0 $background__button-shining;
+  vertical-align: middle;
 }
 
 @media (max-width: $width__tablet-max) {

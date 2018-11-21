@@ -1,0 +1,39 @@
+.feedback > .container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.feedback__heading {
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker3;
+  text-align: center;
+}
+
+.feedback__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.feedback__video {
+  margin: 1em;
+  width: 30em;
+  height: 17.4em;
+  border: none;
+}
+
+.feedback .reviews__list {
+  margin-top: 3em;
+}
+
+.feedback .reviews__content {
+  font-style: italic;
+}
+
+.feedback .reviews__name {
+  font-style: normal;
+}
