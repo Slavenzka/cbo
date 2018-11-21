@@ -57,6 +57,7 @@
       speed: 500,
       adaptiveHeight: true,
       dots: true,
+      lazyLoad: 'ondemand',
       responsive: [
         {
           breakpoint: 767,
