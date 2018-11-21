@@ -1,0 +1,79 @@
+.form {
+  width: 48.5em;
+}
+
+.form__heading {
+  margin: 0;
+  font-size: 3.2em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__landing-highlight;
+  text-transform: uppercase;
+}
+
+.form__descriptor {
+  margin: 0;
+  padding-right: 7.5em;
+  font-size: 1.8em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darkest;
+}
+
+.form__results {
+  padding-right: 7.6em;
+  padding-left: 1em;
+  font-size: 1.8em;
+  font-weight: 500;
+  line-height: normal;
+  color: $font-color__darkest;
+}
+
+.form__input {
+  margin: 0;
+}
+
+.form__input:not(:last-of-type) {
+  margin-bottom: 2em;
+}
+
+.form__text {
+  display: block;
+  margin: 2em 0;
+  padding: 0 calc(1.5em / 1.7);
+  width: 100%;
+  height: 10em;
+  font-family: $font-family__main;
+  font-size: 1.7em;
+  font-weight: 300;
+  line-height: calc(5em / 1.9);
+  color: $font-color__modal-input;
+  border: 1px solid rgba(186, 186, 186, 0.88);
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.form__text::placeholder {
+  opacity: 0.5;
+}
+
+.form__subscribe + label {
+  width: calc(44.7em / 1.4);
+}
+
+@media (max-width: $width__mobile-max) {
+  .form {
+    width: 100%;
+  }
+
+  .form__descriptor {
+    padding: 0;
+  }
+
+  .form__results {
+    padding-right: 0;
+  }
+
+  .form__subscribe + label {
+    width: 85%;
+  }
+}

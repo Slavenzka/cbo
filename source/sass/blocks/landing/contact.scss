@@ -1,0 +1,44 @@
+.contact {
+  padding: 5em 0;
+  font-family: $font-family__main;
+  font-size: 1rem;
+  background-image: url("../img/landing__contact-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 5em;
+  width: 87em;
+  background-color: $background__light;
+}
+
+@media (max-width: $width__tablet-max) {
+  .contact {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .contact {
+    font-size: 0.75rem;
+  }
+
+  .contact__wrapper {
+    flex-direction: column;
+    padding: 2em;
+    width: 100% * 300 / 320;
+  }
+
+  .contact__manager {
+    order: 1;
+  }
+
+  .contact__form {
+    order: 2;
+    margin-top: 2em;
+  }
+}

@@ -719,7 +719,7 @@
                     Получить
                   </button>
                   <span class="modal__privacy">
-                    * — заполняя форму, вы соглашаетесь с нашей политикой обработки персональных данных
+                    * — заполняя данную форму, Вы соглашаетесь на обработку персональных данных
                   </span>
                 </form>
               </div>
@@ -989,36 +989,167 @@
           <span class="additional__subheading">
             для участников программы
           </span>
-          <ul class="additional__list">
-            <li class="additional__item">
+        </h2>
+        <ul class="additional__list">
+          <li class="additional__item additional__item--1">
+            <a href="mailto:mark@cbo.ru" class="additional__link">
               <p class="additional__descriptor">
                 Размещение рекламных материалов в рабочей тетради  формат А4
               </p>
-              <span class="additional__price">
-                По прайсу
-              </span>
-
-            </li>
-            <li class="additional__item">
+              <dl class="additional__discount">
+                <dt class="additional__key">
+                  По прайсу
+                </dt>
+                <dd class="additional__value additional__value--before">
+                  25 000
+                </dd>
+                <dt class="additional__key">
+                  Для участников
+                </dt>
+                <dd class="additional__value additional__value--after">
+                  18 000
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="additional__item additional__item--2">
+            <a href="mailto:mark@cbo.ru" class="additional__link">
               <p class="additional__descriptor">
                 Суперпредложение! Добавьте информацию о мероприятиях ЦБО в вашей информационной рассылке и разместите свои рекламные материалы:
-                <ul class="additional__options">
-                  <li class="additional__option">
-                    - В промозоне
-                  </li>
-                  <li class="additional__option">
-                    - В рабочей тетради (формат А4)
-                  </li>
-                </ul>
               </p>
-            </li>
-            <li class="additional__item">
+              <ul class="additional__options">
+                <li class="additional__option">
+                  - В промозоне
+                </li>
+                <li class="additional__option">
+                  - В рабочей тетради (формат А4)
+                </li>
+              </ul>
+              <dl class="additional__discount">
+                <dt class="additional__key">
+                  По прайсу
+                </dt>
+                <dd class="additional__value additional__value--before">
+                  45 000
+                </dd>
+                <dt class="additional__key">
+                  Для участников
+                </dt>
+                <dd class="additional__value additional__value--after">
+                  9 900
+                </dd>
+              </dl>
+            </a>
+          </li>
+          <li class="additional__item additional__item--3">
+            <a href="mailto:mark@cbo.ru" class="additional__link">
               <p class="additional__descriptor">
                 Размещение рекламных материалов	 на программе:  буклеты, листовки, товары
               </p>
+              <dl class="additional__discount">
+                <dt class="additional__key">
+                  По прайсу
+                </dt>
+                <dd class="additional__value additional__value--before">
+                  20 000
+                </dd>
+                <dt class="additional__key">
+                  Для участников
+                </dt>
+                <dd class="additional__value additional__value--after">
+                  15 000
+                </dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+        <p class="additional__invitation">
+          Приглашаем к сотрудничеству инфопартнеров и бизнес-партнеров!
+          <span class="additional__invitation-details">
+            Если у вас есть, что предложить нашим Клиентам, давайте сотрудничать!
+          </span>
+        </p>
+        <figure class="additional__manager">
+          <figcaption class="additional__details">
+            <span class="additional__name">
+              Наталья Дуванова,
+            </span>
+            <span class="additional__rank">
+              руководитель МиРа
+            </span>
+            <a href="mailto:mark@cbo.ru" class="additional__mail">
+              mark@cbo.ru
+            </a>
+          </figcaption>
+          <div class="additional__frame">
+            <img src="img/landing__additional-manager-img.png" alt="Фотография менеджера" class="additional__img">
+          </div>
+        </figure>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact__wrapper">
+        <div class="contact__form form">
+          <h2 class="form__heading">
+            Узнать условия участия
+          </h2>
+          <p class="form__descriptor">
+            Рады быть Вам полезными. На&nbsp;полученный от&nbsp;вас Запрос мы&nbsp;перезвоним по&nbsp;указанному телефону.
+          </p>
+          <ol class="form__results">
+            <li class="form__result">
+              Вы получите ответы на все вопросы: цена, программа, орг.моменты
             </li>
-          </ul>
-        </h2>
+            <li class="form__result">
+              Зафиксируете текущую стоимость билета
+            </li>
+          </ol>
+          <form class="modal__subscribtion form__fields" action="#">
+            <input type="text" class="modal__input modal__input--name form__input" placeholder="Ваше имя" required>
+            <input type="text" class="modal__input modal__input--company form__input" placeholder="Компания">
+            <input type="email" class="modal__input modal__input--mail form__input" placeholder="Email" required>
+            <input type="tel" class="modal__input modal__input--phone form__input" placeholder="Телефон">
+            <textarea class="form__text" placeholder="Напишите Ваш вопрос"></textarea>
+            <fieldset class="modal__accept form__accept">
+              <input type="checkbox" class="modal__subscribe form__subscribe" id="contact-subscribe" name="subscription" checked>
+              <label for="contact-subscribe">
+                Хочу получать полезные материалы от&nbsp;400+ экспертов из&nbsp;авторской базы ЦБО: Р.Гандапас, И.Манн, М.Хазин, М.Бэнг, М.Делягин, С.Макшанов, В.Якуба, И.Рызов и&nbsp;других. Вы&nbsp;сможете отписаться в&nbsp;любой момент. См.  <a class="modal__example form__exanple" href="#">пример</a>
+              </label>
+            </fieldset>
+            <button class="button-colors modal__btn form__btn">
+              Получить условия
+            </button>
+            <span class="modal__privacy form__privacy">
+              * — заполняя данную форму, Вы соглашаетесь на обработку персональных данных
+            </span>
+          </form>
+        </div>
+        <div class="contact__manager manager">
+          <figure>
+            <div class="manager__frame">
+              <img src="img/landing__manager-img.png" alt="Фотография менеджера проектов" class="manager__photo">
+            </div>
+            <figcaption class="manager__details">
+              <h3 class="manager__name">
+                Юлия Ахметова
+              </h3>
+              <p class="manager__rank">
+                Руководитель проектов
+              </p>
+              <ul class="manager__phones">
+                <li class="manager__phone">
+                  (8 343) 729 84 74 (доб. 324)
+                </li>
+                <li class="manager__phone">
+                  8 800 700 1996 (доб. 324) звонок бесплатный
+                </li>
+              </ul>
+              <a href="mailto:m24@cbo.ru" class="manager__mail">
+                m24@cbo.ru
+              </a>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
   </main>
