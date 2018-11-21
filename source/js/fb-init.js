@@ -1,5 +1,5 @@
 'use strict';
-if (window.matchMedia('screen and (min-width: 720px)')) {
+if (window.matchMedia('screen and (min-width: 720px)').matches) {
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
