@@ -1,0 +1,45 @@
+.books__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.books__item {
+  position: relative;
+  margin-bottom: 4em;
+  padding-right: 1em;
+  padding-left: 8em;
+  width: 50%;
+  min-height: 8.9em;
+}
+
+.books__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6.5em;
+  height: 9.3em;
+  object-fit: contain;
+}
+
+.books__title,
+.books__descriptor {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: $font-color__modal-input;
+}
+
+.books__descriptor {
+  margin-top: calc(1em / 1.6);
+  color: rgb(127, 127, 127);
+}
+
+@media (max-width: $width__mobile-max) {
+  .books__item {
+    width: 100%;
+  }
+}

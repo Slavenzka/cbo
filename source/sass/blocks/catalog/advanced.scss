@@ -279,6 +279,18 @@
   font-size: 1.5em;
 }
 
+.advanced__input {
+  display: block;
+  margin: 0;
+  padding: 0.5em;
+  width: 20em;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: $font-color__dark;
+  border: none;
+}
+
 @media (max-width: $width__tablet-max) {
   .advanced {
     font-size: 0.7rem;
@@ -332,7 +344,9 @@
   }
 
   .advanced__set-filter {
-    margin-top: calc(12em / 2);
+    margin-top: calc(8em / 2);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .advanced__author .slick-arrow,
@@ -373,5 +387,9 @@
     margin-top: -20em;
     margin-left: 0;
     width: 100%;
+  }
+
+  .advanced__slogan--search {
+    margin-top: 6em;
   }
 }

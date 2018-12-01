@@ -13,6 +13,86 @@
   text-transform: uppercase;
 }
 
+.blogz__criteria {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.blogz__sort {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: $font-family__icons;
+  font-size: 25px;
+}
+
+.blogz__sort:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.blogz__sort--pop {
+  color: $font-color__dark;
+}
+
+.blogz__sort--rate {
+  color: $font-color__highlight--dark;
+}
+
+.blogz__btn {
+  position: relative;
+  width: 20px;
+  height: 10px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.blogz__btn--down {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 10px solid $background__darkest;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+}
+
+.blogz__btn--up {
+  margin-right: 10px;
+  margin-left: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 10px solid $background__darkest;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+}
+
+.blogz__sort--pop .blogz__btn:hover {
+  &::before {
+    border-top-color: $background__darker;
+    border-bottom-color: $background__darker;
+  }
+}
+
+.blogz__sort--rate .blogz__btn:hover {
+  &::before {
+    border-top-color: $background__highlight;
+    border-bottom-color: $background__highlight;
+  }
+}
+
 .blogz__list {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +103,7 @@
 
 .blogz__item {
   margin-bottom: 3em;
-  height: 40em;
+  min-height: 40em;
 }
 
 .blogz__item:not(:nth-of-type(3n)) {
@@ -83,6 +163,29 @@
   border: 1px solid $font-color__darker3;
   border-radius: 15px;
   opacity: 0.5;
+}
+
+.blogz__info {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.blogz__metrics {
+  display: flex;
+  align-items: center;
+  font-family: $font-family__icons;
+  font-size: 1.4em;
+}
+
+.blogz__metrics--like {
+  margin-top: calc(0.5em / 1.4);
+  color: $background__highlight;
+}
+
+.blogz__counter {
+  margin-left: calc(0.5em / 1.4);
+  font-family: $font-family__main;
+  color: $font-color__darker3;
 }
 
 .blogz__title {

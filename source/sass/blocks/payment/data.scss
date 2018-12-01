@@ -1,0 +1,83 @@
+.data {
+  width: 100%;
+  font-size: 1rem;
+  border-collapse: collapse;
+}
+
+.data tr:not(:last-of-type) {
+  border-bottom: 1px solid $font-color__darker3;
+}
+
+.data__key {
+  padding-left: 1em;
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__darker3;
+  text-align: left;
+}
+
+.data__value {
+  padding: 0;
+  padding-left: 1em;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__darker3;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.data__value textarea {
+  margin-top: 2px;
+  width: calc(10em / 1.2);
+  height: calc(7.5em / 1.2);
+  font-family: $font-family__main;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__darker3;
+  text-align: left;
+  border: 1px solid $font-color__highlight--dark;
+}
+
+.data__value textarea::placeholder {
+  font-family: $font-family__main;
+  font-size: calc(1.2em / 1.2);
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__highlight--dark;
+  text-align: left;
+}
+
+.data__input {
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
+  min-width: 150px;
+  width: 100%;
+  font-family: $font-family__main;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__darker3;
+  border: none;
+}
+
+.data__input::placeholder {
+  font-family: $font-family__main;
+  font-size: calc(1.2em / 1.2);
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__highlight--dark;
+}
+
+@media (max-width: $width__tablet-max) {
+  .data {
+    font-size: 0.75rem;
+  }
+
+  .data__key--city {
+    width: 100px;
+  }
+}

@@ -1,0 +1,210 @@
+.payment {
+  padding: 8.5em 0;
+  font-family: $font-family__main;
+  font-size: 1rem;
+  background-image: url("../img/payment__main-bg.jpg");
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.payment fieldset {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  border: none;
+}
+
+.payment__wrapper {
+  margin: 0 auto;
+  width: 87em;
+  background-color: $background__light;
+}
+
+.payment__stats {
+  display: flex;
+  align-items: flex-start;
+  padding: 7em 4.5em 3em 4.5em;
+  background-color: rgb(247, 247, 247);
+}
+
+.payment__purpose {
+  position: relative;
+  margin: 0;
+  width: 60%;
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: normal;
+  color: rgb(14, 91, 92);
+  text-transform: uppercase;
+
+  &::before {
+    content: "Программа:";
+    position: absolute;
+    top: calc(-3.5em / 2.2);
+    left: 0;
+    font-size: calc(1.7em / 2.2);
+    font-weight: 300;
+    line-height: normal;
+    color: rgb(27, 45, 66);
+    text-transform: none;
+  }
+}
+
+.payment__total {
+  position: relative;
+  margin: 0;
+  padding-left: 2em;
+  width: 40%;
+  font-size: 2.8em;
+  font-weight: 900;
+  line-height: calc(1.7em / 2.8);
+  color: rgb(223, 33, 27);
+
+  &::before {
+    content: "К оплате:";
+    position: absolute;
+    top: calc(-4.5em / 2.8);
+    left: 3.3em;
+    font-size: calc(1.7em / 2.8);
+    font-weight: 300;
+    line-height: normal;
+    color: rgb(27, 45, 66);
+    text-transform: none;
+  }
+}
+
+.payment__footer {
+  padding: 0 4.5em 1em 4.5em;
+}
+
+.payment__recalc {
+  display: inline-block;
+  margin-left: -105px;
+  padding: 0;
+  width: 105px;
+  height: 47px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: normal;
+  color: rgb(27, 45, 66);
+  vertical-align: top;
+}
+
+.payment__offer,
+.payment__mailorder {
+  padding-top: 10px;
+}
+
+.payment__check {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+}
+
+.payment__check + label {
+  display: inline-block;
+  width: calc(100% - 13px);
+  padding-left: 15px;
+  font-size: 20px;
+  color: rgb(27, 45, 66);
+  vertical-align: top;
+}
+
+.payment__link {
+  color: rgb(147, 152, 159);
+  text-decoration: underline;
+}
+
+.payment__link:visited {
+  color: rgb(67, 79, 94);
+}
+
+.payment__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.payment__btn {
+  margin-top: 0;
+  width: 250px;
+  height: 65px;
+  border: 1px solid rgb(229, 179, 62);
+  border-radius: 16px;
+  box-shadow:
+    0 3px 5px rgb(154, 76, 10),
+    inset 0 1px 0 1px rgba(255, 255, 255, 0.21);
+}
+
+.payment__input {
+  margin-bottom: 12px;
+  padding: 0 15px;
+  width: 377px;
+  height: 47px;
+  font-size: 17px;
+  font-weight: 300;
+  color: rgb(27, 45, 66);
+  border: 1px solid rgba(186, 186, 186, 0.88);
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.payment__input--company {
+  margin-right: 18px;
+}
+
+@media (max-width: $width__tablet-max) {
+  .payment {
+    font-size: 0.8rem;
+  }
+
+  .payment__controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment__btn {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .payment__wrapper {
+    width: 94%;
+  }
+
+  .payment__stats {
+    flex-direction: column;
+  }
+
+  .payment__purpose {
+    width: 100%;
+  }
+
+  .payment__total {
+    margin-top: 2em;
+    padding-left: 0;
+    width: 100%;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .payment__recalc {
+    margin-left: -80px;
+    width: 80px;
+    height: 47px;
+    font-size: 12px;
+  }
+
+  .payment__check + label {
+    font-size: 16px;
+  }
+
+  .payment__input {
+    width: 100%;
+    font-size: 14px;
+  }
+}
