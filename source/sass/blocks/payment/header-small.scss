@@ -1,0 +1,41 @@
+.header-small {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.header-small > .container {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: auto;
+}
+
+.header-small__link {
+  position: relative;
+  padding-left: calc(2.1em / 1.4);
+  font-size: 1.4em;
+  font-weight: 900;
+  line-height: normal;
+  color: rgb(0, 80, 81);
+  text-decoration: underline;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 0;
+    width: 12px;
+    height: 7px;
+    background-image: url("../img/payment__header-arrow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.header-small__logo {
+  margin-left: auto;
+  width: 103px;
+  height: 44px;
+  object-fit: cover;
+}

@@ -1,0 +1,110 @@
+.corporative {
+  font-family: $font-family__modal-checkbox;
+  font-size: 1rem;
+  background-image: linear-gradient(to right, rgb(172, 237, 213) 0%, rgb(0, 191, 156) 40%, rgb(0, 91, 109) 100%);
+}
+
+.corporative > .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-bottom: 5em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 95.9em / 2);
+    width: 95.9em;
+    height: 3.1em;
+    background-image: url("../img/catalog__shadow-bottom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3.1em;
+    left: calc(50% - 95.9em / 2);
+    width: 95.9em;
+    height: 3.1em;
+    background-image: url("../img/catalog__shadow-bottom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.corporative__img {
+  position: absolute;
+  top: 2em;
+  left: 70px;
+  width: 23.8em;
+  border: 2px solid $background__light;
+}
+
+.corporative__descriptor {
+  margin: 0;
+  padding-left: 280px;
+  font-size: 2.3em;
+  font-weight: 300;
+  color: $font-color__light;
+}
+
+.corporative__mail {
+  color: rgb(247, 178, 0);
+}
+
+.corporative__btn {
+  align-self: flex-end;
+  margin-top: 2em;
+  padding: calc(1em / 2.3) calc(2em / 2.3);
+  font-size: 2.3em;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__light;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 3px solid $background__light;
+  border-radius: 6px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.corporative__btn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: $width__tablet-max) {
+  .corporative {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .corporative > .container {
+    &::before {
+      content: "";
+      left: calc(50% - 300px / 2);
+      width: 300px;
+      height: 10px;
+    }
+
+    &::after {
+      content: "";
+      bottom: -10px;
+      left: calc(50% - 300px / 2);
+      width: 300px;
+      height: 10px;
+    }
+  }
+
+  .corporative__descriptor {
+    margin-top: 10em;
+    padding-left: 0;
+  }
+
+  .corporative__btn {
+    align-self: center;
+  }
+}
