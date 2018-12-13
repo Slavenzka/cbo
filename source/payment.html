@@ -99,7 +99,7 @@
             <h2 class="step__heading">
               Заполните недостающие данные в списке участников
             </h2>
-            <div class="step__wrapper">
+            <div class="step__wrapper step__wrapper--hover">
               <table class="step__participant data">
                 <tr class="data__keys">
                   <th class="data__key data__key--number">
@@ -165,7 +165,7 @@
                 Материалов в том числе Презентации от Автора
               </li>
             </ol>
-            <div class="step__wrapper">
+            <div class="step__wrapper step__wrapper--hover">
               <table class="step__participant data">
                 <tr class="data__keys">
                   <th class="data__key data__key--number">
@@ -533,7 +533,6 @@
   </div>
 
   <script async src="https://vk.com/js/api/openapi.js?159"></script>
-  <script async src="js/menu.js"></script>
   <script async src="js/vk-init.js"></script>
   <script async src="js/fb-init.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -543,6 +542,20 @@
   <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
   <script async src="js/modals.js"></script>
   <script src="js/drop-down-btns.js"></script>
+  <script>
+    (function () {
+      let wrappers = document.querySelectorAll('.step__wrapper--hover');
+
+      wrappers.forEach(item => {
+        item.addEventListener('scroll', function () {
+          if (item.scrollLeft !== 0) {
+            item.classList.remove('step__wrapper--hover');
+          } else {
+            item.classList.add('step__wrapper--hover');        }
+        });
+      });
+    })();
+  </script>
 </body>
 
 </html>

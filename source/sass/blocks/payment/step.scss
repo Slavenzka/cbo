@@ -41,4 +41,18 @@
   .step__wrapper {
     overflow-x: scroll;
   }
+
+  .step__wrapper--hover {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 100%;
+      background-image: linear-gradient(to right, transparent 0%, white 90%);
+    }
+  }
 }
