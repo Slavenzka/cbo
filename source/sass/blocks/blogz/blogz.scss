@@ -128,10 +128,20 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-start;
-  padding: 2em;
   height: 100%;
   color: $font-color__darker3;
   box-shadow: 0 0 5px 0 $shadow__main;
+}
+
+.blogz__item:not(.blogz__item--image) .blogz__link {
+  padding: 1.5em;
+}
+
+.blogz__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5em;
 }
 
 .blogz__author {
@@ -222,25 +232,11 @@
   color: $font-color__highlight;
 }
 
-.blogz__item--image {
-  position: relative;
-  background-image: url("../img/catalog__locations-item-13-bg.jpeg");
-  background-size: cover;
-  background-position: 50% 50%;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $background__light-opacity3;
-  }
-}
-
-.blogz__item--image * {
-  position: relative;
+.blogz__img {
+  margin-bottom: 2em;
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
 }
 
 .blogz__item--image .blogz__date,
@@ -271,7 +267,7 @@
   }
 
   .blogz__item {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
   }
 }
