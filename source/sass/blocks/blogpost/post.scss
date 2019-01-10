@@ -256,7 +256,17 @@
   margin-top: 2em;
 }
 
+.post__btn {
+  display: block;
+  margin: 0 auto;
+  width: calc(19.3em / 2);
+}
+
 @media (max-width: $width__tablet-max) {
+  .post {
+    font-size: 0.9rem;
+  }
+
   .post__wrapper {
     padding: 0;
   }

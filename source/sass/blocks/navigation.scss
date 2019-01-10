@@ -266,8 +266,9 @@
   top: 0;
   left: -2em;
   z-index: -1;
-  transform: translateY(-2.55em);
+  transform: translateY(-2.4em);
   transition-duration: 0.5s;
+  opacity: 0;
 }
 
 .navigation__link--search {
@@ -285,7 +286,8 @@
 }
 
 .navigation__link--search:hover .navigation__search {
-  transform: translateY(0);
+  z-index: 1;
+  opacity: 1;
 }
 
 @media (max-width: $width__tablet-max) {
@@ -298,6 +300,10 @@
     font-size: 1.6em;
     font-weight: 300;
     line-height: 3em;
+  }
+
+  .navigation__search {
+    transform: translateY(-2.45em);
   }
 }
 
@@ -324,7 +330,8 @@
   }
 
   .navigation__item--menu {
-    margin-right: 40px;
+    width: 100%;
+    text-align: center;
   }
 
   .navigation__item--selected .navigation__submenu {
