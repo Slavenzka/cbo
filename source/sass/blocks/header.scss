@@ -51,14 +51,14 @@
 @media (max-width: $width__mobile-max) {
   .header__intro > .container {
     flex-wrap: wrap;
-    justify-content: center;
-    background-size: 40em;
+    justify-content: space-around;
+    background-size: 60em;
     background-position: 50% 5%;
   }
 
   .header__company {
     order: 1;
-    margin-bottom: 0;
+    margin-bottom: 1em;
     padding: 0 calc((100% - 290px) / 2);
     width: 100%;
   }

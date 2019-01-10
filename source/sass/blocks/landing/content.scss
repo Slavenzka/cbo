@@ -27,3 +27,9 @@
 .content__item:not(:last-of-type) {
   margin-bottom: 0.5em;
 }
+
+@media (max-width: $width__mobile-max) {
+  .content {
+    padding: 0;
+  }
+}
