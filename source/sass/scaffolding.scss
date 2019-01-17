@@ -104,6 +104,18 @@ a.button-shine {
   vertical-align: middle;
 }
 
+.more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  color: $font-color__dark;
+}
+
+.more:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: $width__tablet-max) {
   .container {
     margin: 0;
@@ -114,6 +126,12 @@ a.button-shine {
 
   .scroll-top {
     display: none;
+  }
+
+  .more {
+    position: static;
+    display: inline-block;
+    margin: 1em auto 0.5em auto;
   }
 }
 

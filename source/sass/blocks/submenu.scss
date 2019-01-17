@@ -89,3 +89,9 @@
     filter: grayscale(1) invert(1) saturate(20);
   }
 }
+
+@media (max-width: $width__mobile-max) {
+  .submenu {
+    margin: 0 auto;
+  }
+}

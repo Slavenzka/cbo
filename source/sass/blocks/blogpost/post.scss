@@ -213,6 +213,7 @@
 }
 
 .post__promo {
+  position: relative;
   margin-top: 5em;
   width: 100%;
 }
@@ -252,6 +253,11 @@
   height: 40em;
 }
 
+.post__articles,
+.post__programms {
+  position: relative;
+}
+
 .post__programms--author {
   margin-top: 2em;
 }
@@ -273,6 +279,10 @@
 
   .post__back {
     margin-right: 20%;
+  }
+
+  .post__promo {
+    text-align: center;
   }
 
   .post__adv {
