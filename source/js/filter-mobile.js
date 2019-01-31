@@ -34,11 +34,15 @@
   }
 
   if (mobile.matches) {
-    let catalogLowLevel = new RearrangeAccordeon(secondLevel);
-    catalogLowLevel.adaptToMobile();
-    let catalogTopLevel = new RearrangeAccordeon(firstLevel);
-    catalogTopLevel.adaptToMobile();
-    let blogTopLevel = new RearrangeAccordeon(blog);
-    blogTopLevel.adaptToMobile();
+    if (firstLevel) {
+      let catalogLowLevel = new RearrangeAccordeon(secondLevel);
+      catalogLowLevel.adaptToMobile();
+      let catalogTopLevel = new RearrangeAccordeon(firstLevel);
+      catalogTopLevel.adaptToMobile();
+    }
+    if (blog) {
+      let blogTopLevel = new RearrangeAccordeon(blog);
+      blogTopLevel.adaptToMobile();
+    }
   }
 })();
