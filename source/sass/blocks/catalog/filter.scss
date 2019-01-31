@@ -141,6 +141,10 @@
 .filter__area--customer,
 .filter__area--theme {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 767px) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
 }
 
 .filter__area--advanced {

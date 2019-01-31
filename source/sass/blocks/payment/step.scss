@@ -37,7 +37,7 @@
   font-size: 14px;
 }
 
-@media (max-width: $width__tablet-max) {
+@media (max-width: $width__mobile-max) {
   .step__wrapper {
     overflow-x: scroll;
   }

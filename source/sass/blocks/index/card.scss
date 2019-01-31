@@ -123,7 +123,8 @@
 .card__general,
 .card__trenings,
 .card__books,
-.card__exp {
+.card__exp,
+.card__rewards {
   display: none;
   padding-top: 3em;
   width: 46em;
@@ -132,7 +133,8 @@
 .card__selector--general:checked ~ .card__general,
 .card__selector--trenings:checked ~ .card__trenings,
 .card__selector--books:checked ~ .card__books,
-.card__selector--exp:checked ~ .card__exp {
+.card__selector--exp:checked ~ .card__exp,
+.card__selector--rewards:checked ~ .card__rewards {
   display: block;
 }
 
@@ -288,7 +290,8 @@
   .card__general,
   .card__trenings,
   .card__books,
-  .card__exp {
+  .card__exp,
+  .card__rewards {
     display: none;
     padding-top: 3em;
     width: 250px;
