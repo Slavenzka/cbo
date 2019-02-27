@@ -144,20 +144,4 @@
       height: 10px;
     }
   }
-
-  .authors__advice {
-    position: relative;
-
-    &::before {
-      content: "<>";
-      position: absolute;
-      bottom: -60px;
-      right: 0;
-      font-size: 1em;
-      font-weight: normal;
-      line-height: normal;
-      color: $font-color__darker2;
-      opacity: 0.5;
-    }
-  }
 }
