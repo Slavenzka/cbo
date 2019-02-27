@@ -116,6 +116,46 @@ a.button-shine {
   opacity: 0.7;
 }
 
+.scroll-indicator--active {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-right: 7px solid $font-color__dark;
+    border-bottom: 3px solid transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 7px solid $font-color__dark;
+    border-bottom: 3px solid transparent;
+  }
+}
+
+.scroll-indicator--prev-block {
+  &::before {
+    border-right-color: #cccccc;
+  }
+}
+
+.scroll-indicator--next-block {
+  &::after {
+    border-left-color: #cccccc;
+  }
+}
+
 @media (max-width: $width__tablet-max) {
   .container {
     margin: 0;

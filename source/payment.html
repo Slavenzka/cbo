@@ -99,49 +99,51 @@
             <h2 class="step__heading">
               Заполните недостающие данные в списке участников
             </h2>
-            <div class="step__wrapper step__wrapper--hover">
-              <table class="step__participant data">
-                <tr class="data__keys">
-                  <th class="data__key data__key--number">
-                    №
-                  </th>
-                  <th class="data__key data__key--name">
-                    ФИО Участника
-                  </th>
-                  <th class="data__key data__key--rank">
-                    Должность
-                  </th>
-                  <th class="data__key data__key--company">
-                    Компания
-                  </th>
-                  <th class="data__key data__key--field">
-                    Сфера деятельности
-                  </th>
-                  <th class="data__key data__key--city">
-                    Город
-                  </th>
-                </tr>
-                <tr class="data__values">
-                  <td class="data__value">
-                    1
-                  </td>
-                  <td class="data__value">
-                    Иванов Иван Иванович
-                  </td>
-                  <td class="data__value">
-                    <textarea name="data-rank" id="rank" placeholder="Должность"></textarea>
-                  </td>
-                  <td class="data__value">
-                    ФГУП "Энергетический заряд"
-                  </td>
-                  <td class="data__value">
-                    <textarea name="data-field" id="field" placeholder="Сфера деятельности"></textarea>
-                  </td>
-                  <td class="data__value">
-                    <textarea name="data-city" id="city" placeholder="Город"></textarea>
-                  </td>
-                </tr>
-              </table>
+            <div class="scroll-indicator">
+              <div class="step__wrapper step__wrapper--hover">
+                <table class="step__participant data">
+                  <tr class="data__keys">
+                    <th class="data__key data__key--number">
+                      №
+                    </th>
+                    <th class="data__key data__key--name">
+                      ФИО Участника
+                    </th>
+                    <th class="data__key data__key--rank">
+                      Должность
+                    </th>
+                    <th class="data__key data__key--company">
+                      Компания
+                    </th>
+                    <th class="data__key data__key--field">
+                      Сфера деятельности
+                    </th>
+                    <th class="data__key data__key--city">
+                      Город
+                    </th>
+                  </tr>
+                  <tr class="data__values">
+                    <td class="data__value">
+                      1
+                    </td>
+                    <td class="data__value">
+                      Иванов Иван Иванович
+                    </td>
+                    <td class="data__value">
+                      <textarea name="data-rank" id="rank" placeholder="Должность"></textarea>
+                    </td>
+                    <td class="data__value">
+                      ФГУП "Энергетический заряд"
+                    </td>
+                    <td class="data__value">
+                      <textarea name="data-field" id="field" placeholder="Сфера деятельности"></textarea>
+                    </td>
+                    <td class="data__value">
+                      <textarea name="data-city" id="city" placeholder="Город"></textarea>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
           <div class="payment__step payment__step--4 step">
@@ -165,37 +167,39 @@
                 Материалов в том числе Презентации от Автора
               </li>
             </ol>
-            <div class="step__wrapper step__wrapper--hover">
-              <table class="step__participant data">
-                <tr class="data__keys">
-                  <th class="data__key data__key--number">
-                    №
-                  </th>
-                  <th class="data__key data__key--name">
-                    ФИО Участника
-                  </th>
-                  <th class="data__key data__key--mail">
-                    E-mail
-                  </th>
-                  <th class="data__key data__key--phone">
-                    Телефон
-                  </th>
-                </tr>
-                <tr class="data__values">
-                  <td class="data__value">
-                    1
-                  </td>
-                  <td class="data__value">
-                    Иванов Иван Иванович
-                  </td>
-                  <td class="data__value">
-                    <input type="email" class="data__input" placeholder="Введите e-mail" required>
-                  </td>
-                  <td class="data__value">
-                    <input type="tel" class="data__input" placeholder="Контактный телефон" required>
-                  </td>
-                </tr>
-              </table>
+            <div class="scroll-indicator">
+              <div class="step__wrapper step__wrapper--hover">
+                <table class="step__participant data">
+                  <tr class="data__keys">
+                    <th class="data__key data__key--number">
+                      №
+                    </th>
+                    <th class="data__key data__key--name">
+                      ФИО Участника
+                    </th>
+                    <th class="data__key data__key--mail">
+                      E-mail
+                    </th>
+                    <th class="data__key data__key--phone">
+                      Телефон
+                    </th>
+                  </tr>
+                  <tr class="data__values">
+                    <td class="data__value">
+                      1
+                    </td>
+                    <td class="data__value">
+                      Иванов Иван Иванович
+                    </td>
+                    <td class="data__value">
+                      <input type="email" class="data__input" placeholder="Введите e-mail" required>
+                    </td>
+                    <td class="data__value">
+                      <input type="tel" class="data__input" placeholder="Контактный телефон" required>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
           <footer class="payment__footer">
@@ -542,6 +546,7 @@
   <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
   <script async src="js/modals.js"></script>
   <script src="js/drop-down-btns.js"></script>
+  <script src="js/scroll-indication.js"></script>
   <script>
     (function () {
       let wrappers = document.querySelectorAll('.step__wrapper--hover');
