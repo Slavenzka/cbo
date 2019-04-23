@@ -1,0 +1,335 @@
+.banner1 {
+  position: relative;
+  font-size: 1rem;
+  background-image: url("../img/annex1__bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.banner1 > .container {
+  position: relative;
+  padding-top: 13em;
+  padding-bottom: 11em;
+}
+
+.banner1__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 62.9em;
+}
+
+.banner1__content {
+  width: 55%;
+}
+
+.banner1__wrapper {
+  padding-bottom: 3.5em;
+  background-image: url("../img/annex1__dots.png");
+  background-position: 0 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner1__author {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 3.8em;
+  font-weight: 500;
+  line-height: normal;
+  color: $font-color__light;
+}
+
+.banner1__title {
+  margin: 0;
+  margin-top: 2rem;
+  font-family: $font-family__main;
+  font-size: 7em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__light;
+}
+
+.banner1__descriptor {
+  margin: 0;
+  margin-top: 3rem;
+  font-family: $font-family__main;
+  font-size: 5.5em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__light;
+}
+
+.banner1__list {
+  display: flex;
+  margin: 0;
+  margin-top: 4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.banner1__item {
+  position: relative;
+  padding-left: calc(5em / 1.6);
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: normal;
+  color: $font-color__light;
+}
+
+.banner1__item:not(:first-of-type) {
+  margin-left: 5rem;
+}
+
+.banner1__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(3.4em / 1.6);
+  height: calc(3.4em / 1.6);
+}
+
+.banner1__icon use {
+  stroke: $font-color__light;
+  fill: $font-color__light;
+}
+
+.banner1__year {
+  display: block;
+}
+
+.banner1__places {
+  display: block;
+}
+
+.banner1__link {
+  position: relative;
+  display: inline-block;
+  margin-top: 8.5rem;
+  padding: 2.4rem 9rem;
+  font-family: $font-family__main;
+  font-size: 2.1em;
+  font-weight: 900;
+  line-height: normal;
+  color: rgb(8, 71, 73);
+  border-radius: 10px;
+}
+
+.banner1__counter {
+  display: none;
+}
+
+.banner1-left {
+  .banner1__content {
+    margin-left: auto;
+  }
+
+  .banner1__img {
+    left: 0;
+  }
+}
+
+.banner1-stamp {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5em;
+    right: 5em;
+    width: 16em;
+    height: 21.8em;
+    background-image: url("../img/annex1__mark.png");
+    background-size: cover;
+  }
+}
+
+.banner1-no-photo .banner1__img {
+  display: none;
+}
+
+.banner1-counter {
+  .banner1__counter {
+    position: absolute;
+    top: 15em;
+    right: 5em;
+    display: block;
+    padding-top: 2.5em;
+    width: 35em;
+    background-color: $font-color__light;
+  }
+
+  .banner__notice {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family__main;
+    font-size: 1.8em;
+    font-weight: 900;
+    line-height: normal;
+    color: $font-color__darkest;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .banner1__timer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 2em;
+    padding: 0;
+    padding-bottom: 3rem;
+    list-style: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.5rem;
+      background-image: linear-gradient(to top, white, rgba(0, 0, 0, 0.4));
+    }
+  }
+
+  .banner1__time {
+    font-family: $font-family__main;
+    font-size: 6em;
+    font-weight: 700;
+    line-height: normal;
+    color: $background__textpage-intro-link-2;
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .banner1__time:not(:first-of-type) {
+    margin-left: 4rem;
+  }
+
+  .banner1__legend {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .banner1__participants {
+    position: relative;
+    display: block;
+    padding: calc(3em / 1.8);
+    font-family: $font-family__main;
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: normal;
+    color: $font-color__darkest;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 2em / 1.8);
+      left: calc(5.5em / 1.8);
+      width: calc(4em / 1.8);
+      height: calc(4em / 1.8);
+      background-image: url("../img/human-resources.svg");
+      background-size: cover;
+      opacity: 0.3;
+      transition-duration: 0.3s;
+    }
+  }
+
+  .banner1__participants:hover {
+    &::before {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .banner1 {
+    font-size: 0.8rem;
+  }
+
+  .banner1__content {
+    width: 45rem;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .banner1 {
+    font-size: 0.6rem;
+  }
+
+  .banner1__content {
+    margin-left: 10%;
+    width: 35rem;
+  }
+
+  .banner1__img {
+    right: 5em;
+  }
+
+  .banner1-stamp {
+    &::before {
+      right: 1rem;
+      width: calc(16em * 0.7);
+      height: calc(21.8em * 0.7);
+    }
+  }
+
+  .banner1-counter {
+    .banner1__counter {
+      top: 15em;
+      left: 65%;
+    }
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .banner1 {
+    font-size: 0.5rem;
+  }
+
+  .banner1__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30rem;
+  }
+
+  .banner1__img {
+    display: none;
+  }
+
+  .banner1__link {
+    align-self: flex-start;
+  }
+
+  .banner1-stamp {
+    &::before {
+      top: 1rem;
+      right: 1rem;
+      width: calc(16em * 0.5);
+      height: calc(21.8em * 0.5);
+    }
+  }
+
+  .banner1-counter {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .banner1__content {
+      order: 2;
+    }
+
+    .banner1__counter {
+      order: 1;
+      position: static;
+      margin: 0 auto;
+      margin-bottom: 5em;
+    }
+  }
+}

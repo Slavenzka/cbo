@@ -1,0 +1,80 @@
+.aftermath {
+  font-size: 1rem;
+}
+
+.aftermath .container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.aftermath__intro {
+  margin: 0;
+  padding: 0 15%;
+  font-family: $font-family__main;
+  font-size: 5em;
+  font-weight: 900;
+  color: $font-color__darker2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aftermath__list {
+  display: grid;
+  grid-template-columns: repeat(2, 40em);
+  justify-content: space-between;
+  grid-row-gap: 5em;
+  margin: 0;
+  margin-top: 7em;
+  padding: 0;
+  list-style: none;
+}
+
+.aftermath__item {
+  position: relative;
+  padding-left: calc(10em / 2);
+  font-family: $font-family__main;
+  font-size: 2em;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(7em / 2);
+    height: calc(7em / 2);
+    background-image: url("../img/approve-circular-button.svg");
+    background-size: cover;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .aftermath {
+    font-size: 0.8rem;
+  }
+
+  .aftermath__list {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .aftermath {
+    font-size: 0.6rem;
+  }
+
+  .aftermath__intro {
+    padding: 0;
+    font-size: 4em;
+  }
+
+  .aftermath__list {
+    grid-template-columns: repeat(auto-fit, 40em);
+  }
+
+  .aftermath__item {
+    margin: 0;
+    min-height: 4em;
+  }
+}
