@@ -85,7 +85,12 @@ a {
   background-image: linear-gradient(to top, #e88900 -20%, #f6b100 10, #ffed61 111.12%, #fffce5 125%);
   border: none;
   border-radius: 35px;
+  transition-duration: 0.3s;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 a.button-shine {

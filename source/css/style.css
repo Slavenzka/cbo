@@ -139,7 +139,11 @@ a {
   background-image: linear-gradient(to top, #e88900 -20%, #f6b100 10, #ffed61 111.12%, #fffce5 125%);
   border: none;
   border-radius: 35px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   cursor: pointer; }
+  .button-colors:hover {
+    opacity: 0.8; }
 
 a.button-shine {
   display: inline-block;
@@ -360,7 +364,7 @@ a.button-shine {
 
 .header__logo--main {
   margin-top: 1.5em;
-  width: 176px; }
+  width: 17.6em; }
 
 .header__company {
   margin: calc(3em / 3.5) 0;
@@ -8121,3 +8125,348 @@ a.book__btn {
   .corporative__btn {
     -ms-flex-item-align: center;
         align-self: center; } }
+
+.banner1 {
+  position: relative;
+  font-size: 1rem;
+  background-image: url("../img/annex1__bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden; }
+
+.banner1 > .container {
+  position: relative;
+  padding-top: 13em;
+  padding-bottom: 11em; }
+
+.banner1__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 62.9em; }
+
+.banner1__content {
+  width: 55%; }
+
+.banner1__wrapper {
+  padding-bottom: 3.5em;
+  background-image: url("../img/annex1__dots.png");
+  background-position: 0 100%;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.banner1__author {
+  margin: 0;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 3.8em;
+  font-weight: 500;
+  line-height: normal;
+  color: white; }
+
+.banner1__title {
+  margin: 0;
+  margin-top: 2rem;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 7em;
+  font-weight: 900;
+  line-height: normal;
+  color: white; }
+
+.banner1__descriptor {
+  margin: 0;
+  margin-top: 3rem;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 5.5em;
+  font-weight: 900;
+  line-height: normal;
+  color: white; }
+
+.banner1__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  margin-top: 4rem;
+  padding: 0;
+  list-style: none; }
+
+.banner1__item {
+  position: relative;
+  padding-left: calc(5em / 1.6);
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: normal;
+  color: white; }
+
+.banner1__item:not(:first-of-type) {
+  margin-left: 5rem; }
+
+.banner1__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(3.4em / 1.6);
+  height: calc(3.4em / 1.6); }
+
+.banner1__icon use {
+  stroke: white;
+  fill: white; }
+
+.banner1__year {
+  display: block; }
+
+.banner1__places {
+  display: block; }
+
+.banner1__link {
+  position: relative;
+  display: inline-block;
+  margin-top: 8.5rem;
+  padding: 2.4rem 9rem;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 2.1em;
+  font-weight: 900;
+  line-height: normal;
+  color: #084749;
+  border-radius: 10px; }
+
+.banner1__counter {
+  display: none; }
+
+.banner1-left .banner1__content {
+  margin-left: auto; }
+
+.banner1-left .banner1__img {
+  left: 0; }
+
+.banner1-stamp::before {
+  content: "";
+  position: absolute;
+  top: 5em;
+  right: 5em;
+  width: 16em;
+  height: 21.8em;
+  background-image: url("../img/annex1__mark.png");
+  background-size: cover; }
+
+.banner1-no-photo .banner1__img {
+  display: none; }
+
+.banner1-counter .banner1__counter {
+  position: absolute;
+  top: 15em;
+  right: 5em;
+  display: block;
+  padding-top: 2.5em;
+  width: 35em;
+  background-color: white; }
+
+.banner1-counter .banner__notice {
+  margin: 0;
+  padding: 0;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 1.8em;
+  font-weight: 900;
+  line-height: normal;
+  color: black;
+  text-align: center;
+  text-transform: uppercase; }
+
+.banner1-counter .banner1__timer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-top: 2em;
+  padding: 0;
+  padding-bottom: 3rem;
+  list-style: none; }
+  .banner1-counter .banner1__timer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(0, 0, 0, 0.4)));
+    background-image: linear-gradient(to top, white, rgba(0, 0, 0, 0.4)); }
+
+.banner1-counter .banner1__time {
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 6em;
+  font-weight: 700;
+  line-height: normal;
+  color: #06ac06;
+  text-align: center;
+  opacity: 0.8; }
+
+.banner1-counter .banner1__time:not(:first-of-type) {
+  margin-left: 4rem; }
+
+.banner1-counter .banner1__legend {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: normal; }
+
+.banner1-counter .banner1__participants {
+  position: relative;
+  display: block;
+  padding: calc(3em / 1.8);
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  line-height: normal;
+  color: black;
+  text-align: center; }
+  .banner1-counter .banner1__participants::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2em / 1.8);
+    left: calc(5.5em / 1.8);
+    width: calc(4em / 1.8);
+    height: calc(4em / 1.8);
+    background-image: url("../img/human-resources.svg");
+    background-size: cover;
+    opacity: 0.3;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s; }
+
+.banner1-counter .banner1__participants:hover::before {
+  opacity: 0.7; }
+
+@media (max-width: 1500px) {
+  .banner1 {
+    font-size: 0.8rem; }
+  .banner1__content {
+    width: 45rem; } }
+
+@media (max-width: 1139px) {
+  .banner1 {
+    font-size: 0.6rem; }
+  .banner1__content {
+    margin-left: 10%;
+    width: 35rem; }
+  .banner1__img {
+    right: 5em; }
+  .banner1-stamp::before {
+    right: 1rem;
+    width: calc(16em * 0.7);
+    height: calc(21.8em * 0.7); }
+  .banner1-counter .banner1__counter {
+    top: 15em;
+    left: 65%; } }
+
+@media (max-width: 767px) {
+  .banner1 {
+    font-size: 0.5rem; }
+  .banner1__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: 30rem; }
+  .banner1__img {
+    display: none; }
+  .banner1__link {
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
+  .banner1-stamp::before {
+    top: 1rem;
+    right: 1rem;
+    width: calc(16em * 0.5);
+    height: calc(21.8em * 0.5); }
+  .banner1-counter .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .banner1-counter .banner1__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .banner1-counter .banner1__counter {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 5em; } }
+
+.aftermath {
+  font-size: 1rem; }
+
+.aftermath .container {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
+.aftermath__intro {
+  margin: 0;
+  padding: 0 15%;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  color: #004a4b;
+  text-align: center;
+  text-transform: uppercase; }
+
+.aftermath__list {
+  display: grid;
+  grid-template-columns: repeat(2, 40em);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-row-gap: 5em;
+  margin: 0;
+  margin-top: 7em;
+  padding: 0;
+  list-style: none; }
+
+.aftermath__item {
+  position: relative;
+  padding-left: calc(10em / 2);
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 2em;
+  font-weight: 400; }
+  .aftermath__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(7em / 2);
+    height: calc(7em / 2);
+    background-image: url("../img/approve-circular-button.svg");
+    background-size: cover;
+    opacity: 0.6; }
+
+@media (max-width: 1139px) {
+  .aftermath {
+    font-size: 0.8rem; }
+  .aftermath__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (max-width: 767px) {
+  .aftermath {
+    font-size: 0.6rem; }
+  .aftermath__intro {
+    padding: 0;
+    font-size: 4em; }
+  .aftermath__list {
+    grid-template-columns: repeat(auto-fit, 40em); }
+  .aftermath__item {
+    margin: 0;
+    min-height: 4em; } }
