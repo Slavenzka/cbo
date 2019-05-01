@@ -53,7 +53,7 @@
   });
 
   $(document).ready(function(){
-    $('.reviews__list').slick({
+    $('.reviews:not(.reviews-video) .reviews__list').slick({
       speed: 500,
       adaptiveHeight: true,
       dots: true,
@@ -68,6 +68,24 @@
       ]
     });
   });
+
+  $(document).ready(function(){
+    $('.reviews-video .reviews__list').slick({
+      speed: 500,
+      adaptiveHeight: true,
+      dots: false,
+      lazyLoad: 'ondemand',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            dots: false
+          }
+        }
+      ]
+    });
+  });
+
 
   let authorTrigger = document.querySelector('.advanced__selector--author');
   let formatTrigger = document.querySelector('.advanced__selector--format');

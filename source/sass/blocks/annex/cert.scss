@@ -1,0 +1,117 @@
+.cert {
+  font-size: 1rem;
+}
+
+.cert > .container {
+  position: relative;
+  padding-top: 5em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 12.5em);
+    right: 5em;
+    width: 25em;
+    height: 25em;
+    background-image: url("../img/diploma.svg");
+    background-size: cover;
+  }
+}
+
+.cert__intro {
+  margin: 0;
+  padding: 0;
+  padding-right: 40%;
+  font-family: $font-family__main;
+  font-size: 5em;
+  font-weight: 900;
+  color: $font-color__darker2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.cert__descriptor {
+  padding-right: 45%;
+  font-family: $font-family__main;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.cert__register {
+  position: relative;
+  display: inline-block;
+  margin-top: 5rem;
+  padding: calc(3em / 2.1) calc(5em / 2.1);
+  font-family: $font-family__main;
+  font-size: 2.1em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker3;
+  text-transform: uppercase;
+  border-radius: calc(1em / 2.1);
+}
+
+.cert__info {
+  margin-top: 7em;
+  margin-bottom: 7em;
+  box-shadow: 0 0 1em 0 rgba(35, 31, 32, 0.3);
+}
+
+.cert__info > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.cert__accountant,
+.cert__license {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: $font-color__darker3;
+}
+
+.cert__accountant {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .cert {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .cert {
+    font-size: 0.6rem;
+  }
+
+  .cert > .container {
+    &::before {
+      top: 0;
+      right: calc(50% - 12.5em);
+    }
+  }
+
+  .cert__intro {
+    margin-top: 4em;
+    padding: 0;
+  }
+
+  .cert__descriptor {
+    padding: 0;
+  }
+
+  .cert__accountant,
+  .cert__license {
+    width: 50%;
+  }
+}
