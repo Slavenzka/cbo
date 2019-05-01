@@ -1,0 +1,56 @@
+.literature__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5em;
+  list-style: none;
+}
+
+.literature__item {
+  width: 46%;
+}
+
+.literature__item:not(:first-of-type):not(:nth-of-type(2)) {
+  margin-top: 3em;
+}
+
+.literature__link {
+  display: flex;
+  align-items: flex-start;
+}
+
+.literature__cover {
+  width: 10em;
+}
+
+.literature__data {
+  margin: 0;
+  padding: 0;
+  padding-left: 2em;
+}
+
+.literature__title {
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: normal;
+  color: $font-color__darker3;
+}
+
+.literature__review {
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: normal;
+  color: $font-color__darker3;
+}
+
+@media (max-width: $width__mobile-max) {
+  .literature__list {
+    padding: 2em;
+  }
+}

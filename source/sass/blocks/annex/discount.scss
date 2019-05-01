@@ -1,0 +1,113 @@
+.discount {
+  font-size: 1rem;
+  background-image: url("../img/landing__contact-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.discount > .container {
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+.discount__details {
+  margin: 0;
+  padding: 0;
+}
+
+.discount__descriptor {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 3em;
+  font-weight: 900;
+  color: $font-color__light;
+  text-align: left;
+}
+
+.discount__price {
+  display: flex;
+  margin: 0;
+}
+
+.discount__after {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 6em;
+  font-weight: 900;
+  color: $font-color__light;
+  text-align: left;
+}
+
+.discount__before {
+  margin: 0;
+  margin-left: 0.5em;
+  font-family: $font-family__main;
+  font-size: 3em;
+  font-weight: 300;
+  color: $font-color__light;
+  text-align: right;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.discount__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 30em;
+}
+
+.discount__btn {
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  font-weight: 900;
+  color: $font-color__darker2;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.discount__link {
+  margin-top: 1em;
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  font-weight: 300;
+  color: $font-color__light;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .discount {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .discount {
+    // font-size: 0.6rem;
+  }
+
+  .discount > .container {
+    flex-direction: column;
+  }
+
+  .discount__details {
+    margin: 0 auto;
+  }
+
+  .discount__controls {
+    margin-top: 5em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

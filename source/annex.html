@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/museosanscyrl_900-webfont.woff2" as="font">
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
-  <!-- <link href="plugins/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet"> -->
+  <link href="plugins/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -253,9 +253,9 @@
     </div>
     <section class="aftermath">
       <div class="container">
-        <p class="aftermath__intro">
+        <h2 class="aftermath__intro">
           Что <span class="aftermath__highlight">вы получаете</span> после прохождения?
-        </p>
+        </h2>
         <ul class="aftermath__list">
           <li class="aftermath__item">
             Сейчас, в начале XXI века, ораторское искусство переживает период упадка.
@@ -280,22 +280,417 @@
     </section>
     <section class="cert">
       <div class="container">
-        <p class="cert__intro">
+        <h2 class="cert__intro">
           Сертификат после прохождения
-        </p>
+        </h2>
         <p class="cert__descriptor">
           Краткая история риторики без мифов и пиетета. От античности до наших дней. Примеры речей 1.0 в контексте своего времени. Крах ораторского искусства. 1.0. Судьба ораторов 1.0 в изменившейся реальности.
         </p>
         <a href="#" class="button-colors cert__register">
           Зарегистрироваться
         </a>
-        <div class="cert__info">
+      </div>
+      <div class="cert__info">
+        <div class="container">
           <a href="#" class="cert__accountant">
             Информация для бухгалтерии
           </a>
           <p class="cert__license">
             Услуги лицензированы. Имеются все необходимые сертификаты
           </p>
+        </div>
+      </div>
+    </section>
+    <section class="mats">
+      <!-- Использует скрипт mats-accordeon.js -->
+      <div class="container">
+        <h2 class="mats__title">
+          Дополнительные материалы автора
+        </h2>
+        <ul class="mats__controls">
+          <li class="mats__item mats__item--books mats__item--accordeon">
+            <a class="mats__link" data-target="mats__content--books">
+              Книги
+            </a>
+          </li>
+          <li href="#videos" class="mats__item mats__item--videos mats__item--accordeon">
+            <a class="mats__link" data-target="mats__content--videos">
+              Видеоматериалы
+            </a>
+          </li>
+          <li href="#" class="mats__item mats__item--shop">
+            <a href="#" class="mats__link">
+              Перейти в магазин
+            </a>
+          </li>
+        </ul>
+        <div class="mats__accordeon">
+          <div class="mats__content mats__content--books literature">
+            <ul class="literature__list">
+              <li class="literature__item literature__item--1">
+                <a href="#" class="literature__link">
+                  <img src="img/card__book-item--1.png" alt="Обложка книги автора" class="literature__cover">
+                  <dl class="literature__data">
+                    <dt class="literature__title">
+                      Название книги №1
+                    </dt>
+                    <dd class="literature__review">
+                      Бестселлер по холодным продажам
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="literature__item literature__item--2">
+                <a href="#" class="literature__link">
+                  <img src="img/card__book-item--2.png" alt="Обложка книги автора" class="literature__cover">
+                  <dl class="literature__data">
+                    <dt class="literature__title">
+                      Название книги №2
+                    </dt>
+                    <dd class="literature__review">
+                      Бестселлер по холодным продажам
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="literature__item literature__item--3">
+                <a href="#" class="literature__link">
+                  <img src="img/card__book-item--3.png" alt="Обложка книги автора" class="literature__cover">
+                  <dl class="literature__data">
+                    <dt class="literature__title">
+                      Название книги №3
+                    </dt>
+                    <dd class="literature__review">
+                      Бестселлер по холодным продажам
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="literature__item literature__item--4">
+                <a href="#" class="literature__link">
+                  <img src="img/card__book-item--4.png" alt="Обложка книги автора" class="literature__cover">
+                  <dl class="literature__data">
+                    <dt class="literature__title">
+                      Название книги №4
+                    </dt>
+                    <dd class="literature__review">
+                      Бестселлер по холодным продажам
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="literature__item literature__item--5">
+                <a href="#" class="literature__link">
+                  <img src="img/card__book-item--5.png" alt="Обложка книги автора" class="literature__cover">
+                  <dl class="literature__data">
+                    <dt class="literature__title">
+                      Название книги №5
+                    </dt>
+                    <dd class="literature__review">
+                      Бестселлер по холодным продажам
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="literature__item literature__item--6">
+                <a href="#" class="literature__link">
+                  <img src="img/card__book-item--6.png" alt="Обложка книги автора" class="literature__cover">
+                  <dl class="literature__data">
+                    <dt class="literature__title">
+                      Название книги №6
+                    </dt>
+                    <dd class="literature__review">
+                      Бестселлер по холодным продажам
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="literature__item literature__item--7">
+                <a href="#" class="literature__link">
+                  <img src="img/card__book-item--7.png" alt="Обложка книги автора" class="literature__cover">
+                  <dl class="literature__data">
+                    <dt class="literature__title">
+                      Название книги №7
+                    </dt>
+                    <dd class="literature__review">
+                      Бестселлер по холодным продажам
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+              <li class="literature__item literature__item--8">
+                <a href="#" class="literature__link">
+                  <img src="img/card__book-item--8.png" alt="Обложка книги автора" class="literature__cover">
+                  <dl class="literature__data">
+                    <dt class="literature__title">
+                      Название книги №8
+                    </dt>
+                    <dd class="literature__review">
+                      Бестселлер по холодным продажам
+                    </dd>
+                  </dl>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="mats__content mats__content--videos vids">
+            <ul class="vids__list">
+              <li class="vids__item vids__item--1">
+                <iframe class="vids__content" src="https://www.youtube.com/embed/nf0llz_Rfd0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="vids__descriptor">
+                  Пример текста под видео роликом, содержащим краткую аннотацию или что-либо подобное
+                </p>
+              </li>
+              <li class="vids__item vids__item--2">
+                <iframe class="vids__content" src="https://www.youtube.com/embed/nf0llz_Rfd0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="vids__descriptor">
+                  Пример текста под видео роликом, содержащим краткую аннотацию или что-либо подобное
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews reviews-video">
+      <!-- Использую секцию .reviews с главной страницы и модифицирую ее классом .reviews-video -->
+      <div class="container">
+        <h2 class="reviews__heading">
+          Польза от курса
+        </h2>
+        <ul class="reviews__list">
+          <li class="reviews__item reviews__item--1">
+            <blockquote class="reviews__content">
+              <p class="reviews__text">
+                Единственная приличная образовательная компания от Новокузнецка до Урала, привлекающая преподавателей высокого уровня, о существовании которой я знаю. Возможно есть ещё, но они пока до меня не достучались.
+              </p>
+              <cite class="reviews__author">
+                <span class="reviews__name">
+                  Милихин Александр
+                </span>
+                <span class="reviews__rank">
+                  Зам. директора, ГеоХим, Новокузнецк
+                </span>
+              </cite>
+            </blockquote>
+            <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
+              Посмотреть видеоотзыв
+            </a>
+          </li>
+          <li class="reviews__item reviews__item--2">
+            <blockquote class="reviews__content">
+              <p class="reviews__text">
+                Семинары и программы, организованные ЦБО, отличаются высоким качеством. Сотрудники ЦБО вежливы, корректны, внимательны.
+              </p>
+              <cite class="reviews__author">
+                <span class="reviews__name">
+                  Латохина Евгения
+                </span>
+                <span class="reviews__rank">
+                  зам.главного бухгалтера по налогам и реализации, ОАО «Белорецкий металлургический комбинат»
+                </span>
+              </cite>
+              <img src="img/index__reviews-logo--2.jpg" alt="Логотип ОАО «Белорецкий металлургический комбинат»" class="reviews__logo">
+            </blockquote>
+            <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
+              Посмотреть видеоотзыв
+            </a>
+          </li>
+          <li class="reviews__item reviews__item--3">
+            <blockquote class="reviews__content">
+              <p class="reviews__text">
+                ЦБО отличается сервисом услуг (на порядок выше, чем в других образовательных организациях): место проведения обучения (уютно, приятно заниматься, здесь же предусмотрен обед, кофе-паузы, где можно пообщаться с коллегами и преподавателями), наличие раздаточного материала и т.д.
+              </p>
+              <p class="reviews__text">
+                ЦБО привлекает разный преподавательский состав, т.е. при изучении одной и той же темы можно услышать различные точки зрения, даже может быть противоположные, но каждая имеет право на существование, подкреплена определенными аргументами.
+              </p>
+              <p class="reviews__text">
+                ЦБО отличается заботливым отношением к клиентам, т.е. к нам.
+              </p>
+              <cite class="reviews__author">
+                <span class="reviews__name">
+                  Фомина Елена
+                </span>
+                <span class="reviews__rank">
+                  руководитель финансово-экономического отдела, Группа Компаний «Оборонснабсбыт»
+                </span>
+              </cite>
+              <img src="img/index__reviews-logo--3.jpg" alt="Логотип Группа Компаний «Оборонснабсбыт»" class="reviews__logo">
+            </blockquote>
+            <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
+              Посмотреть видеоотзыв
+            </a>
+          </li>
+          <li class="reviews__item reviews__item--4">
+            <blockquote class="reviews__content">
+              <p class="reviews__text">
+                Четкая организация мероприятий, реальная клиентоориентированность.
+              </p>
+              <cite class="reviews__author">
+                <span class="reviews__name">
+                  Радченко Елена
+                </span>
+                <span class="reviews__rank">
+                  Начальник службы корпоративных коммуникаций "Российские железные дороги"
+                </span>
+              </cite>
+              <img src="img/index__reviews-logo--4.jpg" alt="Логотип ПАО РЖД" class="reviews__logo">
+            </blockquote>
+            <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
+              Посмотреть видеоотзыв
+            </a>
+          </li>
+          <li class="reviews__item reviews__item--5">
+            <blockquote class="reviews__content">
+              <p class="reviews__text">
+                Очень внимательные сотрудники. Хочется участвовать в других программах ЦБО.
+              </p>
+              <cite class="reviews__author">
+                <span class="reviews__name">
+                  Попков Константин
+                </span>
+                <span class="reviews__rank">
+                  генеральный директор, "ТК Амаэль" г.Екатеринбург
+                </span>
+              </cite>
+              <img src="img/index__reviews-logo--5.jpg" alt="Логотип ТК Амаэль" class="reviews__logo">
+            </blockquote>
+            <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
+              Посмотреть видеоотзыв
+            </a>
+          </li>
+          <li class="reviews__item reviews__item--6">
+            <blockquote class="reviews__content">
+              <p class="reviews__text">
+                Как ни странно, клиент-ориентированных компаний совсем немного. Вы входите в это небольшое число. Очень приятно, когда интересуются мнением клиента не ради галочки, а по-настоящему, для дальнейшего совместного развития.
+              </p>
+              <cite class="reviews__author">
+                <span class="reviews__name">
+                  Подунова Наталья
+                </span>
+                <span class="reviews__rank">
+                  ИП, Екатеринбург
+                </span>
+              </cite>
+            </blockquote>
+            <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
+              Посмотреть видеоотзыв
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="programs">
+      <!-- Класс .programs-no-prices убирает цены программ и нижнюю границу -->
+      <div class="container">
+        <h2 class="programs__heading">
+          Программа курса
+        </h2>
+        <ul class="programs__list">
+          <li class="programs__item">
+            <h3 class="programs__name">
+              Ораторское искусство 1.0
+            </h3>
+            <ul class="programs__sublist">
+              <li class="programs__subitem">
+                Краткая история риторики без мифов и пиетета. От античности до наших дней.
+              </li>
+              <li class="programs__subitem">
+                Примеры речей 1.0 в контексте своего времени.
+              </li>
+              <li class="programs__subitem">
+                Крах ораторского искусства 1.0.
+              </li>
+              <li class="programs__subitem">
+                Судьба ораторов 1.0 в изменившейся реальности
+              </li>
+            </ul>
+            <p class="programs__price">
+              Цена:
+              <span class="programs__value">
+                5600
+              </span>
+            </p>
+          </li>
+          <li class="programs__item">
+            <h3 class="programs__name">
+              Ораторское искусство 1.0
+            </h3>
+            <ul class="programs__sublist">
+              <li class="programs__subitem">
+                Краткая история риторики без мифов и пиетета. От античности до наших дней.
+              </li>
+              <li class="programs__subitem">
+                Примеры речей 1.0 в контексте своего времени.
+              </li>
+              <li class="programs__subitem">
+                Крах ораторского искусства 1.0.
+              </li>
+              <li class="programs__subitem">
+                Судьба ораторов 1.0 в изменившейся реальности
+              </li>
+            </ul>
+            <p class="programs__price">
+              Цена:
+              <span class="programs__value">
+                5600
+              </span>
+            </p>
+          </li>
+          <li class="programs__item">
+            <h3 class="programs__name">
+              Ораторское искусство 1.0
+            </h3>
+            <ul class="programs__sublist">
+              <li class="programs__subitem">
+                Краткая история риторики без мифов и пиетета. От античности до наших дней.
+              </li>
+              <li class="programs__subitem">
+                Примеры речей 1.0 в контексте своего времени.
+              </li>
+              <li class="programs__subitem">
+                Крах ораторского искусства 1.0.
+              </li>
+              <li class="programs__subitem">
+                Судьба ораторов 1.0 в изменившейся реальности
+              </li>
+            </ul>
+            <p class="programs__price">
+              Цена:
+              <span class="programs__value">
+                5600
+              </span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="discount">
+      <div class="container">
+        <dl class="discount__details">
+          <dt class="discount__descriptor">
+            Стоимость всего курса
+          </dt>
+          <dd class="discount__price">
+            <p class="discount__after">
+              140 000
+            </p>
+            <p class="discount__before">
+              170 000
+            </p>
+          </dd>
+        </dl>
+        <div class="discount__controls">
+          <a href="#" class="button-colors discount__btn">
+            Купить курс полностью
+          </a>
+          <a href="#" class="discount__link">
+            Другие варианты участия
+          </a>
+          <a href="#" class="discount__link">
+            Скидки
+          </a>
         </div>
       </div>
     </section>
@@ -596,9 +991,10 @@
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script async src="plugins/slick/slick.min.js"></script>
   <script async src="js/slider-init.js"></script>
-  <!-- <script async src="plugins/fancybox/dist/jquery.fancybox.min.js"></script> -->
   <script async src="js/modals.js"></script>
   <script async src="js/drop-down-btns.js"></script>
+  <script src="js/mats-accordeon.js"></script>
+  <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
