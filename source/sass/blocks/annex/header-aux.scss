@@ -99,10 +99,10 @@
   }
 
   .header-aux__back {
-    width: 10.5em;
+    width: 10em;
     height: 4em;
     background-image: var(--logo-url);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
@@ -162,8 +162,6 @@
   }
 
   .header-menu {
-    .container {
-      flex-direction: column;
-    }
+    display: none;
   }
 }

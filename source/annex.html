@@ -910,6 +910,57 @@
         </a>
       </div>
     </div>
+    <section class="gallery">
+      <div class="container">
+        <h2 class="gallery__heading">
+          Фотоотчет предыдущего мероприятия
+        </h2>
+        <div class="gallery__wrapper">
+          <div class="gallery__frame">
+            <ul class="gallery__preview">
+              <li class="gallery__item">
+                <img src="img/catalog__locations-item-13-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              </li>
+              <li class="gallery__item">
+                <img src="img/catalog__locations-item-14-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              </li>
+              <li class="gallery__item">
+                <img src="img/catalog__locations-item-15-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              </li>
+              <li class="gallery__item">
+                <img src="img/catalog__locations-item-16-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              </li>
+              <li class="gallery__item">
+                <img src="img/catalog__locations-item-17-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              </li>
+              <li class="gallery__item">
+                <img src="img/catalog__locations-item-13-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              </li>
+            </ul>
+          </div>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img src="img/catalog__locations-item-13-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+            </li>
+            <li class="gallery__item">
+              <img src="img/catalog__locations-item-14-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+            </li>
+            <li class="gallery__item">
+              <img src="img/catalog__locations-item-15-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+            </li>
+            <li class="gallery__item">
+              <img src="img/catalog__locations-item-16-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+            </li>
+            <li class="gallery__item">
+              <img src="img/catalog__locations-item-17-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+            </li>
+            <li class="gallery__item">
+              <img src="img/catalog__locations-item-13-bg.jpeg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -1205,12 +1256,37 @@
   <script async src="js/fb-init.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-1.4.1.min.js"></script>
-  <script async src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
   <script async src="js/slider-init.js"></script>
   <script async src="js/modals.js"></script>
   <script async src="js/drop-down-btns.js"></script>
   <script src="js/mats-accordeon.js"></script>
   <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script>
+  $('.gallery__preview').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.gallery__list'
+  });
+  $('.gallery__list').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.gallery__preview',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3
+        }
+      }
+    ]
+  });
+  </script>
 </body>
 
 </html>
