@@ -9076,3 +9076,234 @@ a.book__btn {
 
 .pricelist {
   font-family: 1rem; }
+
+.pricelist > .container {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+.pricelist__heading {
+  margin: 0;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  color: #004a4b;
+  text-align: center;
+  text-transform: uppercase; }
+
+.pricelist__table {
+  margin-top: 5em;
+  width: 100%;
+  border-collapse: collapse; }
+
+.pricelist__headings,
+.pricelist__prices {
+  -webkit-box-shadow: 0 0 1em 0 rgba(35, 31, 32, 0.5);
+          box-shadow: 0 0 1em 0 rgba(35, 31, 32, 0.5); }
+
+.pricelist__headings th {
+  padding-top: calc(1.8em / 1.8);
+  padding-bottom: calc(1.8em / 1.8);
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 1.8em;
+  font-weight: 900;
+  color: #231f20; }
+
+.pricelist__headings th:not(:first-of-type) {
+  width: calc(15em / 1.8);
+  border-left: 1px solid rgba(1, 104, 105, 0.2); }
+
+.pricelist__headings th:first-of-type {
+  padding-left: calc(3em / 1.8);
+  text-align: left; }
+
+.pricelist__row td {
+  padding-top: calc(3em / 1.6);
+  padding-bottom: calc(3em / 1.6); }
+
+.pricelist__row td:first-of-type {
+  padding-left: calc(3em / 1.4);
+  padding-right: calc(5em / 1.4);
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #231f20; }
+
+.pricelist__row td:not(:first-of-type) {
+  border-left: 1px solid rgba(1, 104, 105, 0.2); }
+
+.pricelist__cell--checked {
+  position: relative; }
+  .pricelist__cell--checked::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2.5em / 2);
+    left: calc(50% - 2.5em / 2);
+    width: 2.5em;
+    height: 2.5em;
+    background-image: url("../img/approve-circular-button.svg");
+    background-size: cover; }
+
+.pricelist__prices td:not(:first-of-type) {
+  padding-top: calc(1.8em / 1.8);
+  padding-bottom: calc(1.8em / 1.8);
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 1.8em;
+  font-weight: 900;
+  color: #db1a23;
+  text-align: center;
+  border-left: 1px solid rgba(1, 104, 105, 0.2); }
+
+@media (max-width: 1139px) {
+  .pricelist {
+    font-size: 0.8rem; } }
+
+@media (max-width: 767px) {
+  .pricelist {
+    font-size: 0.5rem; } }
+
+.header-aux {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em 0 #231f20;
+          box-shadow: 0 0 1em 0 #231f20;
+  z-index: 5;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  pointer-events: none; }
+
+.header-aux-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  pointer-events: all; }
+
+.header-aux > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+.header-aux__link {
+  position: relative;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #005856;
+  text-transform: uppercase;
+  background-image: -webkit-gradient(linear, left top, right top, from(#005856), to(#005856));
+  background-image: linear-gradient(to right, #005856, #005856);
+  background-repeat: repeat-x;
+  background-size: 100% 1px;
+  background-position: bottom; }
+  .header-aux__link:hover {
+    background-image: none; }
+
+.header-aux__link--all {
+  margin-left: 3em; }
+  .header-aux__link--all::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1.5em / 2);
+    left: -3em;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("../img/megaphone.svg");
+    background-size: cover;
+    pointer-events: none; }
+
+.header-aux__link--main {
+  margin-right: 10em; }
+
+.header-aux__logo {
+  position: absolute;
+  top: -1.2em;
+  right: -10em;
+  width: 10em; }
+
+.header-menu-light {
+  --background-color: rgb(255, 255, 255);
+  --logo-url: url("../img/logo-light.png");
+  --link-color: rgb(184, 184, 184); }
+  .header-menu-light .header-aux__anchor {
+    background-image: repeating-linear-gradient(to right, #b8b8b8 0, #b8b8b8 1px, white 1px, white 3px); }
+
+.header-menu-dark {
+  --background-color: rgb(0, 74, 75);
+  --logo-url: url("../img/logo-dark.png");
+  --link-color: rgb(255, 255, 255); }
+  .header-menu-dark .header-aux__anchor {
+    background-image: repeating-linear-gradient(to right, white 0, white 1px, #004a4b 1px, #004a4b 3px); }
+
+.header-menu {
+  font-size: 1rem;
+  background-color: var(--background-color); }
+  .header-menu .container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header-menu .header-aux__back {
+    width: 10.5em;
+    height: 4em;
+    background-image: var(--logo-url);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .header-menu .header-aux__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .header-menu .header-aux__item {
+    margin-left: 3.5em; }
+  .header-menu .header-aux__anchor {
+    display: block;
+    font-family: "Museo Sans", "Arial", sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--link-color);
+    background-repeat: repeat-x;
+    background-size: 100% 1px;
+    background-position: bottom; }
+    .header-menu .header-aux__anchor:hover {
+      background-image: none; }
+  .header-menu .header-aux__btn {
+    margin: 0;
+    margin-left: auto;
+    font-family: "Museo Sans", "Arial", sans-serif;
+    font-size: 1.4em;
+    color: #004a4b;
+    text-transform: uppercase;
+    border: 1px solid #f7b200;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.55);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.55); }
+
+@media (max-width: 1139px) {
+  .header-aux {
+    font-size: 0.8rem; }
+  .header-menu {
+    font-size: 0.7rem; } }
+
+@media (max-width: 767px) {
+  .header-aux {
+    font-size: 0.4rem; }
+  .header-menu .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
