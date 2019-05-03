@@ -1,0 +1,130 @@
+.formats {
+  font-size: 1rem;
+}
+
+.formats > .container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.formats__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-auto-rows: 20em;
+  grid-gap: 1.2em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.formats__item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 0.3;
+  }
+}
+
+.formats__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+  width: 100%;
+  height: 100%;
+  font-family: $font-family__main;
+  font-size: 2em;
+  font-weight: 700;
+  color: $font-color__light;
+  text-align: center;
+}
+
+.formats__item--1 {
+  background-image: url("../img/catalog__locations-item-2-bg.jpeg");
+}
+
+.formats__item--2 {
+  background-image: url("../img/catalog__locations-item-11-bg.jpeg");
+}
+
+.formats__item--3 {
+  background-image: url("../img/catalog__locations-item-12-bg.png");
+}
+
+.formats__item--4 {
+  background-image: url("../img/catalog__locations-item-13-bg.jpeg");
+}
+
+.formats__item--5 {
+  background-image: url("../img/catalog__locations-item-14-bg.jpeg");
+}
+
+.formats__item--6 {
+  background-image: url("../img/catalog__locations-item-15-bg.jpeg");
+}
+
+.formats__btn {
+  position: relative;
+  display: block;
+  margin-top: calc(1.2em / 1.8);
+  padding: 1.5em;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 400;
+  color: $font-color__light;
+  text-align: center;
+  background-color: $font-color__dark;
+  transition-duration: 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 0.9em / 1.8);
+    left: calc(50% - 9em);
+    width: calc(1.8em / 1.8);
+    height: calc(1.8em / 1.8);
+    background-image: url("../img/search.svg");
+    background-size: cover;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .formats {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .formats {
+    font-size: 0.7rem;
+  }
+
+  .formats__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,235 @@
+.partnership {
+  font-size: 1rem;
+  background-color: var(--background-color);
+}
+
+.partnership-dark {
+  --background-color: rgb(1, 104, 105);
+  --slogan-color: rgb(255, 185, 13);
+  --main-color: rgb(255, 255, 255);
+}
+
+.partnership-light {
+  --background-color: rgb(255, 255, 255);
+  --slogan-color: rgb(247, 178, 0);
+  --main-color: rgb(35, 31, 32);
+}
+
+.partnership > .container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.partnership__promo {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+    background-color: var(--slogan-color);
+  }
+}
+
+.partnership__adv {
+  position: relative;
+  width: 50%;
+}
+
+.partnership__adv:first-of-type {
+  padding-right: 12em;
+  text-align: right;
+
+  .partnership__icon {
+    right: 2em;
+  }
+
+  .partnership__slogan {
+    padding-left: 10em;
+  }
+}
+
+.partnership__adv:not(:first-of-type) {
+  padding-left: 12em;
+
+  .partnership__icon {
+    left: 2em;
+  }
+
+  .partnership__slogan {
+    padding-right: 5em;
+  }
+}
+
+.partnership__icon {
+  position: absolute;
+  top: calc(50% - 3.5em);
+  width: 7em;
+  height: 7em;
+
+  use {
+    fill: var(--main-color);
+  }
+}
+
+.partnership__slogan {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: normal;
+  color: var(--slogan-color);
+  text-transform: uppercase;
+}
+
+.partnership__descriptor {
+  margin: 0;
+  margin-top: 1em;
+  font-family: $font-family__main;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.partnership__card {
+  display: flex;
+  margin: 0;
+  margin-top: 5em;
+  padding-left: 7em;
+}
+
+.partnership__frame {
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.partnership__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partnership__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-left: 8em;
+  width: calc(100% - 15em);
+}
+
+.partnership__name {
+  margin: 0;
+  width: 100%;
+  font-family: $font-family__main;
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: normal;
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.partnership__details {
+  margin-top: 2.5em;
+}
+
+.partnership__details--write {
+  margin-left: auto;
+}
+
+.partnership__invite {
+  display: block;
+  margin-bottom: 2em;
+  font-family: $font-family__main;
+  font-size: 1.4em;
+  font-weight: normal;
+  color: var(--main-color);
+  opacity: 0.6;
+}
+
+.partnership__phones {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partnership__phone {
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  font-weight: normal;
+  line-height: 1.25;
+  color: var(--main-color);
+}
+
+.partnership__calls {
+  display: block;
+  font-family: $font-family__main;
+  font-size: 1.4em;
+  font-weight: normal;
+  color: var(--main-color);
+}
+
+.partnership__email {
+  font-family: $font-family__main;
+  font-size: 1.6em;
+  font-weight: normal;
+  color: var(--main-color);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .partnership {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .partnership {
+    font-size: 0.6rem;
+  }
+
+  .partnership__adv:first-of-type {
+    padding-right: 5em;
+
+    .partnership__slogan {
+      padding-left: 0;
+    }
+  }
+
+  .partnership__adv:not(:first-of-type) {
+    padding-left: 5em;
+
+    .partnership__slogan {
+      padding-right: 0;
+    }
+  }
+
+  .partnership__icon {
+    display: none;
+  }
+
+  .partnership__card {
+    padding-left: 0;
+  }
+
+  .partnership__info {
+    flex-direction: column;
+    padding-left: 4em;
+  }
+
+  .partnership__details--write {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,78 @@
+.like {
+  font-size: 1rem;
+}
+
+.like > .container {
+  padding-top: 3em;
+  padding-bottom: 5em;
+}
+
+.like__heading {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 5em;
+  font-weight: 900;
+  color: $font-color__darker2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.like__list {
+  display: flex;
+  margin: 0;
+  margin-top: 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.like__item:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+.like__link {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-duration: 0.3s;
+  transform-origin: center;
+}
+
+.like__item--vk .like__link {
+  background-image: url("../img/social-vk.svg");
+}
+
+.like__item--fb .like__link {
+  background-image: url("../img/social-fb.svg");
+}
+
+.like__item--twitter .like__link {
+  background-image: url("../img/social-twitter.svg");
+}
+
+.like__item--ok .like__link {
+  background-image: url("../img/social-ok.svg");
+}
+
+.like__item--mail .like__link {
+  background-image: url("../img/social-mail.svg");
+}
+
+.like__link:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: $width__tablet-max) {
+  .like {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .like {
+    font-size: 0.6rem;
+  }
+}
