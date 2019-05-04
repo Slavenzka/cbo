@@ -1333,6 +1333,96 @@
         </a>
       </div>
     </section>
+    <div class="textblock">
+      <div class="container">
+        <h3 class="textblock__heading">
+          Про <span class="highlight">что</span> это?
+        </h3>
+        <p class="textblock__descriptor">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vero iste natus quas voluptate dignissimos incidunt neque iure, eligendi nostrum facilis fugiat, fuga a magnam ut blanditiis! Odit incidunt nobis nemo, sed laboriosam soluta consequuntur.
+        </p>
+        <p class="textblock__descriptor">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cum reiciendis vero illum tempora ipsa non ut iure, maiores eligendi eos autem adipisci, aut quidem, voluptatum laudantium officia. Nam itaque, adipisci libero mollitia autem aperiam. Labore totam consequuntur magni debitis, ipsum, maiores sint amet laboriosam. Explicabo labore voluptatibus tenetur, atque.
+        </p>
+      </div>
+    </div>
+    <div class="textslider">
+      <ul class="textslider__list">
+        <li class="textslider__item">
+          <div class="textblock">
+            <div class="container">
+              <h3 class="textblock__heading">
+                Это <span class="highlight">слайд</span> №1
+              </h3>
+              <p class="textblock__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vero iste natus quas voluptate dignissimos incidunt neque iure, eligendi nostrum facilis fugiat, fuga a magnam ut blanditiis! Odit incidunt nobis nemo, sed laboriosam soluta consequuntur.
+              </p>
+              <p class="textblock__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cum reiciendis vero illum tempora ipsa non ut iure, maiores eligendi eos autem adipisci, aut quidem, voluptatum laudantium officia. Nam itaque, adipisci libero mollitia autem aperiam. Labore totam consequuntur magni debitis, ipsum, maiores sint amet laboriosam. Explicabo labore voluptatibus tenetur, atque.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="textslider__item">
+          <div class="textblock">
+            <div class="container">
+              <h3 class="textblock__heading">
+                Это <span class="highlight">слайд</span> №2
+              </h3>
+              <p class="textblock__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vero iste natus quas voluptate dignissimos incidunt neque iure, eligendi nostrum facilis fugiat, fuga a magnam ut blanditiis! Odit incidunt nobis nemo, sed laboriosam soluta consequuntur.
+              </p>
+              <p class="textblock__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cum reiciendis vero illum tempora ipsa non ut iure, maiores eligendi eos autem adipisci, aut quidem, voluptatum laudantium officia. Nam itaque, adipisci libero mollitia autem aperiam. Labore totam consequuntur magni debitis, ipsum, maiores sint amet laboriosam. Explicabo labore voluptatibus tenetur, atque.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="textslider__item">
+          <div class="textblock">
+            <div class="container">
+              <h3 class="textblock__heading">
+                Это <span class="highlight">слайд</span> №3
+              </h3>
+              <p class="textblock__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vero iste natus quas voluptate dignissimos incidunt neque iure, eligendi nostrum facilis fugiat, fuga a magnam ut blanditiis! Odit incidunt nobis nemo, sed laboriosam soluta consequuntur.
+              </p>
+              <p class="textblock__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cum reiciendis vero illum tempora ipsa non ut iure, maiores eligendi eos autem adipisci, aut quidem, voluptatum laudantium officia. Nam itaque, adipisci libero mollitia autem aperiam. Labore totam consequuntur magni debitis, ipsum, maiores sint amet laboriosam. Explicabo labore voluptatibus tenetur, atque.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="location">
+      <div class="container">
+        <h2 class="location__heading">
+          Контактная информация
+        </h2>
+        <address class="location__contacts">
+          <p class="location__descriptor location__descriptor--address">
+            Екатеринбург, ул. Белинского, д. 83, 8 этаж
+            <a href="#" class="location__map">
+              Посмотреть на карте
+            </a>
+          </p>
+          <div class="location__phones">
+            <p class="location__descriptor">
+              Телефон:
+            </p>
+            <ul class="location__list">
+              <li class="location__descriptor location__descriptor--item">
+                (343) 38-50-50
+              </li>
+            </ul>
+          </div>
+        </address>
+        <p class="location__descriptor location__descriptor--company">
+          &copy; ЦБО, Центр Бизнес-Образования
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -1635,29 +1725,37 @@
   <script src="js/mats-accordeon.js"></script>
   <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
   <script>
-  $('.gallery__preview').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.gallery__list'
-  });
-  $('.gallery__list').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: '.gallery__preview',
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 3
+    $('.gallery__preview').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.gallery__list'
+    });
+    $('.gallery__list').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.gallery__preview',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3
+          }
         }
-      }
-    ]
-  });
+      ]
+    });
+  </script>
+  <script>
+    $('.textslider__list').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true
+    })
   </script>
 </body>
 

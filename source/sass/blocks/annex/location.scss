@@ -1,0 +1,93 @@
+.location {
+  font-size: 1rem;
+}
+
+.location > .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.location__heading {
+  margin: 0;
+  margin-bottom: 1em;
+  width: 100%;
+  font-family: $font-family__main;
+  font-size: 5em;
+  font-weight: 900;
+  color: $font-color__darker2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.location__contacts {
+  display: flex;
+}
+
+.location__descriptor {
+  margin: 0;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 140%;
+  color: $font-color__darker3;
+}
+
+.location__descriptor--address {
+  display: flex;
+  flex-direction: column;
+  width: calc(36.5em / 1.8);
+}
+
+.location__map {
+  text-decoration: underline;
+  color: $font-color__dark;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.location__phones {
+  margin-left: 10em;
+}
+
+.location__list {
+  margin: 0;
+  padding: 0;
+  width: 20em;
+  list-style: none;
+}
+
+.location__descriptor--company {
+  margin-left: auto;
+}
+
+@media (max-width: $width__tablet-max) {
+  .location {
+    font-size: 0.8rem;
+  }
+
+  .location__descriptor--company {
+    margin: 0;
+    margin-top: 2em;
+    width: 100%;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .location {
+    font-size: 0.6rem;
+  }
+
+  .location__contacts {
+    flex-direction: column;
+  }
+
+  .location__phones {
+    margin-top: 2.5em;
+    margin-left: 0;
+  }
+}
