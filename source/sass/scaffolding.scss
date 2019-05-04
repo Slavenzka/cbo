@@ -161,6 +161,10 @@ a.button-shine {
   }
 }
 
+.highlight {
+  color: $font-color__highlight--dark;
+}
+
 @media (max-width: $width__tablet-max) {
   .container {
     margin: 0;

@@ -1,0 +1,43 @@
+.textslider {
+  padding: 5em 0;
+}
+
+.textslider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.textslider .slick-dots {
+  position: absolute;
+  bottom: 3.6em;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.textslider .slick-dots button {
+  margin-left: 10px;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.textslider .slick-active button {
+  background-color: $background__darker2;
+}
+
+@media (max-width: $width__tablet-max) {
+  .textslider .slick-dots {
+    bottom: 0;
+  }
+}
