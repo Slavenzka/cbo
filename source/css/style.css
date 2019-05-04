@@ -10128,3 +10128,72 @@ a.book__btn {
   .location__phones {
     margin-top: 2.5em;
     margin-left: 0; } }
+
+.sequence {
+  font-size: 1rem; }
+
+.sequence > .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20em);
+  grid-template-rows: auto;
+  grid-auto-rows: minmax(15em, auto);
+  grid-gap: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
+.sequence__heading {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  color: #004a4b;
+  text-align: center;
+  text-transform: uppercase; }
+
+.sequence__trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  opacity: 0;
+  pointer-events: none; }
+
+.sequence__trigger + label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  width: 20em;
+  min-height: 15em;
+  font-family: "Museo Sans", "Arial", sans-serif;
+  color: #231f20;
+  cursor: pointer; }
+  .sequence__trigger + label .sequence__stage {
+    font-size: 1.8em;
+    font-weight: normal;
+    line-height: 1.25;
+    text-transform: uppercase; }
+  .sequence__trigger + label .sequence__time {
+    display: block;
+    margin-top: auto;
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: normal; }
+
+.sequence__trigger:checked + label {
+  color: white;
+  background-color: #016869;
+  pointer-events: none; }
