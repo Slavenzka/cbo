@@ -1,0 +1,50 @@
+.numbers {
+  font-size: 1rem;
+}
+
+.numbers > .container {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.numbers__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.numbers__item {
+  width: 20em;
+  font-family: $font-family__main;
+}
+
+.numbers__value {
+  margin: 0;
+  font-size: 10em;
+  font-weight: 900;
+  line-height: normal;
+  color: $font-color__darker2;
+  border-bottom: 3px solid rgba(0, 74, 75, 0.2);
+}
+
+.numbers__descriptor {
+  margin: 0;
+  margin-top: 1em;
+  font-size: 1.6em;
+}
+
+@media (max-width: $width__mobile-max) {
+  .numbers {
+    font-size: 0.6rem;
+  }
+
+  .numbers__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20em);
+    justify-content: space-around;
+    grid-column-gap: 1em;
+    grid-row-gap: 3em;
+  }
+}

@@ -1,0 +1,256 @@
+.procedure {
+  font-size: 1rem;
+  background-color: $background__darker;
+}
+
+.procedure > .container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.procedure__heading {
+  margin: 0;
+  width: 100%;
+  font-family: $font-family__main;
+  font-size: 5em;
+  font-weight: 900;
+  color: $font-color__light;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.procedure__schedule {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  margin-top: 5em;
+  padding: 0;
+  list-style: none;
+}
+
+.procedure__day:not(:first-of-type) {
+  margin-left: 5em;
+}
+
+.procedure__link {
+  display: block;
+  padding: calc(1em / 1.8) calc(2em / 1.8);
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 900;
+  color: $font-color__light;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.procedure__day--selected .procedure__link {
+  border: 2px solid $background__dark;
+  pointer-events: none;
+}
+
+.procedure__wrapper {
+  display: flex;
+  margin-top: 2.5em;
+}
+
+.procedure__hours,
+.procedure__activities {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.procedure__hours {
+  grid-template-rows: repeat(20, 3.5em);
+  align-items: center;
+  width: 10.5em;
+}
+
+.procedure__hour {
+  grid-row: span 2;
+  font-family: $font-family__main;
+  font-size: 2.5em;
+  font-weight: 900;
+  color: $font-color__light;
+}
+
+.procedure__activities {
+  grid-template-rows: repeat(20, 3.5em);
+  align-items: flex-start;
+  width: calc(100% - 10.5em);
+}
+
+.procedure__activity {
+  padding: 1.5em;
+  height: 100%;
+  font-family: $font-family__main;
+  font-size: 1.8em;
+  font-weight: 900;
+  color: $font-color__light;
+  text-transform: uppercase;
+  background-color: $background__dark;
+}
+
+.procedure__activity--lunch {
+  color: $font-color__darker;
+  background-color: $background__light;
+}
+
+.procedure__activity--1 {
+  grid-row: 1 / span 6;
+}
+
+.procedure__activity--2 {
+  grid-row: 9 / span 2;
+}
+
+.procedure__activity--3 {
+  grid-row: 11/ span 2;
+}
+
+.procedure__activity--4 {
+  grid-row: -3 / span 2;
+}
+
+.procedure-halls {
+  .procedure__wrapper {
+    // justify-content: space-between;
+  }
+
+  .procedure__hours {
+    margin-top: 5.4em;
+  }
+
+  .procedure__hall {
+    width: 25em;
+
+    &:not(:first-of-type) {
+      margin-left: 7%;
+    }
+  }
+
+  .procedure__location {
+    position: relative;
+    margin: 0;
+    font-family: $font-family__main;
+    font-size: 1.8em;
+    font-weight: 900;
+    line-height: 3;
+    color: $font-color__light;
+    text-transform: uppercase;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 1em);
+      left: calc(50% - 4em);
+      width: 2em;
+      height: 2em;
+      background-image: url("../img/seats.svg");
+      background-size: cover;
+    }
+  }
+
+  .procedure__activities {
+    width: 100%;
+  }
+
+  .procedure__activity {
+    padding: 1em;
+  }
+
+  .procedure__activity--11 {
+    grid-row: 1 / span 6;
+  }
+
+  .procedure__activity--12 {
+    grid-row: 7 / span 2;
+  }
+
+  .procedure__activity--13 {
+    grid-row: 9/ span 2;
+  }
+
+  .procedure__activity--14 {
+    grid-row: -3 / span 2;
+  }
+
+  .procedure__activity--21 {
+    grid-row: 1 / span 6;
+  }
+
+  .procedure__activity--22 {
+    grid-row: 9 / span 2;
+  }
+
+  .procedure__activity--23 {
+    grid-row: 11/ span 5;
+  }
+
+  .procedure__activity--24 {
+    grid-row: -3 / span 2;
+  }
+
+  .procedure__activity--31 {
+    grid-row: 1 / span 6;
+  }
+
+  .procedure__activity--32 {
+    grid-row: 9 / span 3;
+  }
+
+  .procedure__activity--33 {
+    grid-row: 12/ span 7;
+  }
+
+  .procedure__activity--34 {
+    grid-row: -3 / span 2;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .procedure {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .procedure {
+    font-size: 0.6rem;
+  }
+
+  .procedure-halls {
+    font-size: 0.4rem;
+
+    .procedure__hours {
+      width: 6em;
+    }
+
+    .procedure__hall {
+      width: 27%;
+    }
+  }
+
+  .procedure__schedule {
+    flex-direction: column;
+  }
+
+  .procedure__day:not(:first-of-type) {
+    margin-top: 2.5em;
+    margin-left: 0;
+  }
+
+  .procedure__link {
+    padding: calc(1em / 1.8) calc(2em / 1.8);
+  }
+}

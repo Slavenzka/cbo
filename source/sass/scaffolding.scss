@@ -161,6 +161,17 @@ a.button-shine {
   }
 }
 
+.heading {
+  margin: 0;
+  width: 100%;
+  font-family: $font-family__main;
+  font-size: 5em;
+  font-weight: 900;
+  color: $font-color__darker2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .highlight {
   color: $font-color__highlight--dark;
 }

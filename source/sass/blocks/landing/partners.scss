@@ -5,13 +5,22 @@
   font-size: 1rem;
 }
 
+.partners__intro {
+  margin-bottom: 0.5em;
+}
+
 .partners__heading {
   margin: 0;
+  font-family: $font-family__main;
   font-size: 3.5em;
   font-weight: 900;
   line-height: normal;
   color: $font-color__darker3;
   text-align: center;
+
+  &:not(:first-of-type) {
+    margin-top: 1em;
+  }
 }
 
 .partners__list {
