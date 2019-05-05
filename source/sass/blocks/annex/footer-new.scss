@@ -1,0 +1,130 @@
+.footer-new {
+  font-size: 1rem;
+  background-color: #e8e8e8;
+}
+
+.footer-new > .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 5em;
+  padding-bottom: 2.5em;
+  font-family: $font-family__main;
+}
+
+.footer-new__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 45em;
+}
+
+.footer-new__phone {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: normal;
+  color: $font-color__dark;
+}
+
+.footer-new__all {
+  display: block;
+  margin-left: 1em;
+  font-size: 1.6em;
+  line-height: 1.4;
+  color: $font-color__link;
+  background-image: linear-gradient(to right, $font-color__link, $font-color__link);
+  background-size: 100% 1px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background-image: none;
+    opacity: 0.5;
+  }
+}
+
+.footer-new__free {
+  margin: 0;
+  margin-top: 0.3em;
+  font-size: 1.4em;
+  color: $font-color__catalog-author;
+}
+
+.footer-new__location {
+  margin: 0;
+  margin-top: 2em;
+  font-size: 1.6em;
+  color: $font-color__darker2;
+}
+
+.footer-new__map {
+  display: inline-block;
+  margin-top: 1em;
+  font-size: 1.6em;
+  line-height: 1.4;
+  color: $font-color__link;
+  background-image: linear-gradient(to right, $font-color__link, $font-color__link);
+  background-size: 100% 1px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background-image: none;
+    opacity: 0.5;
+  }
+}
+
+.footer-new__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 20em);
+  grid-template-rows: repeat(5, 3em);
+  grid-auto-rows: 3em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-new__link {
+  display: inline-block;
+  font-size: 1.6em;
+  line-height: 1.4;
+  color: $font-color__link;
+  transition-duration: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.footer-new__social {
+  margin-top: 5em;
+  width: 100%;
+}
+
+.footer-new__copyright {
+  margin-top: 2em;
+  font-size: 1.6em;
+  color: $font-color__darker2;
+}
+
+@media (max-width: $width__tablet-max) {
+  .footer-new {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .footer-new {
+    font-size: 0.7rem;
+  }
+
+  .footer-new__list {
+    margin-top: 3em;
+    width: 100%;
+  }
+}

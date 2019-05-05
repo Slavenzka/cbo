@@ -4,21 +4,15 @@
 
 .sequence > .container {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 20em);
-  grid-template-rows: auto;
-  grid-auto-rows: minmax(15em, auto);
-  grid-gap: 2em;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 5em;
   padding-bottom: 5em;
 }
 
 .sequence__heading {
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
   margin: 0;
-  margin-bottom: 0.5em;
+  width: 100%;
   font-family: $font-family__main;
   font-size: 5em;
   font-weight: 900;
@@ -29,7 +23,7 @@
 
 .sequence__trigger {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   width: 1px;
   height: 1px;
@@ -41,14 +35,22 @@
 .sequence__trigger + label {
   display: flex;
   flex-direction: column;
+  margin-top: 3em;
   padding: 2em;
   width: 20em;
   min-height: 15em;
   font-family: $font-family__main;
   color: $font-color__darker3;
   cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background-color: rgba(1, 104, 105, 0.1);
+  }
 
   .sequence__stage {
+    display: block;
+    margin-bottom: 2em;
     font-size: 1.8em;
     font-weight: normal;
     line-height: 1.25;
@@ -68,4 +70,27 @@
   color: $font-color__light;
   background-color: $font-color__dark;
   pointer-events: none;
+}
+
+.sequence__content {
+  display: none;
+  width: 100%;
+}
+
+@for $i from 1 through 20 {
+  .sequence__trigger--#{$i}:checked ~ .sequence__content--#{$i} {
+    display: block;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .sequence {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .sequence {
+    font-size: 0.6rem;
+  }
 }

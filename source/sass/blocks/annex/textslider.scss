@@ -10,7 +10,7 @@
 
 .textslider .slick-dots {
   position: absolute;
-  bottom: 3.6em;
+  bottom: 0;
   left: 0;
   display: flex;
   justify-content: center;
@@ -34,10 +34,4 @@
 
 .textslider .slick-active button {
   background-color: $background__darker2;
-}
-
-@media (max-width: $width__tablet-max) {
-  .textslider .slick-dots {
-    bottom: 0;
-  }
 }
