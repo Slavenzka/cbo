@@ -1106,7 +1106,7 @@ a.button-shine {
 
 .modal__close {
   position: absolute;
-  top: 70px;
+  top: 40px;
   right: 80px;
   margin: 0;
   padding: 0;
@@ -1364,7 +1364,9 @@ a.button-shine {
 
 @media (max-width: 1139px) {
   .modal {
-    font-size: 0.7rem; } }
+    font-size: 0.7rem; }
+  .modal__highlight {
+    padding-right: 25%; } }
 
 @media (max-width: 767px) {
   .modal {
