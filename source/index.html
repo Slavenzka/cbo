@@ -273,7 +273,7 @@
             <a href="#" class="services__link">
               <figure>
                 <div class="services__frame">
-                  <img src="img/index__services-item--1.jpg" alt="Иллюстрация к ссылке на страницу об MBA" class="services__img">
+                  <img data-src="img/index__services-item--1.jpg" alt="Иллюстрация к ссылке на страницу об MBA" class="services__img b-lazy">
                 </div>
                 <figcaption>
                   MBA, mini-MBA
@@ -285,7 +285,7 @@
             <a href="#" class="services__link">
               <figure>
                 <div class="services__frame">
-                  <img src="img/index__services-item--2.jpg" alt="Иллюстрация к ссылке на страницу о корпоративном обучении" class="services__img">
+                  <img data-src="img/index__services-item--2.jpg" alt="Иллюстрация к ссылке на страницу о корпоративном обучении" class="services__img b-lazy">
                 </div>
                 <figcaption>
                   Корпоративное обучение
@@ -297,7 +297,7 @@
             <a href="#" class="services__link">
               <figure>
                 <div class="services__frame">
-                  <img src="img/index__services-item--3.jpg" alt="Иллюстрация к ссылке на страницу о семинарах, тренингах и мастер-классах" class="services__img">
+                  <img data-src="img/index__services-item--3.jpg" alt="Иллюстрация к ссылке на страницу о семинарах, тренингах и мастер-классах" class="services__img b-lazy">
                 </div>
                 <figcaption>
                   Семинары, тренинги, мастер-классы
@@ -309,7 +309,7 @@
             <a href="#" class="services__link">
               <figure>
                 <div class="services__frame">
-                  <img src="img/index__services-item--4.gif" alt="Иллюстрация к ссылке на страницу об интеллектуальных путешествиях" class="services__img">
+                  <img data-src="img/index__services-item--4.gif" alt="Иллюстрация к ссылке на страницу об интеллектуальных путешествиях" class="services__img b-lazy">
                 </div>
                 <figcaption>
                   Интеллектуальные Путешествия
@@ -321,7 +321,7 @@
             <a href="#" class="services__link">
               <figure>
                 <div class="services__frame">
-                  <img src="img/index__services-item--5.jpg" alt="Иллюстрация к ссылке на страницу об услугах online" class="services__img">
+                  <img data-src="img/index__services-item--5.jpg" alt="Иллюстрация к ссылке на страницу об услугах online" class="services__img b-lazy">
                 </div>
                 <figcaption>
                   Online
@@ -333,7 +333,7 @@
             <a href="#" class="services__link">
               <figure>
                 <div class="services__frame">
-                  <img src="img/index__services-item--6.jpg" alt="Иллюстрация к ссылке на страницу с полным календарем мероприятий" class="services__img">
+                  <img data-src="img/index__services-item--6.jpg" alt="Иллюстрация к ссылке на страницу с полным календарем мероприятий" class="services__img b-lazy">
                 </div>
                 <figcaption>
                   Полный календарь мероприятий
@@ -357,7 +357,7 @@
             <a href="javascript:;" data-type="ajax" class="team__link" data-fancybox="team-gallery">
               <figure>
                 <div class="team__frame">
-                  <img data-lazy="img/index__team-item--1.jpg" alt="Фотография" class="team__img">
+                  <img data-lazy="img/index__team-item--1.jpg" data-src="img/index__team-item--1.jpg" alt="Фотография" class="team__img b-lazy">
                 </div>
                 <figcaption class="team__full-name">
                   <span class="team__name">
@@ -374,7 +374,7 @@
             <a href="javascript:;" data-type="ajax" class="team__link" data-fancybox="team-gallery">
               <figure>
                 <div class="team__frame">
-                  <img data-lazy="img/index__team-item--2.jpg" alt="Фотография" class="team__img">
+                  <img data-lazy="img/index__team-item--2.jpg" data-src="img/index__team-item--2.jpg" alt="Фотография" class="team__img b-lazy">
                 </div>
                 <figcaption class="team__full-name">
                   <span class="team__name">
@@ -391,7 +391,7 @@
             <a href="javascript:;" data-type="ajax" class="team__link" data-fancybox="team-gallery">
               <figure>
                 <div class="team__frame">
-                  <img data-lazy="img/index__team-item--3.jpg" alt="Фотография" class="team__img">
+                  <img data-lazy="img/index__team-item--3.jpg" alt="Фотография" class="team__img b-lazy">
                 </div>
                 <figcaption class="team__full-name">
                   <span class="team__name">
@@ -408,7 +408,7 @@
             <a href="javascript:;" data-type="ajax" class="team__link" data-fancybox="team-gallery">
               <figure>
                 <div class="team__frame">
-                  <img data-lazy="img/index__team-item--4.jpg" alt="Фотография" class="team__img">
+                  <img data-lazy="img/index__team-item--4.jpg" data-src="img/index__team-item--4.jpg" alt="Фотография" class="team__img b-lazy">
                 </div>
                 <figcaption class="team__full-name">
                   <span class="team__name">
@@ -1729,6 +1729,13 @@
   <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
   <script async src="js/modals.js"></script>
   <script src="js/drop-down-btns.js"></script>
+  <script src="js/blazy.min.js"></script>
+  <script>
+    ;(function() {
+        // Initialize
+        var bLazy = new Blazy();
+    })();
+  </script>
 </body>
 
 </html>
