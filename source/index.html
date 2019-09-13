@@ -8,6 +8,9 @@
   <link rel="preload" href="fonts/museosanscyrl_500-webfont.woff2" as="font">
   <link rel="preload" href="fonts/museosanscyrl_900-webfont.woff2" as="font">
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <style>
+
+  </style>
 </head>
 
 <body>
@@ -177,7 +180,6 @@
     <h1 class="visually-hidden">
       Главная страница портала Центра Бизнес-Образования
     </h1>
-    <link rel="stylesheet" href="plugins/slick/slick.css">
     <section class="slider">
       <h2 class="visually-hidden">
         Информация о предстоящих программах и событиях
@@ -343,7 +345,6 @@
         </ul>
       </div>
     </section>
-    <link href="plugins/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
     <section class="team" id="team">
       <div class="container">
         <h2 class="team__title">
@@ -1735,6 +1736,23 @@
         // Initialize
         var bLazy = new Blazy();
     })();
+  </script>
+  <script type="text/javascript">
+    /* First CSS File */
+    var giftofspeed = document.createElement('link');
+    giftofspeed.rel = 'stylesheet';
+    giftofspeed.href = 'plugins/slick/slick.css';
+    giftofspeed.type = 'text/css';
+    var godefer = document.getElementsByTagName('link')[0];
+    godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+    /* Second CSS File */
+    var giftofspeed2 = document.createElement('link');
+    giftofspeed2.rel = 'stylesheet';
+    giftofspeed2.href = 'plugins/fancybox/dist/jquery.fancybox.min.css';
+    giftofspeed2.type = 'text/css';
+    var godefer2 = document.getElementsByTagName('link')[0];
+    godefer2.parentNode.insertBefore(giftofspeed2, godefer2);
   </script>
 </body>
 
