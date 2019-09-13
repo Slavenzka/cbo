@@ -33,6 +33,7 @@
       infinite: true,
       slidesToShow: 6,
       slidesToScroll: 6,
+      lazyLoad: 'ondemand',
       responsive: [
         {
           breakpoint: 1139,
