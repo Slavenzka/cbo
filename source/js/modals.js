@@ -31,7 +31,16 @@
       }
 
       function openModal (evt) {
+        function replaceImageSources ()  {
+          const images = modals[index].querySelectorAll('img[data-src]');
+          images.forEach(image => {
+            image.setAttribute('src', image.getAttribute('data-src'));
+            image.removeAttribute('data-src');
+          })
+        }
+
         evt.preventDefault();
+        replaceImageSources();
         modals[index].classList.remove('modal-close');
         modals[index].style.display = 'block';
         modals[index].classList.add('modal-open');
