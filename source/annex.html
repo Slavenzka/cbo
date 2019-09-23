@@ -1177,7 +1177,7 @@
           <ul class="support__list">
             <li class="support__item">
               <div class="support__frame">
-                <img src="img/landing__additional-manager-img.jpg" alt="Фотография специалиста ЦБО" class="support__photo b-lazy">
+                <img data-src="img/landing__additional-manager-img.jpg" alt="Фотография специалиста ЦБО" class="support__photo b-lazy">
               </div>
               <p class="support__name">
                 Надежда Ахметова
@@ -1199,7 +1199,7 @@
             </li>
             <li class="support__item">
               <div class="support__frame">
-                <img src="img/landing__additional-manager-img.jpg" alt="Фотография специалиста ЦБО" class="support__photo">
+                <img data-src="img/landing__additional-manager-img.jpg" alt="Фотография специалиста ЦБО" class="support__photo b-lazy">
               </div>
               <p class="support__name">
                 Надежда Ахметова
@@ -1255,7 +1255,7 @@
         </ul>
         <figure class="partnership__card">
           <div class="partnership__frame">
-            <img src="img/landing__additional-manager-img.jpg" alt="Фотография специалиста ЦБО" class="partnership__img">
+            <img data-src="img/landing__additional-manager-img.jpg" alt="Фотография специалиста ЦБО" class="partnership__img b-lazy">
           </div>
           <figcaption class="partnership__info">
             <p class="partnership__name">
@@ -2233,11 +2233,11 @@
                   </li>
                 </ol>
                 <div class="modal__logos">
-                  <img src="img/index__modal-visa1.jpg" alt="Логотип платежной системы Visa" class="modal__logo">
-                  <img src="img/index__modal-visa2.jpg" alt="Логотип платежной системы Visa" class="modal__logo">
-                  <img src="img/index__modal-master1.gif" alt="Логотип платежной системы Mastercard" class="modal__logo">
-                  <img src="img/index__modal-master2.gif" alt="Логотип платежной системы Mastercard" class="modal__logo">
-                  <img src="img/index__modal-mir.png" alt="Логотип платежной системы Мир" class="modal__logo">
+                  <img data-src="img/index__modal-visa1.jpg" alt="Логотип платежной системы Visa" class="modal__logo b-lazy">
+                  <img data-src="img/index__modal-visa2.jpg" alt="Логотип платежной системы Visa" class="modal__logo b-lazy">
+                  <img data-src="img/index__modal-master1.gif" alt="Логотип платежной системы Mastercard" class="modal__logo b-lazy">
+                  <img data-src="img/index__modal-master2.gif" alt="Логотип платежной системы Mastercard" class="modal__logo b-lazy">
+                  <img data-src="img/index__modal-mir.png" alt="Логотип платежной системы Мир" class="modal__logo b-lazy">
                 </div>
               </div>
             </div>
@@ -2312,7 +2312,7 @@
             </div>
           </li>
         </ul>
-        <img src="img/footer__contacts-logo.png" alt="Логотип Центра Бизнес Образования" class="footer__logo">
+        <img data-src="img/footer__contacts-logo.png" alt="Логотип Центра Бизнес Образования" class="footer__logo b-lazy">
         <p class="footer__copyright">
           © Группа Компаний «ЦБО» Центр Бизнес-Образования 1996 — 2017
         </p>
@@ -2362,17 +2362,10 @@
   <script async src="js/slider-init.js"></script>
   <script async src="js/modals.js"></script>
   <script async src="js/drop-down-btns.js"></script>
-  <script src="js/mats-accordeon.js"></script>
+  <script async src="js/mats-accordeon.js"></script>
   <script async src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
-  <script src="js/blazy.min.js"></script>
   <script src="plugins/jquery.lazy.min.js"></script>
   <script src="plugins/jquery.lazy.youtube.min.js"></script>
-  <script>
-    ;(function() {
-        // Initialize
-        var bLazy = new Blazy();
-    })();
-  </script>
   <script>
     $('.gallery__preview').slick({
       slidesToShow: 1,
@@ -2410,6 +2403,7 @@
 
     $(function() {
       $('iframe[data-src]').Lazy();
+      $('.b-lazy').Lazy();
     });
   </script>
   <script>
