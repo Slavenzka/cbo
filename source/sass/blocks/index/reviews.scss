@@ -161,29 +161,15 @@ li.reviews__item.slick-slide {
 .reviews-video {
   .reviews__item {
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 40%;
-      height: 100%;
-      background-size: contain;
-      background-position: 100% 100%;
-      background-repeat: no-repeat;
-    }
   }
 
-  .reviews__item--1,
-  .reviews__item--2,
-  .reviews__item--3,
-  .reviews__item--4,
-  .reivews__item--5,
-  .reviews__item--6 {
-    &::before {
-      background-image: url("../img/reviews-video__bg.png");
-    }
+  .reviews__avatar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
   .reviews__text {

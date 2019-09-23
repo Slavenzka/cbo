@@ -200,9 +200,9 @@
     .banner1-no-photo скрывает фотографию автора курса и оставляет только фон
     .banner1-stamp добавляет метку "Гарантия качества" в правый верхний угол
     .banner1-counter добавляет панель со счетчиками дней и часов до начала-->
-    <div class="banner1">
+    <div class="banner1 b-lazy" data-src="img/annex1__bg.jpg">
       <div class="container">
-        <img src="img/annex1.png" alt="Фото автора курса" class="banner1__img">
+        <img data-src="img/annex1.png" alt="Фото автора курса" class="banner1__img b-lazy">
         <div class="banner1__content">
           <div class="banner1__wrapper">
             <p class="banner1__author">
@@ -473,6 +473,7 @@
         </h2>
         <ul class="reviews__list">
           <li class="reviews__item reviews__item--1">
+            <img class="reviews__avatar" data-lazy="img/reviews-video__bg.png" alt="Фото преподавателя">
             <blockquote class="reviews__content">
               <p class="reviews__text">
                 Единственная приличная образовательная компания от Новокузнецка до Урала, привлекающая преподавателей высокого уровня, о существовании которой я знаю. Возможно есть ещё, но они пока до меня не достучались.
@@ -491,6 +492,7 @@
             </a>
           </li>
           <li class="reviews__item reviews__item--2">
+            <img class="reviews__avatar" data-lazy="img/reviews-video__bg.png" alt="Фото преподавателя">
             <blockquote class="reviews__content">
               <p class="reviews__text">
                 Семинары и программы, организованные ЦБО, отличаются высоким качеством. Сотрудники ЦБО вежливы, корректны, внимательны.
@@ -503,13 +505,14 @@
                   зам.главного бухгалтера по налогам и реализации, ОАО «Белорецкий металлургический комбинат»
                 </span>
               </cite>
-              <img src="img/index__reviews-logo--2.jpg" alt="Логотип ОАО «Белорецкий металлургический комбинат»" class="reviews__logo">
+              <img data-lazy="img/index__reviews-logo--2.jpg" alt="Логотип ОАО «Белорецкий металлургический комбинат»" class="reviews__logo">
             </blockquote>
             <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
               Посмотреть видеоотзыв
             </a>
           </li>
           <li class="reviews__item reviews__item--3">
+            <img class="reviews__avatar" data-lazy="img/reviews-video__bg.png" alt="Фото преподавателя">
             <blockquote class="reviews__content">
               <p class="reviews__text">
                 ЦБО отличается сервисом услуг (на порядок выше, чем в других образовательных организациях): место проведения обучения (уютно, приятно заниматься, здесь же предусмотрен обед, кофе-паузы, где можно пообщаться с коллегами и преподавателями), наличие раздаточного материала и т.д.
@@ -528,13 +531,14 @@
                   руководитель финансово-экономического отдела, Группа Компаний «Оборонснабсбыт»
                 </span>
               </cite>
-              <img src="img/index__reviews-logo--3.jpg" alt="Логотип Группа Компаний «Оборонснабсбыт»" class="reviews__logo">
+              <img data-lazy="img/index__reviews-logo--3.jpg" alt="Логотип Группа Компаний «Оборонснабсбыт»" class="reviews__logo">
             </blockquote>
             <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
               Посмотреть видеоотзыв
             </a>
           </li>
           <li class="reviews__item reviews__item--4">
+            <img class="reviews__avatar" data-lazy="img/reviews-video__bg.png" alt="Фото преподавателя">
             <blockquote class="reviews__content">
               <p class="reviews__text">
                 Четкая организация мероприятий, реальная клиентоориентированность.
@@ -547,13 +551,14 @@
                   Начальник службы корпоративных коммуникаций "Российские железные дороги"
                 </span>
               </cite>
-              <img src="img/index__reviews-logo--4.jpg" alt="Логотип ПАО РЖД" class="reviews__logo">
+              <img data-lazy="img/index__reviews-logo--4.jpg" alt="Логотип ПАО РЖД" class="reviews__logo">
             </blockquote>
             <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
               Посмотреть видеоотзыв
             </a>
           </li>
           <li class="reviews__item reviews__item--5">
+            <img class="reviews__avatar" data-lazy="img/reviews-video__bg.png" alt="Фото преподавателя">
             <blockquote class="reviews__content">
               <p class="reviews__text">
                 Очень внимательные сотрудники. Хочется участвовать в других программах ЦБО.
@@ -566,13 +571,14 @@
                   генеральный директор, "ТК Амаэль" г.Екатеринбург
                 </span>
               </cite>
-              <img src="img/index__reviews-logo--5.jpg" alt="Логотип ТК Амаэль" class="reviews__logo">
+              <img data-lazy="img/index__reviews-logo--5.jpg" alt="Логотип ТК Амаэль" class="reviews__logo">
             </blockquote>
             <a href="https://www.youtube.com/watch?v=nf0llz_Rfd0&t=301s" data-fancybox class="reviews__video">
               Посмотреть видеоотзыв
             </a>
           </li>
           <li class="reviews__item reviews__item--6">
+            <img class="reviews__avatar" data-lazy="img/reviews-video__bg.png" alt="Фото преподавателя">
             <blockquote class="reviews__content">
               <p class="reviews__text">
                 Как ни странно, клиент-ориентированных компаний совсем немного. Вы входите в это небольшое число. Очень приятно, когда интересуются мнением клиента не ради галочки, а по-настоящему, для дальнейшего совместного развития.
@@ -593,7 +599,7 @@
         </ul>
       </div>
     </section>
-    <section class="programs">
+    <section class="programs b-lazy" data-src="img/landing__contact-bg.jpg">
       <!-- Класс .programs-no-prices убирает цены программ и нижнюю границу -->
       <div class="container">
         <h2 class="programs__heading">
@@ -678,7 +684,7 @@
         </ul>
       </div>
     </section>
-    <section class="discount">
+    <section class="discount b-lazy" data-src="img/landing__contact-bg.jpg">
       <div class="container">
         <h2 class="visually-hidden">
           Информация о программах скидок
@@ -931,49 +937,49 @@
           <div class="gallery__frame">
             <ul class="gallery__preview">
               <li class="gallery__item">
-                <img src="img/catalog__locations-item-13-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+                <img data-lazy="img/catalog__locations-item-13-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
               </li>
               <li class="gallery__item">
-                <img src="img/catalog__locations-item-14-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+                <img data-lazy="img/catalog__locations-item-14-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
               </li>
               <li class="gallery__item">
-                <img src="img/catalog__locations-item-15-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+                <img data-lazy="img/catalog__locations-item-15-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
               </li>
               <li class="gallery__item">
-                <img src="img/catalog__locations-item-16-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+                <img data-lazy="img/catalog__locations-item-16-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
               </li>
               <li class="gallery__item">
-                <img src="img/catalog__locations-item-17-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+                <img data-lazy="img/catalog__locations-item-17-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
               </li>
               <li class="gallery__item">
-                <img src="img/catalog__locations-item-13-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+                <img data-lazy="img/catalog__locations-item-13-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
               </li>
             </ul>
           </div>
           <ul class="gallery__list">
             <li class="gallery__item">
-              <img src="img/catalog__locations-item-13-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              <img data-lazy="img/catalog__locations-item-13-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
             </li>
             <li class="gallery__item">
-              <img src="img/catalog__locations-item-14-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              <img data-lazy="img/catalog__locations-item-14-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
             </li>
             <li class="gallery__item">
-              <img src="img/catalog__locations-item-15-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              <img data-lazy="img/catalog__locations-item-15-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
             </li>
             <li class="gallery__item">
-              <img src="img/catalog__locations-item-16-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              <img data-lazy="img/catalog__locations-item-16-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
             </li>
             <li class="gallery__item">
-              <img src="img/catalog__locations-item-17-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              <img data-lazy="img/catalog__locations-item-17-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
             </li>
             <li class="gallery__item">
-              <img src="img/catalog__locations-item-13-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
+              <img data-lazy="img/catalog__locations-item-13-bg.jpg" alt="Фотография с предыдущего мероприятия" class="gallery__img">
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="contact bonus">
+    <section class="contact bonus b-lazy" data-src="img/landing__contact-bg.jpg">
       <div class="contact__wrapper">
         <div class="contact__form form">
           <h2 class="form__heading">
