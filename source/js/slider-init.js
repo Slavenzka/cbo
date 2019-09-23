@@ -87,6 +87,41 @@
     });
   });
 
+  $(document).ready(function () {
+    $('.textslider__list').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true
+    })
+
+    $('.gallery__preview').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      lazyLoad: 'ondemand',
+      fade: true,
+      asNavFor: '.gallery__list'
+    });
+
+    $('.gallery__list').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      lazyLoad: 'ondemand',
+      asNavFor: '.gallery__preview',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3
+          }
+        }
+      ]
+    });
+  })
 
   let authorTrigger = document.querySelector('.advanced__selector--author');
   let formatTrigger = document.querySelector('.advanced__selector--format');
