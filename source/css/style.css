@@ -9932,24 +9932,6 @@ a.book__btn {
   color: white;
   text-align: center; }
 
-.formats__item--1 {
-  background-image: url("../img/catalog__locations-item-2-bg.jpeg"); }
-
-.formats__item--2 {
-  background-image: url("../img/catalog__locations-item-11-bg.jpeg"); }
-
-.formats__item--3 {
-  background-image: url("../img/catalog__locations-item-12-bg.png"); }
-
-.formats__item--4 {
-  background-image: url("../img/catalog__locations-item-13-bg.jpeg"); }
-
-.formats__item--5 {
-  background-image: url("../img/catalog__locations-item-14-bg.jpeg"); }
-
-.formats__item--6 {
-  background-image: url("../img/catalog__locations-item-15-bg.jpeg"); }
-
 .formats__btn {
   position: relative;
   display: block;
