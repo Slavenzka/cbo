@@ -448,13 +448,14 @@
           <div class="mats__content mats__content--videos vids">
             <ul class="vids__list">
               <li class="vids__item vids__item--1">
-                <iframe class="vids__content" src="https://www.youtube.com/embed/nf0llz_Rfd0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vids__content" data-src="nf0llz_Rfd0" data-loader="youtube">
+                </iframe>
                 <p class="vids__descriptor">
                   Пример текста под видео роликом, содержащим краткую аннотацию или что-либо подобное
                 </p>
               </li>
               <li class="vids__item vids__item--2">
-                <iframe class="vids__content" src="https://www.youtube.com/embed/nf0llz_Rfd0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vids__content" data-src="nf0llz_Rfd0" data-loader="youtube"></iframe>
                 <p class="vids__descriptor">
                   Пример текста под видео роликом, содержащим краткую аннотацию или что-либо подобное
                 </p>
@@ -2364,6 +2365,8 @@
   <script src="js/mats-accordeon.js"></script>
   <script async src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
   <script src="js/blazy.min.js"></script>
+  <script src="plugins/jquery.lazy.min.js"></script>
+  <script src="plugins/jquery.lazy.youtube.min.js"></script>
   <script>
     ;(function() {
         // Initialize
@@ -2404,6 +2407,10 @@
       arrows: false,
       dots: true
     })
+
+    $(function() {
+      $('iframe[data-src]').Lazy();
+    });
   </script>
   <script>
     var giftofspeed = document.createElement('link');
