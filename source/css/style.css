@@ -2847,24 +2847,15 @@ li.reviews__item.slick-slide {
 
 .reviews-video .reviews__item {
   position: relative; }
-  .reviews-video .reviews__item::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    background-size: contain;
-    background-position: 100% 100%;
-    background-repeat: no-repeat; }
 
-.reviews-video .reviews__item--1::before,
-.reviews-video .reviews__item--2::before,
-.reviews-video .reviews__item--3::before,
-.reviews-video .reviews__item--4::before,
-.reviews-video .reivews__item--5::before,
-.reviews-video .reviews__item--6::before {
-  background-image: url("../img/reviews-video__bg.png"); }
+.reviews-video .reviews__avatar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain; }
 
 .reviews-video .reviews__text {
   padding-right: 40%;
@@ -8273,7 +8264,6 @@ a.book__btn {
 .banner1 {
   position: relative;
   font-size: 1rem;
-  background-image: url("../img/annex1__bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -8952,7 +8942,6 @@ a.book__btn {
 
 .programs {
   font-size: 1rem;
-  background-image: url("../img/landing__contact-bg.jpg");
   background-size: cover; }
 
 .programs > .container {
@@ -9035,7 +9024,6 @@ a.book__btn {
 
 .discount {
   font-size: 1rem;
-  background-image: url("../img/landing__contact-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -9451,7 +9439,6 @@ a.book__btn {
     width: 100%; } }
 
 .bonus {
-  background-image: url("../img/landing__contact-bg.jpg");
   background-size: cover; }
   .bonus .contact__form {
     width: 100%; }
