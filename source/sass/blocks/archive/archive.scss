@@ -16,18 +16,6 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: calc(50% - 475px);
-    width: 951px;
-    height: 31px;
-    background-image: url("../img/catalog__shadow-bottom.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 }
 
 .archive .container {
