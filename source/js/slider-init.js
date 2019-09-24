@@ -221,6 +221,7 @@
         arrows: false,
         speed: 500,
         adaptiveHeight: true,
+        lazyLoad: 'ondemand',
         customPaging: function(slider, i) {
           return $('<button type="button" />').text(letters[i].dataset.letter);
         },
