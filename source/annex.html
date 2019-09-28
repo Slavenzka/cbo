@@ -448,12 +448,13 @@
           <div class="mats__content mats__content--videos vids">
             <ul class="vids__list">
               <li class="vids__item vids__item--1">
+                <!-- Вместо iframe показываем картинку-превью с сервера youtube. Клик по картинке инициирует autoplay. На мобильных устройствах - печалька, так как autoplay не работает и первый клик по картинке загружает интерфейс просмотра youtube, а вторым кликом инициируется проигрывание видео. Плата за эффективность успользования ресурсов пользователя. -->
                 <iframe
                   class="vids__content"
                   src="https://www.youtube.com/embed/nf0llz_Rfd0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/nf0llz_Rfd0?autoplay=1><img src=https://img.youtube.com/vi/nf0llz_Rfd0/hqdefault.jpg alt='Video'><span>▶</span></a>"
+                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/nf0llz_Rfd0?autoplay=1><img src=https://img.youtube.com/vi/nf0llz_Rfd0/maxresdefault.jpg alt='Video'><span>▶</span></a>"
                 >
                 </iframe>
                 <p class="vids__descriptor">
@@ -466,7 +467,7 @@
                   src="https://www.youtube.com/embed/nf0llz_Rfd0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/nf0llz_Rfd0?autoplay=1><img src=https://img.youtube.com/vi/nf0llz_Rfd0/hqdefault.jpg alt='Video'><span>▶</span></a>"
+                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/nf0llz_Rfd0?autoplay=1><img src=https://img.youtube.com/vi/nf0llz_Rfd0/maxresdefault.jpg alt='Video'><span>▶</span></a>"
                 >
                 </iframe>
                 <p class="vids__descriptor">
