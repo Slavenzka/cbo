@@ -7,9 +7,7 @@
   <title>Запись в блоге ЦБО</title>
   <link rel="preload" href="fonts/museosanscyrl_300-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/museosanscyrl_900-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
-  <link href="plugins/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -192,7 +190,7 @@
             </a>
             <figure class="post__data">
               <div class="post__frame">
-                <img src="img/authors__list-item-portrait--2.png" alt="Аватар автора записи в блоге" class="post__avatar">
+                <img data-src="img/authors__list-item-portrait--2.jpg" alt="Аватар автора записи в блоге" class="post__avatar b-lazy">
               </div>
               <figcaption>
                 <a class="post__author" href="#">
@@ -242,7 +240,7 @@
             </h2>
             <p class="content__intro post__intro">Вступительная часть текстового контента. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod praesentium magni debitis. Quod rerum vel nihil quo alias nesciunt reprehenderit, totam, iste libero quisquam, illo labore incidunt perspiciatis enim dolorem. Optio porro aliquid quasi ex. Ea in veritatis, iusto omnis!
             </p>
-            <img src="img/catalog__locations-item-11-bg.jpeg" alt="Необтекаемое изображение без подписи" class="content__img-standalone post__img__standalone">
+            <img data-src="img/catalog__locations-item-11-bg.jpg" alt="Необтекаемое изображение без подписи" class="content__img-standalone post__img__standalone b-lazy">
             <h3 class="content__subheading post__subheading">
               Подзаголовок текстового раздела
             </h3>
@@ -258,7 +256,7 @@
             <h3 class="content__subheading post__subheading">
               Подзаголовок текстового раздела <span class="content__highlight">с выделенным</span> фрагментом
             </h3>
-            <img src="img/catalog__locations-item-11-bg.jpeg" alt="Обтекаемое текстом изображение" class="content__img-float post__img-float">
+            <img data-src="img/catalog__locations-item-11-bg.jpg" alt="Обтекаемое текстом изображение" class="content__img-float post__img-float b-lazy">
             <p class="content__descriptor post__descriptor">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus illo deleniti sunt vero enim voluptatum totam natus quidem. Mollitia ad cupiditate eos facere pariatur velit ipsam rem quae a repellat perferendis, tempora quia, et magni odio soluta itaque molestias. Veniam!
             </p>
@@ -275,7 +273,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla unde itaque, vel id non placeat beatae. Magnam sed quasi suscipit. Mollitia quis minus recusandae alias similique omnis ea magni, ab! Dolores assumenda soluta eos repellendus tenetur, debitis, iste qui itaque. Explicabo, non illum ad excepturi culpa quibusdam! Quos voluptatibus ut architecto aperiam libero, facere! Explicabo deleniti alias ducimus perferendis nam.
             </p>
             <figure class="content__img-captioned">
-              <img src="img/catalog__locations-item-11-bg.jpeg" alt="Необтекаемое изображение без подписи" class="content__img-standalone post__img-standalone">
+              <img data-src="img/catalog__locations-item-11-bg.jpg" alt="Необтекаемое изображение без подписи" class="content__img-standalone post__img-standalone b-lazy">
               <figcaption>
                 Пробное изображение. Подпись к изображению.
               </figcaption>
@@ -286,7 +284,13 @@
             <p class="content__descriptor post__descriptor">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eaque. Sint, saepe culpa. Itaque dicta, repellat magnam facere cupiditate aperiam libero saepe reprehenderit nisi reiciendis accusamus fuga, recusandae, eaque necessitatibus voluptas dignissimos laboriosam aspernatur deleniti. Eos distinctio architecto id doloremque nisi consectetur cum possimus eum neque cumque at repellat quod, natus provident porro voluptatum vel. Ea asperiores dolorem fugit aspernatur!
             </p>
-            <iframe class="content__video post__video" src="https://www.youtube.com/embed/pbBZyOgxf5c?controls=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe
+              class="content__video post__video"
+              src="https://www.youtube.com/embed/pbBZyOgxf5c"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/pbBZyOgxf5c?autoplay=1><img src=https://img.youtube.com/vi/pbBZyOgxf5c/maxresdefault.jpg alt='Video'><span>▶</span></a>"
+            ></iframe>
           </div>
         </div>
         <aside class="post__promo">
@@ -299,7 +303,7 @@
           <ul class="blogz__list post__list">
             <li class="blogz__item blogz__item--regular blogz__item--image">
               <a href="blogpost.html" class="blogz__link">
-                <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                 <div class="blogz__wrapper">
                   <p class="blogz__author">
                     Иванов Иван Иванович
@@ -335,7 +339,7 @@
             </li>
             <li class="blogz__item blogz__item--regular blogz__item--image">
               <a href="blogpost.html" class="blogz__link">
-                <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                 <div class="blogz__wrapper">
                   <p class="blogz__author">
                     Иванов Иван Иванович
@@ -371,7 +375,7 @@
             </li>
             <li class="blogz__item blogz__item--regular blogz__item--image">
               <a href="blogpost.html" class="blogz__link">
-                <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                 <div class="blogz__wrapper">
                   <p class="blogz__author">
                     Иванов Иван Иванович
@@ -454,7 +458,7 @@
             <ul class="blogz__list post__list">
               <li class="blogz__item blogz__item--regular blogz__item--image">
                 <a href="blogpost.html" class="blogz__link">
-                  <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                  <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                   <div class="blogz__wrapper">
                     <p class="blogz__author">
                       Иванов Иван Иванович
@@ -490,7 +494,7 @@
               </li>
               <li class="blogz__item blogz__item--regular blogz__item--image">
                 <a href="blogpost.html" class="blogz__link">
-                  <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                  <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                   <div class="blogz__wrapper">
                     <p class="blogz__author">
                       Иванов Иван Иванович
@@ -526,7 +530,7 @@
               </li>
               <li class="blogz__item blogz__item--regular blogz__item--image">
                 <a href="blogpost.html" class="blogz__link">
-                  <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                  <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                   <div class="blogz__wrapper">
                     <p class="blogz__author">
                       Иванов Иван Иванович
@@ -572,7 +576,7 @@
             <ul class="blogz__list post__list">
               <li class="blogz__item blogz__item--regular blogz__item--image">
                 <a href="blogpost.html" class="blogz__link">
-                  <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                  <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                   <div class="blogz__wrapper">
                     <p class="blogz__author">
                       Иванов Иван Иванович
@@ -608,7 +612,7 @@
               </li>
               <li class="blogz__item blogz__item--regular blogz__item--image">
                 <a href="blogpost.html" class="blogz__link">
-                  <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                  <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                   <div class="blogz__wrapper">
                     <p class="blogz__author">
                       Иванов Иван Иванович
@@ -644,7 +648,7 @@
               </li>
               <li class="blogz__item blogz__item--regular blogz__item--image">
                 <a href="blogpost.html" class="blogz__link">
-                  <img src="img/catalog__locations-item-13-bg.jpeg" alt="Иллюстрация к записи в блоге" class="blogz__img">
+                  <img data-src="img/catalog__locations-item-13-bg.jpg" alt="Иллюстрация к записи в блоге" class="blogz__img b-lazy">
                   <div class="blogz__wrapper">
                     <p class="blogz__author">
                       Иванов Иван Иванович
@@ -694,7 +698,7 @@
                     Семинары, тренинги, мастер-классы
                   </span>
                   <div class="small__frame">
-                    <img src="img/catalog__small-item-1-bg.png" alt="Иллюстрация к карточке программы" class="small__img">
+                    <img data-src="img/catalog__small-item-1-bg.jpg" alt="Иллюстрация к карточке программы" class="small__img b-lazy">
                   </div>
                   <figure class="small__course course">
                     <p class="course__title">
@@ -724,7 +728,7 @@
                     Конференции, форумы, фестивали
                   </span>
                   <div class="small__frame">
-                    <img src="img/catalog__small-item-2-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
+                    <img data-src="img/catalog__small-item-2-bg.jpg" alt="Иллюстрация к карточке программы" class="small__img b-lazy">
                   </div>
                   <figure class="small__course course">
                     <p class="course__title">
@@ -753,7 +757,7 @@
                     Семинары, тренинги, мастер-классы
                   </span>
                   <div class="small__frame">
-                    <img src="img/catalog__small-item-3-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
+                    <img data-src="img/catalog__small-item-3-bg.jpg" alt="Иллюстрация к карточке программы" class="small__img b-lazy">
                   </div>
                   <figure class="small__course course">
                     <p class="course__title">
@@ -792,7 +796,7 @@
                     Семинары, тренинги, мастер-классы
                   </span>
                   <div class="small__frame">
-                    <img src="img/catalog__small-item-1-bg.png" alt="Иллюстрация к карточке программы" class="small__img">
+                    <img data-src="img/catalog__small-item-1-bg.jpg" alt="Иллюстрация к карточке программы" class="small__img b-lazy">
                   </div>
                   <figure class="small__course course">
                     <p class="course__title">
@@ -822,7 +826,7 @@
                     Конференции, форумы, фестивали
                   </span>
                   <div class="small__frame">
-                    <img src="img/catalog__small-item-2-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
+                    <img data-src="img/catalog__small-item-2-bg.jpg" alt="Иллюстрация к карточке программы" class="small__img b-lazy">
                   </div>
                   <figure class="small__course course">
                     <p class="course__title">
@@ -851,7 +855,7 @@
                     Семинары, тренинги, мастер-классы
                   </span>
                   <div class="small__frame">
-                    <img src="img/catalog__small-item-3-bg.jpeg" alt="Иллюстрация к карточке программы" class="small__img">
+                    <img data-src="img/catalog__small-item-3-bg.jpg" alt="Иллюстрация к карточке программы" class="small__img b-lazy">
                   </div>
                   <figure class="small__course course">
                     <p class="course__title">
@@ -1049,11 +1053,11 @@
                   </li>
                 </ol>
                 <div class="modal__logos">
-                  <img src="img/index__modal-visa1.jpg" alt="Логотип платежной системы Visa" class="modal__logo">
-                  <img src="img/index__modal-visa2.jpg" alt="Логотип платежной системы Visa" class="modal__logo">
-                  <img src="img/index__modal-master1.gif" alt="Логотип платежной системы Mastercard" class="modal__logo">
-                  <img src="img/index__modal-master2.gif" alt="Логотип платежной системы Mastercard" class="modal__logo">
-                  <img src="img/index__modal-mir.png" alt="Логотип платежной системы Мир" class="modal__logo">
+                  <img data-src="img/index__modal-visa1.jpg" alt="Логотип платежной системы Visa" class="modal__logo b-lazy">
+                  <img data-src="img/index__modal-visa2.jpg" alt="Логотип платежной системы Visa" class="modal__logo b-lazy">
+                  <img data-src="img/index__modal-master1.gif" alt="Логотип платежной системы Mastercard" class="modal__logo b-lazy">
+                  <img data-src="img/index__modal-master2.gif" alt="Логотип платежной системы Mastercard" class="modal__logo b-lazy">
+                  <img data-src="img/index__modal-mir.png" alt="Логотип платежной системы Мир" class="modal__logo b-lazy">
                 </div>
               </div>
             </div>
@@ -1128,7 +1132,7 @@
             </div>
           </li>
         </ul>
-        <img src="img/footer__contacts-logo.png" alt="Логотип Центра Бизнес Образования" class="footer__logo">
+        <img data-src="img/footer__contacts-logo.png" alt="Логотип Центра Бизнес Образования" class="footer__logo b-lazy">
         <p class="footer__copyright">
           © Группа Компаний «ЦБО» Центр Бизнес-Образования 1996 — 2017
         </p>
@@ -1173,12 +1177,30 @@
   <script async src="js/vk-init.js"></script>
   <script async src="js/fb-init.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script async src="plugins/slick/slick.min.js"></script>
   <script async src="js/slider-init.js"></script>
   <script src="plugins/fancybox/dist/jquery.fancybox.min.js"></script>
   <script async src="js/modals.js"></script>
   <script src="js/drop-down-btns.js"></script>
+  <script src="plugins/jquery.lazy.min.js"></script>
+  <script>
+    $(function() {
+      $('.b-lazy').Lazy();
+    });
+    var giftofspeed = document.createElement('link');
+    giftofspeed.rel = 'stylesheet';
+    giftofspeed.href = 'plugins/fancybox/dist/jquery.fancybox.min.css';
+    giftofspeed.type = 'text/css';
+    var godefer = document.getElementsByTagName('link')[0];
+    godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+    var giftofspeed = document.createElement('link');
+    giftofspeed.rel = 'stylesheet';
+    giftofspeed.href = 'plugins/slick/slick.css';
+    giftofspeed.type = 'text/css';
+    var godefer = document.getElementsByTagName('link')[0];
+    godefer.parentNode.insertBefore(giftofspeed, godefer);
+  </script>
 </body>
 
 </html>
