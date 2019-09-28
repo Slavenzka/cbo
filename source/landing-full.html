@@ -7,10 +7,7 @@
   <title>Лендинг</title>
   <link rel="preload" href="fonts/museosanscyrl_500-webfont.woff2" as="font">
   <link rel="preload" href="fonts/museosanscyrl_900-webfont.woff2" as="font">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
-  <!-- <link href="plugins/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet"> -->
-  <script async src="js/lozad.min.js"></script>
 </head>
 
 <body>
@@ -1477,15 +1474,22 @@
   <script async src="js/vk-init.js"></script>
   <script async src="js/fb-init.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-1.4.1.min.js"></script>
   <script async src="plugins/slick/slick.min.js"></script>
   <script async src="js/slider-init.js"></script>
-  <!-- <script async src="plugins/fancybox/dist/jquery.fancybox.min.js"></script> -->
   <script async src="js/modals.js"></script>
   <script async src="js/drop-down-btns.js"></script>
+  <script src="js/lozad.min.js"></script>
   <script>
     const observer = lozad();
     observer.observe();
+  </script>
+  <script>
+    var giftofspeed = document.createElement('link');
+    giftofspeed.rel = 'stylesheet';
+    giftofspeed.href = 'plugins/slick/slick.css';
+    giftofspeed.type = 'text/css';
+    var godefer = document.getElementsByTagName('link')[0];
+    godefer.parentNode.insertBefore(giftofspeed, godefer);
   </script>
 </body>
 
